@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Mastonet\Mastonet\Mastonet.csproj" />
+    <ProjectReference Include="..\Aurochs.Core\Aurochs.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -140,6 +140,11 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Aurochs.Core\Aurochs.Core.csproj">
+      <Project>{a561055e-26ca-4bb0-b4e1-1447488d573d}</Project>
+      <Name>Aurochs.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
