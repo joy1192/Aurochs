@@ -55,7 +55,14 @@
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\CommonServiceLocator.1.2\lib\portable-windows8+net40+sl5+windowsphone8\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="StatefulModel, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StatefulModel.0.6.0\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\StatefulModel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
     <Reference Include="System.Reactive.Core, Version=3.0.3000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Reactive.Core.3.1.1\lib\net46\System.Reactive.Core.dll</HintPath>
@@ -95,13 +102,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ActionCreators\TimelineActionCreator.cs" />
+    <Compile Include="ActionMessages\TimelineInitializeMessage.cs" />
+    <Compile Include="ActionMessages\StatusMessage.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Events\ApplicationLocalEventArgs.cs" />
-    <Compile Include="Models\Contents\Account.cs" />
-    <Compile Include="Models\Contents\Status.cs" />
+    <Compile Include="Events\TimelineContentUpdatedEventArgs.cs" />
+    <Compile Include="Helpers\APIHelper.cs" />
+    <Compile Include="Helpers\DispatcherHelper.cs" />
+    <Compile Include="Models\IFluxStore.cs" />
+    <Compile Include="Models\PublicTimelineStore.cs" />
+    <Compile Include="Models\StoreAccessor.cs" />
+    <Compile Include="Models\UserTimelineStore.cs" />
     <Compile Include="SampleData\StatusSample.cs" />
     <Compile Include="SampleData\TimelineSample.cs" />
     <Compile Include="ViewModels\Contents\StatusViewModel.cs" />
@@ -159,10 +174,19 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Infrastructure.Flux\source\Infrastructure.Flux\Infrastructure.Flux.csproj">
+      <Project>{dc44df8d-e197-459e-a430-c20e7b84d259}</Project>
+      <Name>Infrastructure.Flux</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Aurochs.Core\Aurochs.Core.csproj">
       <Project>{a561055e-26ca-4bb0-b4e1-1447488d573d}</Project>
       <Name>Aurochs.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Aurochs.Linkage.Mastonet\Aurochs.Linkage.Mastonet.csproj">
+      <Project>{8e92e2c1-500b-4447-b8d8-ee98fc674522}</Project>
+      <Name>Aurochs.Linkage.Mastonet</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

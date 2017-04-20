@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Aurochs.Desktop.Views"
-        xmlns:vm="clr-namespace:Aurochs.Desktop.ViewModels.Contents"
+        xmlns:vm="clr-namespace:Aurochs.Desktop.ViewModels"
         xmlns:controls="clr-namespace:Aurochs.Desktop.Views.Controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="300" Width="300">
@@ -12,7 +12,7 @@
         <controls:TimelineControl>
             <controls:TimelineControl.DataContext>
                 <!-- 仮 -->
-                <vm:StatusViewModel
+                <vm:TimelineViewModel/>
             </controls:TimelineControl.DataContext>
         </controls:TimelineControl>
     </Grid>

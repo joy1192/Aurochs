@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Aurochs.Desktop.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,7 @@ namespace Aurochs.Desktop.Views
         public MainWindow()
         {
             InitializeComponent();
+            DispatcherHelper.CurrentDispatcher = this.Dispatcher;
         }
     }
 }

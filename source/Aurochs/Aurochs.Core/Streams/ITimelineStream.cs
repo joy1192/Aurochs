@@ -8,8 +8,8 @@ namespace Aurochs.Core.Streams
 {
     public interface ITimelineStream
     {
-        IObservable<StreamingMessage> UserAsObservable(ApplicationRegistration registration);
+        IObservable<StreamingMessage> UserAsObservable();
 
-        IObservable<StreamingMessage> PublicAsObservable(ApplicationRegistration registration);
+        IObservable<StreamingMessage> PublicAsObservable();
     }
 }

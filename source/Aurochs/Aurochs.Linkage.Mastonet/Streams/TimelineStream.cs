@@ -20,24 +20,25 @@ namespace Aurochs.Linkage.Streams
 
         private TimelineStreaming _Steaming { get; set; }
 
-        public TimelineStream(AppRegistration appRegistration)
-        {
-            this._AppRegistration = appRegistration;
+        private string _AccessToken { get; set; }
 
-            _Client = new MastodonClient(this._AppRegistration);
+        public TimelineStream(ApplicationRegistration appRegistration, string accessToken)
+        {
+            this._AppRegistration = appRegistration.ToMastonetAppRegistration();
+            this._AccessToken = accessToken;
+
+            _Client = new MastodonClient(this._AppRegistration, accessToken);
             _Steaming = _Client.GetUserStreaming();
         }
 
-        public IObservable<StreamingMessage> UserAsObservable(ApplicationRegistration registration)
+        public IObservable<StreamingMessage> UserAsObservable()
         {
-            var appRegistration = registration.ToMastonetAppRegistration();
-            return new UserStreamingObservable(appRegistration);
+            return new UserStreamingObservable(this._AppRegistration, this._AccessToken);
         }
 
-        public IObservable<StreamingMessage> PublicAsObservable(ApplicationRegistration registration)
+        public IObservable<StreamingMessage> PublicAsObservable()
         {
-            var appRegistration = registration.ToMastonetAppRegistration();
-            return new PublicStreamingObservable(appRegistration);
+            return new PublicStreamingObservable(_AppRegistration, this._AccessToken);
         }
     }
 
@@ -45,14 +46,17 @@ namespace Aurochs.Linkage.Streams
     {
         public AppRegistration Registration { get; private set; }
 
-        public UserStreamingObservable(AppRegistration registration)
+        public string AccessToken { get; private set; }
+
+        public UserStreamingObservable(AppRegistration registration, string accessToken)
         {
             this.Registration = registration;
+            this.AccessToken = accessToken;
         }
 
         public IDisposable Subscribe(IObserver<StreamingMessage> observer)
         {
-            var streaming = new StreamingImpl(this.Registration, client => client.GetUserStreaming());
+            var streaming = new StreamingImpl(observer, this.Registration, this.AccessToken, client => client.GetUserStreaming());
             streaming.Start();
 
             return streaming;
@@ -63,14 +67,17 @@ namespace Aurochs.Linkage.Streams
     {
         public AppRegistration Registration { get; private set; }
 
-        public PublicStreamingObservable(AppRegistration registration)
+        public string AccessToken { get; private set; }
+
+        public PublicStreamingObservable(AppRegistration registration, string accessToken)
         {
             this.Registration = registration;
+            this.AccessToken = accessToken;
         }
 
         public IDisposable Subscribe(IObserver<StreamingMessage> observer)
         {
-            var streaming = new StreamingImpl(this.Registration, client => client.GetPublicStreaming());
+            var streaming = new StreamingImpl(observer, this.Registration, this.AccessToken, client => client.GetPublicStreaming());
             streaming.Start();
 
             return streaming;
@@ -85,9 +92,10 @@ namespace Aurochs.Linkage.Streams
 
         private TimelineStreaming _Streaming { get; set; }
 
-        public StreamingImpl(AppRegistration registration, Func<MastodonClient, TimelineStreaming> factory)
+        public StreamingImpl(IObserver<StreamingMessage> observer, AppRegistration registration, string accessToken, Func<MastodonClient, TimelineStreaming> factory)
         {
-            _Client = new MastodonClient(registration);
+            _Observer = observer;
+            _Client = new MastodonClient(registration, accessToken);
             _Streaming = factory(_Client);
 
             _Streaming.OnUpdate += OnUpdate;

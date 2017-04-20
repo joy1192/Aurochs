@@ -1,4 +1,4 @@
-﻿using Aurochs.Desktop.Models.Contents;
+﻿using Aurochs.Core.Entities;
 using Microsoft.Practices.Prism.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -50,27 +50,27 @@ namespace Aurochs.Desktop.ViewModels.Contents
 
         public void Update(Status status)
         {
-            if (status.Boost == null)
+            if (status.Reblog == null)
             {
-                this.DisplayId = status.AccountScreenName;
-                this.Text = status.Text;
-                this.AvatarImageURI = status.AvatarImageURI;
+                this.DisplayId = status.Account.AccountName;
+                this.Text = status.Content;
+                this.AvatarImageURI = status.Account.AvatarImageUrl;
                 this.SourceAvatarImageURI = null;
 
-                var localTime = status.CreateAt.ToLocalTime();
+                var localTime = status.CreatedAt.ToLocalTime();
 
                 this.CreateTime = $"{localTime.Hour:00}:{localTime.Minute:00}";
                 this.CreateDate = (DateTime.Today == localTime.Date) ? string.Empty : $"{ localTime.Year}/{ localTime.Month}/{ localTime.Day}";
             }
             else
             {
-                var boost = status.Boost;
-                this.DisplayId = boost.AccountScreenName;
-                this.Text = boost.Text;
-                this.AvatarImageURI = boost.AvatarImageURI;
-                this.SourceAvatarImageURI = status.AvatarImageURI;
+                var reblog = status.Reblog;
+                this.DisplayId = reblog.Account.AccountName;
+                this.Text = reblog.Content;
+                this.AvatarImageURI = reblog.Account.AvatarImageUrl;
+                this.SourceAvatarImageURI = status.Account.AvatarImageUrl;
 
-                var localTime = status.CreateAt.ToLocalTime();
+                var localTime = status.CreatedAt.ToLocalTime();
 
                 this.CreateTime = $"{localTime.Hour:00}:{localTime.Minute:00}";
                 this.CreateDate = (DateTime.Today == localTime.Date) ? string.Empty : $"{ localTime.Year}/{ localTime.Month}/{ localTime.Day}";

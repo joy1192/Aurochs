@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mastonet", "..\..\..\Maston
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aurochs.Linkage.Mastonet", "Aurochs.Linkage.Mastonet\Aurochs.Linkage.Mastonet.csproj", "{8E92E2C1-500B-4447-B8D8-EE98FC674522}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Flux", "..\..\..\Infrastructure.Flux\source\Infrastructure.Flux\Infrastructure.Flux.csproj", "{DC44DF8D-E197-459E-A430-C20E7B84D259}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8E92E2C1-500B-4447-B8D8-EE98FC674522}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E92E2C1-500B-4447-B8D8-EE98FC674522}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E92E2C1-500B-4447-B8D8-EE98FC674522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC44DF8D-E197-459E-A430-C20E7B84D259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC44DF8D-E197-459E-A430-C20E7B84D259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC44DF8D-E197-459E-A430-C20E7B84D259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC44DF8D-E197-459E-A430-C20E7B84D259}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
