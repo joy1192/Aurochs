@@ -13,7 +13,7 @@
     </UserControl.Resources>
     <Grid Background="{StaticResource BackgroundBrush}" d:DataContext="{StaticResource TimelineSample}">
         <ScrollViewer VerticalScrollBarVisibility="Visible">
-            <ItemsControl ItemsSource="{Binding Toots}">
+            <ItemsControl ItemsSource="{Binding StatusCollection}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <local:StatusControl/>

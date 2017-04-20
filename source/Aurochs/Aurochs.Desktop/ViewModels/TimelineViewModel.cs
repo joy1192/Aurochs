@@ -29,14 +29,14 @@ namespace Aurochs.Desktop.ViewModels
             var creator = new TimelineActionCreator();
             creator.Initialize();
 
-            var store = StoreAccessor.Default.Get<PublicTimelineStore>();
+            var store = StoreAccessor.Default.Get<UserTimelineStore>();
             var observer = Observable.FromEventPattern<ApplicationLocalEventArgs>
             (
                 handler => store.StoreContentChanged += handler,
                 handler => store.StoreContentChanged -= handler
             ).
             Select(x => x.Sender).
-            OfType<PublicTimelineStore>().
+            OfType<UserTimelineStore>().
             Subscribe(s =>
             {
                 DispatcherHelper.CurrentDispatcher.Invoke(() =>
@@ -66,6 +66,8 @@ namespace Aurochs.Desktop.ViewModels
 
         public void Initalize()
         {
+            var creator = new TimelineActionCreator();
+            creator.Initialize();
         }
     }
 }

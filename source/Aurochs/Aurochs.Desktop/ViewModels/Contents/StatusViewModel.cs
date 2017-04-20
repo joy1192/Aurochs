@@ -3,8 +3,11 @@ using Microsoft.Practices.Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Aurochs.Desktop.ViewModels.Contents
 {
@@ -53,7 +56,7 @@ namespace Aurochs.Desktop.ViewModels.Contents
             if (status.Reblog == null)
             {
                 this.DisplayId = status.Account.AccountName;
-                this.Text = status.Content;
+                this.Text = this.ParseContent(status.Content);
                 this.AvatarImageURI = status.Account.AvatarImageUrl;
                 this.SourceAvatarImageURI = null;
 
@@ -66,7 +69,7 @@ namespace Aurochs.Desktop.ViewModels.Contents
             {
                 var reblog = status.Reblog;
                 this.DisplayId = reblog.Account.AccountName;
-                this.Text = reblog.Content;
+                this.Text = this.ParseContent(reblog.Content);
                 this.AvatarImageURI = reblog.Account.AvatarImageUrl;
                 this.SourceAvatarImageURI = status.Account.AvatarImageUrl;
 
@@ -75,6 +78,18 @@ namespace Aurochs.Desktop.ViewModels.Contents
                 this.CreateTime = $"{localTime.Hour:00}:{localTime.Minute:00}";
                 this.CreateDate = (DateTime.Today == localTime.Date) ? string.Empty : $"{ localTime.Year}/{ localTime.Month}/{ localTime.Day}";
             }
+        }
+
+        private string ParseContent(string rawContent)
+        {
+            var text = rawContent.
+                Replace("<br>", "\n").
+                Replace("<br/>", "\n").
+                Replace("<br />", "\n").
+                Replace("</p><p>", "\n\n");
+            var formattedText =  Regex.Replace(text, "<.*?>", String.Empty);
+
+            return HttpUtility.HtmlDecode(formattedText);
         }
     }
 }
