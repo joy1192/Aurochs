@@ -48,7 +48,6 @@ namespace Aurochs.Desktop.ViewModels.Contents
 
         private string _SourceAvatarImageURI;
 
-
         public void Update(Status status)
         {
             if (status.Boost == null)
