@@ -31,40 +31,64 @@ namespace Aurochs.Linkage.Streams
         public IObservable<StreamingMessage> UserAsObservable(ApplicationRegistration registration)
         {
             var appRegistration = registration.ToMastonetAppRegistration();
-            return new StreamingObservable(appRegistration);
+            return new UserStreamingObservable(appRegistration);
+        }
+
+        public IObservable<StreamingMessage> PublicAsObservable(ApplicationRegistration registration)
+        {
+            var appRegistration = registration.ToMastonetAppRegistration();
+            return new PublicStreamingObservable(appRegistration);
         }
     }
 
-    public class StreamingObservable : IObservable<StreamingMessage>
+    public class UserStreamingObservable : IObservable<StreamingMessage>
     {
         public AppRegistration Registration { get; private set; }
 
-        public StreamingObservable(AppRegistration registration)
+        public UserStreamingObservable(AppRegistration registration)
         {
             this.Registration = registration;
         }
-        
+
         public IDisposable Subscribe(IObserver<StreamingMessage> observer)
         {
-            var streaming = new StreamingImpl(this.Registration);
+            var streaming = new StreamingImpl(this.Registration, client => client.GetUserStreaming());
             streaming.Start();
 
             return streaming;
         }
     }
 
-    public class StreamingImpl : IDisposable
+    public class PublicStreamingObservable : IObservable<StreamingMessage>
+    {
+        public AppRegistration Registration { get; private set; }
+
+        public PublicStreamingObservable(AppRegistration registration)
+        {
+            this.Registration = registration;
+        }
+
+        public IDisposable Subscribe(IObserver<StreamingMessage> observer)
+        {
+            var streaming = new StreamingImpl(this.Registration, client => client.GetPublicStreaming());
+            streaming.Start();
+
+            return streaming;
+        }
+    }
+
+    internal class StreamingImpl : IDisposable
     {
         private IObserver<StreamingMessage> _Observer { get; set; }
 
         private MastodonClient _Client { get; set; }
 
-        private TimelineStreaming _Streaming { get; set;}
+        private TimelineStreaming _Streaming { get; set; }
 
-        public StreamingImpl(AppRegistration registration)
+        public StreamingImpl(AppRegistration registration, Func<MastodonClient, TimelineStreaming> factory)
         {
             _Client = new MastodonClient(registration);
-            _Streaming = _Client.GetUserStreaming();
+            _Streaming = factory(_Client);
 
             _Streaming.OnUpdate += OnUpdate;
             _Streaming.OnDelete += OnDelete;

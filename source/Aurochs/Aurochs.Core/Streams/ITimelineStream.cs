@@ -9,5 +9,7 @@ namespace Aurochs.Core.Streams
     public interface ITimelineStream
     {
         IObservable<StreamingMessage> UserAsObservable(ApplicationRegistration registration);
+
+        IObservable<StreamingMessage> PublicAsObservable(ApplicationRegistration registration);
     }
 }
