@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              xmlns:sample="clr-namespace:Aurochs.Desktop.SampleData"
+             xmlns:controls="clr-namespace:Aurochs.Desktop.Views.Controls"
              xmlns:util="clr-namespace:Aurochs.Desktop.Views.Behaviors"
              mc:Ignorable="d" d:DesignWidth="300">
     <UserControl.Resources>
@@ -23,22 +24,22 @@
             <ColumnDefinition Width="60"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Image Grid.Row="0"
-               Grid.Column="0"
-               Grid.RowSpan="4"
-               Height="50"
-               Width="50"
-               Margin="5"
-               Source="{Binding AvatarImageURI}"
-               VerticalAlignment="Top"/>
-        <Image Grid.Row="0"
-               Grid.Column="0"
-               Grid.RowSpan="4"
-               Height="25"
-               Width="25"
-               Source="{Binding SourceAvatarImageURI}"
-               VerticalAlignment="Top"
-               Margin="30,35,0,0"/>
+        <controls:LazyImage Grid.Row="0"
+                            Grid.Column="0"
+                            Grid.RowSpan="4"
+                            Height="50"
+                            Width="50"
+                            Margin="5"
+                            LoadSource="{Binding AvatarImageURI}"
+                            VerticalAlignment="Top"/>
+        <controls:LazyImage Grid.Row="0"
+                            Grid.Column="0"
+                            Grid.RowSpan="4"
+                            Height="25"
+                            Width="25"
+                            LoadSource="{Binding SourceAvatarImageURI}"
+                            VerticalAlignment="Top"
+                            Margin="30,35,0,0"/>
         <Button Grid.Column="1" Grid.Row="0">
             <Button.Template>
                 <ControlTemplate TargetType="Button">

@@ -108,10 +108,17 @@ namespace Aurochs.Desktop.Views.Utility
                     var text = element.Descendants("span").
                         Where(x => x.Attributes["class"]?.Value != "invisible").
                         Select(x => x.InnerText).
-                        Single();
-                    var url = element.Attributes["href"].Value;
-
-                    yield return factory(InlineContentType.Link, text.ToString(), url);
+                        SingleOrDefault();
+                    if (text == null)
+                    {
+                        var url = element.Attributes["href"].Value;
+                        yield return factory(InlineContentType.Link, url, url);
+                    }
+                    else
+                    {
+                        var url = element.Attributes["href"].Value;
+                        yield return factory(InlineContentType.Link, text.ToString(), url);
+                    }
                 }
             }
         }

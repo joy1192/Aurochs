@@ -130,6 +130,7 @@
     <Compile Include="ViewModels\TimelineViewModelBase.cs" />
     <Compile Include="ViewModels\UserTimelineViewModel.cs" />
     <Compile Include="Views\Behaviors\StatusBehavior.cs" />
+    <Compile Include="Views\Controls\LazyImage.cs" />
     <Compile Include="Views\Controls\StatusControl.xaml.cs">
       <DependentUpon>StatusControl.xaml</DependentUpon>
     </Compile>
@@ -139,6 +140,7 @@
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Utility\ImageLoader.cs" />
     <Compile Include="Views\Utility\InlineGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
