@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aurochs.Linkage.Mastonet", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Flux", "..\..\..\Infrastructure.Flux\source\Infrastructure.Flux\Infrastructure.Flux.csproj", "{DC44DF8D-E197-459E-A430-C20E7B84D259}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aurochs.Desktop.Test", "Aurochs.Desktop.Test\Aurochs.Desktop.Test.csproj", "{6DA3535C-EE0A-4D8A-92AF-4702E6543219}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DC44DF8D-E197-459E-A430-C20E7B84D259}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC44DF8D-E197-459E-A430-C20E7B84D259}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC44DF8D-E197-459E-A430-C20E7B84D259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DA3535C-EE0A-4D8A-92AF-4702E6543219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA3535C-EE0A-4D8A-92AF-4702E6543219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA3535C-EE0A-4D8A-92AF-4702E6543219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA3535C-EE0A-4D8A-92AF-4702E6543219}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

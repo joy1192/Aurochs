@@ -50,7 +50,7 @@
                    Background="Transparent"
                    TextWrapping="Wrap">
             <i:Interaction.Behaviors>
-                <util:StatusTextBehavior Status="{Binding Text}"
+                <util:StatusBehavior Contents="{Binding Text}"
                                          TextForeground="White"
                                          UriForeground="Gray"/>
             </i:Interaction.Behaviors>

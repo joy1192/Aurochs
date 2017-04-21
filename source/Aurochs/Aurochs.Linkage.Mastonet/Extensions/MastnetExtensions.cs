@@ -140,8 +140,8 @@ namespace Aurochs.Linkage.Converter
                 Id = notification.Id,
                 Type = StringToNotificationType(notification.Type),
                 CreatedAt = notification.CreatedAt,
-                Account = notification.Account.ToAccount(),
-                Status = notification.Status.ToStatus()
+                Account = notification.Account?.ToAccount(),
+                Status = notification.Status?.ToStatus()
             };
         }
 

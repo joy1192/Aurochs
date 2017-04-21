@@ -8,6 +8,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web;
+using System.Xml.Linq;
+using System.Xml.XPath;
 
 namespace Aurochs.Desktop.ViewModels.Contents
 {
@@ -56,7 +58,7 @@ namespace Aurochs.Desktop.ViewModels.Contents
             if (status.Reblog == null)
             {
                 this.DisplayId = status.Account.AccountName;
-                this.Text = this.ParseContent(status.Content);
+                this.Text = status.Content;
                 this.AvatarImageURI = status.Account.AvatarImageUrl;
                 this.SourceAvatarImageURI = null;
 
@@ -69,7 +71,7 @@ namespace Aurochs.Desktop.ViewModels.Contents
             {
                 var reblog = status.Reblog;
                 this.DisplayId = reblog.Account.AccountName;
-                this.Text = this.ParseContent(reblog.Content);
+                this.Text = reblog.Content;
                 this.AvatarImageURI = reblog.Account.AvatarImageUrl;
                 this.SourceAvatarImageURI = status.Account.AvatarImageUrl;
 
@@ -80,16 +82,27 @@ namespace Aurochs.Desktop.ViewModels.Contents
             }
         }
 
-        private string ParseContent(string rawContent)
-        {
-            var text = rawContent.
-                Replace("<br>", "\n").
-                Replace("<br/>", "\n").
-                Replace("<br />", "\n").
-                Replace("</p><p>", "\n\n");
-            var formattedText =  Regex.Replace(text, "<.*?>", String.Empty);
+        //public string ParseContent(string rawContent)
+        //{
+        //    var reg = new Regex("<a href=\"(?<url>.*?)\".* class=\"u-url mention\".*?>@\\<span\\>(?<text>.*?)\\<\\/span\\>\\<\\/a\\>", RegexOptions.IgnoreCase | RegexOptions.Singleline);
 
-            return HttpUtility.HtmlDecode(formattedText);
-        }
+        //    foreach (var match in reg.Matches(rawContent).OfType<Match>())
+        //    {
+        //        var mention_url = match.Groups["url"].Value;
+        //        var fullId = Regex.Replace(mention_url, "^http(s)?://(?<Domain>.*?)/@(?<Account>.*)$", "${Account}@${Domain}");
+        //        rawContent = rawContent.Replace(match.Value, fullId);
+        //    }
+
+        //    var text = rawContent.
+        //        Replace("<br>", "\n").
+        //        Replace("<br/>", "\n").
+        //        Replace("<br />", "\n").
+        //        Replace("</p><p>", "\n\n");
+
+        //    // Tag除去
+        //    var formattedText =  Regex.Replace(text, "<.*?>", String.Empty);
+
+        //    return HttpUtility.HtmlDecode(formattedText);
+        //}
     }
 }

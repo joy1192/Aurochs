@@ -122,7 +122,7 @@
     <Compile Include="SampleData\TimelineSample.cs" />
     <Compile Include="ViewModels\Contents\StatusViewModel.cs" />
     <Compile Include="ViewModels\TimelineViewModel.cs" />
-    <Compile Include="Views\Behaviors\StatusTextBehavior.cs" />
+    <Compile Include="Views\Behaviors\StatusBehavior.cs" />
     <Compile Include="Views\Controls\StatusControl.xaml.cs">
       <DependentUpon>StatusControl.xaml</DependentUpon>
     </Compile>
@@ -132,6 +132,7 @@
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Utility\InlineGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
