@@ -32,33 +32,43 @@ namespace Aurochs.Desktop.Test
             var raw = File.ReadAllText("./RawToot.txt");
             var inlines = InlineGenerator.Resolve(raw, BuildInlineMock).ToArray();
 
-            Assert.IsInstanceOfType(inlines[0], typeof(HyperlinkMock));
             {
                 var inline = inlines[0].Inline as HyperlinkMock;
+                Assert.IsNotNull(inline);
                 Assert.AreEqual(inline.Text, "@mzne");
-                Assert.AreEqual(inline.Text, "https://friends.nico/@mzne");
+                Assert.AreEqual(inline.LinkUrl, "https://friends.nico/@mzne");
             }
-            Assert.IsInstanceOfType(inlines[1], typeof(RunMock));
             {
                 var inline = inlines[1].Inline as RunMock;
-                Assert.AreEqual(inline.Text, " 国語力の足りない業界という闇\n");
+                Assert.IsNotNull(inline);
+                Assert.AreEqual(inline.Text, " 国語力の足りない業界という闇");
             }
-            Assert.IsInstanceOfType(inlines[2], typeof(HyperlinkMock));
             {
-                var inline = inlines[2].Inline as HyperlinkMock;
+                var inline = inlines[2].Inline as RunMock;
+                Assert.IsNotNull(inline);
+                Assert.AreEqual(inline.Text, "\n");
+            }
+            {
+                var inline = inlines[3].Inline as HyperlinkMock;
+                Assert.IsNotNull(inline);
                 Assert.AreEqual(inline.Text, "@joy");
-                Assert.AreEqual(inline.Text, "https://friends.nico/@joy");
+                Assert.AreEqual(inline.LinkUrl, "https://friends.nico/@joy");
             }
-            Assert.IsInstanceOfType(inlines[3], typeof(RunMock));
             {
-                var inline = inlines[3].Inline as RunMock;
-                Assert.AreEqual(inline.Text, " (Test Tootもついでに)\n");
+                var inline = inlines[4].Inline as RunMock;
+                Assert.IsNotNull(inline);
+                Assert.AreEqual(inline.Text, " (Test Tootもついでに)");
             }
-            Assert.IsInstanceOfType(inlines[4], typeof(HyperlinkMock));
             {
-                var inline = inlines[4].Inline as HyperlinkMock;
+                var inline = inlines[5].Inline as RunMock;
+                Assert.IsNotNull(inline);
+                Assert.AreEqual(inline.Text, "\n");
+            }
+            {
+                var inline = inlines[6].Inline as HyperlinkMock;
+                Assert.IsNotNull(inline);
                 Assert.AreEqual(inline.Text, "friends.nico/");
-                Assert.AreEqual(inline.Text, "https://friends.nico/");
+                Assert.AreEqual(inline.LinkUrl, "https://friends.nico/");
             }
         }
 
