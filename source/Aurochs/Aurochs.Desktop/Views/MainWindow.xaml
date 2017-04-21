@@ -7,12 +7,31 @@
         xmlns:vm="clr-namespace:Aurochs.Desktop.ViewModels"
         xmlns:controls="clr-namespace:Aurochs.Desktop.Views.Controls"
         mc:Ignorable="d"
-        Title="Aurochs" Height="300" Width="300">
+        Title="Aurochs" Height="300" Width="800">
     <Grid>
-        <controls:TimelineControl>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <controls:TimelineControl Grid.Column="0">
             <controls:TimelineControl.DataContext>
                 <!-- 仮 -->
-                <vm:TimelineViewModel/>
+                <vm:UserTimelineViewModel/>
+            </controls:TimelineControl.DataContext>
+        </controls:TimelineControl>
+
+        <controls:TimelineControl Grid.Column="1">
+            <controls:TimelineControl.DataContext>
+                <!-- 仮 -->
+                <vm:LocalTimelineViewModel/>
+            </controls:TimelineControl.DataContext>
+        </controls:TimelineControl>
+        
+        <controls:TimelineControl Grid.Column="2">
+            <controls:TimelineControl.DataContext>
+                <!-- 仮 -->
+                <vm:PublicTimelineViewModel/>
             </controls:TimelineControl.DataContext>
         </controls:TimelineControl>
     </Grid>

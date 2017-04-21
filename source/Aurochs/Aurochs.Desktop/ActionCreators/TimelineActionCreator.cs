@@ -47,6 +47,21 @@ namespace Aurochs.Desktop.ActionCreators
                         Subscribe(msg =>
                         {
                         }));
+
+                    this.Add(
+                        stream.PublicAsObservable().
+                        OfType<UpdateStatusMessage>().
+                        Subscribe(msg =>
+                        {
+                            Dispatcher.Default.Invoke(new UpdateStatusActionMessage(msg.Status, StatusSource.Public));
+                        }));
+                    this.Add(
+                        stream.PublicAsObservable().
+                        OfType<DeleteStatusMessage>().
+                        Subscribe(msg =>
+                        {
+                            Dispatcher.Default.Invoke(new DeleteStatusActionMessage(msg.StatusId, StatusSource.Public));
+                        }));
                 });
         }
     }

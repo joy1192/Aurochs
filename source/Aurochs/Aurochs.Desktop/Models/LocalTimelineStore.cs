@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 namespace Aurochs.Desktop.Models
 {
     [Export(typeof(IFluxStore))]
-    public class PublicTimelineStore : MultipleDisposable, IFluxStore
+    public class LocalTimelineStore : MultipleDisposable, IFluxStore
     {
         private Dictionary<string, DispatcherToken> Tokens { get; } = new Dictionary<string, DispatcherToken>();
 
@@ -25,7 +25,7 @@ namespace Aurochs.Desktop.Models
         private const int TimelineMaxSize = 200;
 
         [ImportingConstructor]
-        public PublicTimelineStore()
+        public LocalTimelineStore()
         {
             this.Tokens[nameof(OnPublicTimelineInitialize)] = Dispatcher.Default.Register<PublicTimelineInitializeMessage>(OnPublicTimelineInitialize);
             this.Tokens[nameof(OnUpdateStatus)] = Dispatcher.Default.Register<UpdateStatusActionMessage>(OnUpdateStatus);
@@ -43,6 +43,9 @@ namespace Aurochs.Desktop.Models
         private void OnUpdateStatus(UpdateStatusActionMessage msg)
         {
             if (msg.Source != StatusSource.Public)
+                return;
+
+            if (!msg.Status.Uri.Contains("friends.nico"))
                 return;
 
             this.StatusCollection.Insert(0, msg.Status);

@@ -1,4 +1,5 @@
 ﻿using Aurochs.Core.Entities;
+using Aurochs.Core.Extensions;
 using Aurochs.Desktop.ActionMessages;
 using Aurochs.Desktop.Events;
 using Infrastructure.Flux.Core;
@@ -39,14 +40,20 @@ namespace Aurochs.Desktop.Models
 
         private void OnUpdateStatus(UpdateStatusActionMessage msg)
         {
-            this.StatusCollection.Add(msg.Status);
-            this.StatusCollection = this.StatusCollection.Distinct().OrderByDescending(x => x.CreatedAt).Take(TimelineMaxSize).ToList();
+            if (msg.Source != StatusSource.User)
+                return;
+
+            this.StatusCollection.Insert(0, msg.Status);
+            this.StatusCollection = this.StatusCollection.Distinct((lhs, rhs) => lhs.Id == rhs.Id, x => (int)x.Id).OrderByDescending(x => x.CreatedAt).Take(TimelineMaxSize).ToList();
 
             StoreContentChanged?.Invoke(this, TimelineContentUpdatedEventArgs.Default);
         }
 
         private void OnDeleteStatus(DeleteStatusActionMessage msg)
         {
+            if (msg.Source != StatusSource.User)
+                return;
+
             this.StatusCollection.RemoveAll(x => x.Id == msg.StatusId);
 
             StoreContentChanged?.Invoke(this, TimelineContentUpdatedEventArgs.Default);

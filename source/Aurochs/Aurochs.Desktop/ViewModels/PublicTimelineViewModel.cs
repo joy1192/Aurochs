@@ -15,28 +15,21 @@ using System.Threading.Tasks;
 
 namespace Aurochs.Desktop.ViewModels
 {
-    public class TimelineViewModel : BindableBase
+    public class PublicTimelineViewModel : TimelineViewModelBase
     {
-        public ObservableCollection<StatusViewModel> StatusCollection
-        {
-            get { return _StatusCollection; }
-            set { SetProperty(ref _StatusCollection, value); }
-        }
-        private ObservableCollection<StatusViewModel> _StatusCollection = new ObservableCollection<StatusViewModel>();
-
-        public TimelineViewModel()
+        public PublicTimelineViewModel()
         {
             var creator = new TimelineActionCreator();
             creator.Initialize();
 
-            var store = StoreAccessor.Default.Get<UserTimelineStore>();
+            var store = StoreAccessor.Default.Get<PublicTimelineStore>();
             var observer = Observable.FromEventPattern<ApplicationLocalEventArgs>
             (
                 handler => store.StoreContentChanged += handler,
                 handler => store.StoreContentChanged -= handler
             ).
             Select(x => x.Sender).
-            OfType<UserTimelineStore>().
+            OfType<PublicTimelineStore>().
             Subscribe(s =>
             {
                 DispatcherHelper.CurrentDispatcher.Invoke(() =>
