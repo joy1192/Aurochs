@@ -1,4 +1,5 @@
-﻿using Aurochs.Desktop.ActionCreators;
+﻿using Aurochs.Core.Entities;
+using Aurochs.Desktop.ActionCreators;
 using Aurochs.Desktop.Events;
 using Aurochs.Desktop.Helpers;
 using Aurochs.Desktop.Models;
@@ -37,15 +38,26 @@ namespace Aurochs.Desktop.ViewModels
                 {
                     try
                     {
-                        while (args.Adds.Count != 0)
+                        var adds = new Queue<Status>();
+                        foreach (var add in args.Adds)
                         {
-                            var status = args.Adds.Dequeue();
+                            adds.Enqueue(add);
+                        }
+                        var removes = new Queue<long>();
+                        foreach (var remove in args.Removes)
+                        {
+                            removes.Enqueue(remove);
+                        }
+
+                        while (adds.Count != 0)
+                        {
+                            var status = adds.Dequeue();
                             this.StatusCollection.Insert(0, new StatusViewModel(status));
                         }
 
-                        while(args.Removes.Count != 0)
+                        while(removes.Count != 0)
                         {
-                            var removeId = args.Removes.Dequeue();
+                            var removeId = removes.Dequeue();
                             var removeTarget = this.StatusCollection.FirstOrDefault(x => x.StatusId == removeId);
                             this.StatusCollection.Remove(removeTarget);
                         }

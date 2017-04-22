@@ -14,6 +14,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+
         <controls:TimelineControl Grid.Column="0">
             <controls:TimelineControl.DataContext>
                 <!-- 仮 -->

@@ -80,7 +80,7 @@ namespace Aurochs.Desktop.Views.Utility
                     try
                     {
                         var url = request.URI;
-                        
+
                         using (var web = new HttpClient())
                         {
                             byte[] bytes = null;
@@ -105,6 +105,7 @@ namespace Aurochs.Desktop.Views.Utility
                                             if (PersistentImages.TryAdd(request.URI, bitmap))
                                             {
                                                 // some log
+                                                Trace.TraceInformation("save persisitent");
                                             }
                                         }
                                         else
@@ -123,6 +124,7 @@ namespace Aurochs.Desktop.Views.Utility
                                                         if (LoadedImages.TryRemove(result, out ImageSource value))
                                                         {
                                                             // some log
+                                                            Trace.TraceInformation("remove max cap");
                                                         }
                                                     }
                                                 }
