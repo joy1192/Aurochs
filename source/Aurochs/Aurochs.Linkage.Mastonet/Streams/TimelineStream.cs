@@ -20,25 +20,25 @@ namespace Aurochs.Linkage.Streams
 
         private TimelineStreaming _Steaming { get; set; }
 
-        private string _AccessToken { get; set; }
+        private Mastonet.Entities.Auth _Auth { get; set; }
 
-        public TimelineStream(ApplicationRegistration appRegistration, string accessToken)
+        public TimelineStream(ApplicationRegistration appRegistration, Core.Entities.Auth auth)
         {
             this._AppRegistration = appRegistration.ToMastonetAppRegistration();
-            this._AccessToken = accessToken;
+            this._Auth = auth.ToMastonetAuth();
 
-            _Client = new MastodonClient(this._AppRegistration, accessToken);
+            _Client = new MastodonClient(this._AppRegistration, this._Auth);
             _Steaming = _Client.GetUserStreaming();
         }
 
         public IObservable<StreamingMessage> UserAsObservable()
         {
-            return new UserStreamingObservable(this._AppRegistration, this._AccessToken);
+            return new UserStreamingObservable(this._AppRegistration, this._Auth);
         }
 
         public IObservable<StreamingMessage> PublicAsObservable()
         {
-            return new PublicStreamingObservable(_AppRegistration, this._AccessToken);
+            return new PublicStreamingObservable(_AppRegistration, this._Auth);
         }
     }
 
@@ -46,17 +46,17 @@ namespace Aurochs.Linkage.Streams
     {
         public AppRegistration Registration { get; private set; }
 
-        public string AccessToken { get; private set; }
+        public Mastonet.Entities.Auth Auth { get; private set; }
 
-        public UserStreamingObservable(AppRegistration registration, string accessToken)
+        public UserStreamingObservable(AppRegistration registration, Mastonet.Entities.Auth auth)
         {
             this.Registration = registration;
-            this.AccessToken = accessToken;
+            this.Auth = auth;
         }
 
         public IDisposable Subscribe(IObserver<StreamingMessage> observer)
         {
-            var streaming = new StreamingImpl(observer, this.Registration, this.AccessToken, client => client.GetUserStreaming());
+            var streaming = new StreamingImpl(observer, this.Registration, this.Auth, client => client.GetUserStreaming());
             streaming.Start();
 
             return streaming;
@@ -67,17 +67,17 @@ namespace Aurochs.Linkage.Streams
     {
         public AppRegistration Registration { get; private set; }
 
-        public string AccessToken { get; private set; }
+        public Mastonet.Entities.Auth Auth { get; private set; }
 
-        public PublicStreamingObservable(AppRegistration registration, string accessToken)
+        public PublicStreamingObservable(AppRegistration registration, Mastonet.Entities.Auth auth)
         {
             this.Registration = registration;
-            this.AccessToken = accessToken;
+            this.Auth = auth;
         }
 
         public IDisposable Subscribe(IObserver<StreamingMessage> observer)
         {
-            var streaming = new StreamingImpl(observer, this.Registration, this.AccessToken, client => client.GetPublicStreaming());
+            var streaming = new StreamingImpl(observer, this.Registration, this.Auth, client => client.GetPublicStreaming());
             streaming.Start();
 
             return streaming;
@@ -92,10 +92,10 @@ namespace Aurochs.Linkage.Streams
 
         private TimelineStreaming _Streaming { get; set; }
 
-        public StreamingImpl(IObserver<StreamingMessage> observer, AppRegistration registration, string accessToken, Func<MastodonClient, TimelineStreaming> factory)
+        public StreamingImpl(IObserver<StreamingMessage> observer, AppRegistration registration, Mastonet.Entities.Auth auth, Func<MastodonClient, TimelineStreaming> factory)
         {
             _Observer = observer;
-            _Client = new MastodonClient(registration, accessToken);
+            _Client = new MastodonClient(registration, auth);
             _Streaming = factory(_Client);
 
             _Streaming.OnUpdate += OnUpdate;

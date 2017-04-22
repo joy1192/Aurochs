@@ -21,12 +21,6 @@ namespace Aurochs.Desktop.ViewModels
     {
         public PublicTimelineViewModel()
         {
-            var creator = new PublicTimelineActionCreator();
-            creator.Initialize();
-
-            // TODO: 本来の位置は初期化Message受けたModel側
-            InstanceMetadata.InstanceName = "friends.nico";
-
             var store = StoreAccessor.Default.Get<PublicTimelineStore>();
             var observer = Observable.FromEventPattern<ApplicationLocalEventArgs>
             (

@@ -161,26 +161,30 @@ namespace Aurochs.Linkage.Converter
             };
         }
 
+        public static Auth ToAuth(this Mastonet.Entities.Auth auth)
+        {
+            return new Auth
+            {
+                AccessToken = auth.AccessToken,
+                CreatedAt = auth.CreatedAt,
+                Scope = auth.Scope,
+                TokenType = auth.TokenType
+            };
+        }
+
+        public static Mastonet.Entities.Auth ToMastonetAuth(this Auth auth)
+        {
+            return new Mastonet.Entities.Auth()
+            {
+                AccessToken = auth.AccessToken,
+                CreatedAt = auth.CreatedAt,
+                Scope = auth.Scope,
+                TokenType = auth.TokenType
+            };
+        }
+
         public static Mastonet.Entities.AppRegistration ToMastonetAppRegistration(this ApplicationRegistration registration)
         {
-            Mastonet.Scope GetScope(bool read, bool write, bool follow)
-            {
-                var scope = Mastonet.Scope.Read | Mastonet.Scope.Write | Mastonet.Scope.Follow;
-                if (!read)
-                {
-                    scope = scope & ~Mastonet.Scope.Read;
-                }
-                if (!write)
-                {
-                    scope = scope & ~Mastonet.Scope.Write;
-                }
-                if (!follow)
-                {
-                    scope = scope & ~Mastonet.Scope.Follow;
-                }
-                return scope;
-            }
-
             return new Mastonet.Entities.AppRegistration
             {
                 Id = (int)registration.Id,
@@ -190,6 +194,24 @@ namespace Aurochs.Linkage.Converter
                 Instance = registration.Instance,
                 Scope = GetScope(registration.AllowRead, registration.AllowWrite, registration.AllowFollow)
             };
+        }
+
+        private static Mastonet.Scope GetScope(bool read, bool write, bool follow)
+        {
+            var scope = Mastonet.Scope.Read | Mastonet.Scope.Write | Mastonet.Scope.Follow;
+            if (!read)
+            {
+                scope = scope & ~Mastonet.Scope.Read;
+            }
+            if (!write)
+            {
+                scope = scope & ~Mastonet.Scope.Write;
+            }
+            if (!follow)
+            {
+                scope = scope & ~Mastonet.Scope.Follow;
+            }
+            return scope;
         }
     }
 }

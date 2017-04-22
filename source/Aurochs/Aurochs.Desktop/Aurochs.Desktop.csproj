@@ -106,18 +106,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ActionCreators\PublicTimelineActionCreator.cs" />
-    <Compile Include="ActionCreators\UserTimelineActionCreator.cs" />
+    <Compile Include="ActionCreators\ApplicationActionCreator.cs" />
+    <Compile Include="ActionCreators\TimelineActionCreator.cs" />
+    <Compile Include="ActionMessages\AuthenticatedMessage.cs" />
+    <Compile Include="ActionMessages\AuthenticationFailedMessage.cs" />
+    <Compile Include="ActionMessages\InitializeApplicationMessage.cs" />
     <Compile Include="ActionMessages\TimelineInitializeMessage.cs" />
     <Compile Include="ActionMessages\StatusMessage.cs" />
+    <Compile Include="ActionMessages\UnauthenticatedMessage.cs" />
+    <Compile Include="ActionMessages\WakeUpApplicationMessage.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Applications\AppCore.cs" />
     <Compile Include="Events\ApplicationLocalEventArgs.cs" />
     <Compile Include="Events\TimelineContentUpdatedEventArgs.cs" />
     <Compile Include="Helpers\APIHelper.cs" />
     <Compile Include="Helpers\DispatcherHelper.cs" />
+    <Compile Include="Models\ApplicationStore.cs" />
     <Compile Include="Models\IFluxStore.cs" />
     <Compile Include="Models\LocalTimelineStore.cs" />
     <Compile Include="Models\PublicTimelineStore.cs" />
@@ -125,11 +132,15 @@
     <Compile Include="Models\UserTimelineStore.cs" />
     <Compile Include="SampleData\StatusSample.cs" />
     <Compile Include="SampleData\TimelineSample.cs" />
+    <Compile Include="ViewModels\AuthorizationViewModels\AuthViewModel.cs" />
     <Compile Include="ViewModels\Contents\StatusViewModel.cs" />
     <Compile Include="ViewModels\LocalTimelineViewModel.cs" />
     <Compile Include="ViewModels\PublicTimelineViewModel.cs" />
     <Compile Include="ViewModels\TimelineViewModelBase.cs" />
     <Compile Include="ViewModels\UserTimelineViewModel.cs" />
+    <Compile Include="Views\AuthorizationWindow.xaml.cs">
+      <DependentUpon>AuthorizationWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Behaviors\StatusBehavior.cs" />
     <Compile Include="Views\Controls\LazyImage.cs" />
     <Compile Include="Views\Controls\StatusControl.xaml.cs">
@@ -144,7 +155,6 @@
     </Compile>
     <Compile Include="Views\Utility\ImageLoader.cs" />
     <Compile Include="Views\Utility\InlineGenerator.cs" />
-    <Compile Include="Views\Utility\InstanceMetadata.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -174,6 +184,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\AuthorizationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Controls\StatusControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -201,6 +215,8 @@
       <Name>Aurochs.Linkage.Mastonet</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\background.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

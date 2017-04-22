@@ -119,7 +119,7 @@ namespace Aurochs.Desktop.ViewModels.Contents
                 return url;
 
             if (url == "/avatars/original/missing.png")
-                return $"https://{InstanceMetadata.InstanceName}{url}";
+                return $"https://{"friends.nico"}{url}"; // TODO: 特定インスタンスドメイン直書き直す
 
             return url;
         }

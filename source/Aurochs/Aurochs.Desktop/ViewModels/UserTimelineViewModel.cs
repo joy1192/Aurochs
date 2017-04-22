@@ -20,9 +20,6 @@ namespace Aurochs.Desktop.ViewModels
     {
         public UserTimelineViewModel()
         {
-            var creator = new UserTimelineActionCreator();
-            creator.Initialize();
-
             var store = StoreAccessor.Default.Get<UserTimelineStore>();
             var observer = Observable.FromEventPattern<ApplicationLocalEventArgs>
             (

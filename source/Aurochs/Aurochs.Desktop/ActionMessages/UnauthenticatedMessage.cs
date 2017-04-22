@@ -1,14 +1,13 @@
-﻿using Aurochs.Linkage;
+﻿using Infrastructure.Flux.Core;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aurochs.Desktop.Helpers
+namespace Aurochs.Desktop.ActionMessages
 {
-    public static class APIHelper
+    public class UnauthenticatedMessage : ActionMessage
     {
     }
 }
