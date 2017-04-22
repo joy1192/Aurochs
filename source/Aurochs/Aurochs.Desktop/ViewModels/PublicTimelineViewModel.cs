@@ -3,6 +3,7 @@ using Aurochs.Desktop.Events;
 using Aurochs.Desktop.Helpers;
 using Aurochs.Desktop.Models;
 using Aurochs.Desktop.ViewModels.Contents;
+using Aurochs.Desktop.Views.Utility;
 using Microsoft.Practices.Prism.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,9 @@ namespace Aurochs.Desktop.ViewModels
         {
             var creator = new PublicTimelineActionCreator();
             creator.Initialize();
+
+            // TODO: 本来の位置は初期化Message受けたModel側
+            InstanceMetadata.InstanceName = "friends.nico";
 
             var store = StoreAccessor.Default.Get<PublicTimelineStore>();
             var observer = Observable.FromEventPattern<ApplicationLocalEventArgs>

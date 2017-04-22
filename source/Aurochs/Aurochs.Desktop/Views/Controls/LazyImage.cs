@@ -21,13 +21,66 @@ namespace Aurochs.Desktop.Views.Controls
         }
 
         public static readonly DependencyProperty LoadSourceProperty =
-            DependencyProperty.Register("LoadSource", typeof(string), typeof(LazyImage), new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.AffectsRender, OnSourceChanged));
+            DependencyProperty.Register("LoadSource", typeof(string), typeof(LazyImage), new FrameworkPropertyMetadata(null, OnSourceChanged));
+
+        public string DefaultSource
+        {
+            get { return (string)GetValue(DefaultSourceProperty); }
+            set { SetValue(DefaultSourceProperty, value); }
+        }
+
+        public static readonly DependencyProperty DefaultSourceProperty =
+            DependencyProperty.Register("DefaultSource", typeof(string), typeof(LazyImage), new PropertyMetadata(null, OnDefaultSourceChanged));
+
+        private static void OnDefaultSourceChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            if (d is LazyImage image)
+            {
+                LoadDefaultImage(image);
+            }
+        }
 
         private static void OnSourceChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             if (d is LazyImage image)
             {
                 LoadImage(image);
+            }
+        }
+
+        private static void LoadDefaultImage(LazyImage image)
+        {
+            var source = image.DefaultSource;
+            if (source == null)
+                return;
+
+            if (ImageLoader.TryGetImage(source, out ImageSource imageSource))
+            {
+                DispatcherHelper.CurrentDispatcher.BeginInvoke((Action)(() =>
+                {
+                    // image.Sourceに何も存在しない場合のみ設定する
+                    if (image.Source == null)
+                    {
+                        image.Source = imageSource;
+                    }
+                }));
+            }
+            else
+            {
+                ImageLoader.RequestLoadImage(source, () =>
+                    {
+                        DispatcherHelper.CurrentDispatcher.BeginInvoke((Action)(() =>
+                        {
+                            if (ImageLoader.TryGetImage(source, out ImageSource loadedBitmap))
+                            {
+                                // image.Sourceに何も存在しない場合のみ設定する
+                                if (image.Source == null)
+                                {
+                                    image.Source = loadedBitmap;
+                                }
+                            }
+                        }));
+                    }, true);
             }
         }
 
@@ -60,7 +113,7 @@ namespace Aurochs.Desktop.Views.Controls
 
                             if (ImageLoader.TryGetImage(source, out ImageSource loadedBitmap))
                             {
-                                image.Source = imageSource;
+                                image.Source = loadedBitmap;
                             }
                         }));
                     });

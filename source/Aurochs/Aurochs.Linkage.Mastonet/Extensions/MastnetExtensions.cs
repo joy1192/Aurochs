@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Aurochs.Linkage.Converter
 {
@@ -58,7 +59,7 @@ namespace Aurochs.Linkage.Converter
                 StatusesCount = account.StatusesCount
             };
         }
-
+        
         public static Attachment ToAttachment(this Mastonet.Entities.Attachment attachment)
         {
             AttachmentType StringToAttachmentType(string type)

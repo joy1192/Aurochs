@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using HtmlAgilityPack;
+using System.Web;
 
 namespace Aurochs.Desktop.Views.Utility
 {
@@ -97,7 +98,8 @@ namespace Aurochs.Desktop.Views.Utility
                 }
                 else if (IsText(element))
                 {
-                    yield return factory(InlineContentType.Text, element.InnerText, null);
+                    var text = HttpUtility.HtmlDecode(element.InnerText);
+                    yield return factory(InlineContentType.Text, text, null);
                 }
                 else if (IsNewLine(element))
                 {
@@ -108,6 +110,7 @@ namespace Aurochs.Desktop.Views.Utility
                     var text = element.Descendants("span").
                         Where(x => x.Attributes["class"]?.Value != "invisible").
                         Select(x => x.InnerText).
+                        Select(x => HttpUtility.HtmlDecode(x)).
                         SingleOrDefault();
                     if (text == null)
                     {

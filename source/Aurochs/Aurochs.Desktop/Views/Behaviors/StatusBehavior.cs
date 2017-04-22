@@ -51,11 +51,16 @@ namespace Aurochs.Desktop.Views.Behaviors
                 if (behavior.AssociatedObject is TextBlock textblock)
                 {
                     textblock.Inlines.Clear();
-                    foreach (var inline in GenerateInlines(behavior, behavior.Contents))
-                    {
-                        textblock.Inlines.Add(inline);
-                    }
+                    NewMethod(behavior, textblock);
                 }
+            }
+        }
+
+        private static void NewMethod(StatusBehavior behavior, TextBlock textblock)
+        {
+            foreach (var inline in GenerateInlines(behavior, behavior.Contents))
+            {
+                textblock.Inlines.Add(inline);
             }
         }
 

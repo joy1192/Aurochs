@@ -144,6 +144,7 @@
     </Compile>
     <Compile Include="Views\Utility\ImageLoader.cs" />
     <Compile Include="Views\Utility\InlineGenerator.cs" />
+    <Compile Include="Views\Utility\InstanceMetadata.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
