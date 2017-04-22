@@ -49,9 +49,11 @@ namespace Aurochs.Desktop.Models
                 return;
 
             this.StatusCollection.Insert(0, msg.Status);
-            this.StatusCollection = this.StatusCollection.Distinct((lhs, rhs) => lhs.Id == rhs.Id, x => (int)x.Id).Take(TimelineMaxSize).ToList();
 
-            StoreContentChanged?.Invoke(this, TimelineContentUpdatedEventArgs.Default);
+            var adds = new Queue<Status>();
+            adds.Enqueue(msg.Status);
+
+            StoreContentChanged?.Invoke(this, new TimelineContentUpdatedEventArgs() { Adds = adds });
         }
 
         private void OnDeleteStatus(DeleteStatusActionMessage msg)
@@ -61,7 +63,10 @@ namespace Aurochs.Desktop.Models
 
             this.StatusCollection.RemoveAll(x => x.Id == msg.StatusId);
 
-            StoreContentChanged?.Invoke(this, TimelineContentUpdatedEventArgs.Default);
+            var removes = new Queue<long>();
+            removes.Enqueue(msg.StatusId);
+
+            StoreContentChanged?.Invoke(this, new TimelineContentUpdatedEventArgs() { Removes = removes });
         }
 
         private void OnPublicTimelineInitialize(PublicTimelineInitializeMessage msg)

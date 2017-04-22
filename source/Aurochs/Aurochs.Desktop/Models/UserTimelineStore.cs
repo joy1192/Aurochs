@@ -21,7 +21,7 @@ namespace Aurochs.Desktop.Models
         public List<Status> StatusCollection { get; private set; } = new List<Status>();
 
         private const int TimelineMaxSize = 200;
-
+        
         [ImportingConstructor]
         public UserTimelineStore()
         {
@@ -42,11 +42,13 @@ namespace Aurochs.Desktop.Models
         {
             if (msg.Source != StatusSource.User)
                 return;
-
+            
             this.StatusCollection.Insert(0, msg.Status);
-            this.StatusCollection = this.StatusCollection.Distinct((lhs, rhs) => lhs.Id == rhs.Id, x => (int)x.Id).OrderByDescending(x => x.CreatedAt).Take(TimelineMaxSize).ToList();
 
-            StoreContentChanged?.Invoke(this, TimelineContentUpdatedEventArgs.Default);
+            var adds = new Queue<Status>();
+            adds.Enqueue(msg.Status);
+
+            StoreContentChanged?.Invoke(this, new TimelineContentUpdatedEventArgs() { Adds = adds });
         }
 
         private void OnDeleteStatus(DeleteStatusActionMessage msg)
@@ -56,7 +58,10 @@ namespace Aurochs.Desktop.Models
 
             this.StatusCollection.RemoveAll(x => x.Id == msg.StatusId);
 
-            StoreContentChanged?.Invoke(this, TimelineContentUpdatedEventArgs.Default);
+            var removes = new Queue<long>();
+            removes.Enqueue(msg.StatusId);
+
+            StoreContentChanged?.Invoke(this, new TimelineContentUpdatedEventArgs() { Removes = removes });
         }
 
         private void OnUserTimelineInitialize(TimelineInitializeMessage msg)

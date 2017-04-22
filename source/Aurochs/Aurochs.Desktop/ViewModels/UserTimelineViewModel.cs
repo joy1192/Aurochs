@@ -19,7 +19,7 @@ namespace Aurochs.Desktop.ViewModels
     {
         public UserTimelineViewModel()
         {
-            var creator = new TimelineActionCreator();
+            var creator = new UserTimelineActionCreator();
             creator.Initialize();
 
             var store = StoreAccessor.Default.Get<UserTimelineStore>();
@@ -28,25 +28,26 @@ namespace Aurochs.Desktop.ViewModels
                 handler => store.StoreContentChanged += handler,
                 handler => store.StoreContentChanged -= handler
             ).
-            Select(x => x.Sender).
-            OfType<UserTimelineStore>().
-            Subscribe(s =>
+            Where(x => x.Sender is UserTimelineStore).
+            Select(x => x.EventArgs).
+            OfType<TimelineContentUpdatedEventArgs>().
+            Subscribe(args =>
             {
                 DispatcherHelper.CurrentDispatcher.Invoke(() =>
                 {
                     try
                     {
-                        while (this.StatusCollection.Count < s.StatusCollection.Count)
+                        while (args.Adds.Count != 0)
                         {
-                            this.StatusCollection.Add(new StatusViewModel());
+                            var status = args.Adds.Dequeue();
+                            this.StatusCollection.Insert(0, new StatusViewModel(status));
                         }
-                        while (this.StatusCollection.Count > s.StatusCollection.Count)
+
+                        while(args.Removes.Count != 0)
                         {
-                            this.StatusCollection.RemoveAt(0);
-                        }
-                        for (int i = 0; i < this.StatusCollection.Count; i++)
-                        {
-                            this.StatusCollection[i].Update(s.StatusCollection[i]);
+                            var removeId = args.Removes.Dequeue();
+                            var removeTarget = this.StatusCollection.FirstOrDefault(x => x.StatusId == removeId);
+                            this.StatusCollection.Remove(removeTarget);
                         }
                     }
                     catch (Exception e)
@@ -55,12 +56,6 @@ namespace Aurochs.Desktop.ViewModels
                     }
                 });
             });
-        }
-
-        public void Initalize()
-        {
-            var creator = new TimelineActionCreator();
-            creator.Initialize();
         }
     }
 }

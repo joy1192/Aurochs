@@ -15,6 +15,8 @@ namespace Aurochs.Desktop.ViewModels.Contents
 {
     public class StatusViewModel : BindableBase
     {
+        public long StatusId { get; set; }
+
         public string DisplayId
         {
             get { return _DisplayId; }
@@ -53,8 +55,20 @@ namespace Aurochs.Desktop.ViewModels.Contents
 
         private string _SourceAvatarImageURI;
 
+        public StatusViewModel()
+        {
+
+        }
+
+        public StatusViewModel(Status status)
+        {
+            this.Update(status);
+        }
+
         public void Update(Status status)
         {
+            StatusId = status.Id;
+
             if (status.Reblog == null)
             {
                 this.DisplayId = status.Account.AccountName;
@@ -81,28 +95,5 @@ namespace Aurochs.Desktop.ViewModels.Contents
                 this.CreateDate = (DateTime.Today == localTime.Date) ? string.Empty : $"{ localTime.Year}/{ localTime.Month}/{ localTime.Day}";
             }
         }
-
-        //public string ParseContent(string rawContent)
-        //{
-        //    var reg = new Regex("<a href=\"(?<url>.*?)\".* class=\"u-url mention\".*?>@\\<span\\>(?<text>.*?)\\<\\/span\\>\\<\\/a\\>", RegexOptions.IgnoreCase | RegexOptions.Singleline);
-
-        //    foreach (var match in reg.Matches(rawContent).OfType<Match>())
-        //    {
-        //        var mention_url = match.Groups["url"].Value;
-        //        var fullId = Regex.Replace(mention_url, "^http(s)?://(?<Domain>.*?)/@(?<Account>.*)$", "${Account}@${Domain}");
-        //        rawContent = rawContent.Replace(match.Value, fullId);
-        //    }
-
-        //    var text = rawContent.
-        //        Replace("<br>", "\n").
-        //        Replace("<br/>", "\n").
-        //        Replace("<br />", "\n").
-        //        Replace("</p><p>", "\n\n");
-
-        //    // Tag除去
-        //    var formattedText =  Regex.Replace(text, "<.*?>", String.Empty);
-
-        //    return HttpUtility.HtmlDecode(formattedText);
-        //}
     }
 }

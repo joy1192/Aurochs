@@ -4,17 +4,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
-using System.Windows.Interactivity;
 using System.Windows.Media;
 
-namespace Aurochs.Desktop.Views.Behaviors
+namespace Aurochs.Desktop.Views.Controls
 {
-    public class StatusBehavior : Behavior<TextBlock>
+    public class TootContent : TextBlock
     {
         public Brush TextForeground
         {
@@ -22,7 +20,7 @@ namespace Aurochs.Desktop.Views.Behaviors
             set { SetValue(TextForegroundProperty, value); }
         }
         public static readonly DependencyProperty TextForegroundProperty =
-            DependencyProperty.Register("TextForeground", typeof(Brush), typeof(StatusBehavior), new PropertyMetadata(Brushes.Black));
+            DependencyProperty.Register("TextForeground", typeof(Brush), typeof(TootContent), new PropertyMetadata(Brushes.Black));
 
         public Brush UriForeground
         {
@@ -30,7 +28,7 @@ namespace Aurochs.Desktop.Views.Behaviors
             set { SetValue(UriForegroundProperty, value); }
         }
         public static readonly DependencyProperty UriForegroundProperty =
-            DependencyProperty.Register("UriForeground", typeof(Brush), typeof(StatusBehavior), new PropertyMetadata(Brushes.Blue));
+            DependencyProperty.Register("UriForeground", typeof(Brush), typeof(TootContent), new PropertyMetadata(Brushes.Blue));
 
         public string Contents
         {
@@ -39,19 +37,19 @@ namespace Aurochs.Desktop.Views.Behaviors
         }
 
         public static readonly DependencyProperty ContentsProperty =
-            DependencyProperty.Register("Contents", typeof(string), typeof(StatusBehavior), new PropertyMetadata(string.Empty, OnStatusChanged));
+            DependencyProperty.Register("Contents", typeof(string), typeof(TootContent), new PropertyMetadata(string.Empty, OnStatusChanged));
 
         private static void OnStatusChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            if (d is StatusBehavior behavior)
+            if (d is TootContent toot)
             {
-                if (behavior.Contents is null)
+                if (toot.Contents is null)
                     return;
 
-                if (behavior.AssociatedObject is TextBlock textblock)
+                if (toot is TextBlock textblock)
                 {
                     textblock.Inlines.Clear();
-                    foreach (var inline in GenerateInlines(behavior, behavior.Contents))
+                    foreach (var inline in GenerateInlines(toot, toot.Contents))
                     {
                         textblock.Inlines.Add(inline);
                     }
@@ -59,7 +57,7 @@ namespace Aurochs.Desktop.Views.Behaviors
             }
         }
 
-        private static IEnumerable<Inline> GenerateInlines(StatusBehavior parent, string status)
+        private static IEnumerable<Inline> GenerateInlines(TootContent parent, string status)
         {
             foreach (var item in InlineGenerator.Resolve<Inline>(status, BuildInlines))
             {

@@ -106,7 +106,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ActionCreators\TimelineActionCreator.cs" />
+    <Compile Include="ActionCreators\PublicTimelineActionCreator.cs" />
+    <Compile Include="ActionCreators\UserTimelineActionCreator.cs" />
     <Compile Include="ActionMessages\TimelineInitializeMessage.cs" />
     <Compile Include="ActionMessages\StatusMessage.cs" />
     <Compile Include="App.xaml.cs">
@@ -137,6 +138,7 @@
     <Compile Include="Views\Controls\TimelineControl.xaml.cs">
       <DependentUpon>TimelineControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Controls\TootContent.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>

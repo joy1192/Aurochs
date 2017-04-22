@@ -1,21 +1,20 @@
-﻿using Aurochs.Core.Streams;
+﻿using Aurochs.Core.Messages;
+using Aurochs.Core.Streams;
+using Aurochs.Desktop.ActionMessages;
 using Aurochs.Linkage.Authentications;
 using Aurochs.Linkage.Streams;
+using Infrastructure.Flux.Core;
 using StatefulModel;
 using System;
-using System.Reactive;
-using System.Reactive.Linq;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Infrastructure.Flux.Core;
-using Aurochs.Core.Messages;
-using Aurochs.Desktop.ActionMessages;
 
 namespace Aurochs.Desktop.ActionCreators
 {
-    public class TimelineActionCreator : MultipleDisposable
+    public class PublicTimelineActionCreator : MultipleDisposable
     {
         private ITimelineStream UserStream { get; set; }
 
@@ -26,27 +25,6 @@ namespace Aurochs.Desktop.ActionCreators
                 {
                     var accessToken = Environment.GetEnvironmentVariable("AUROCHS_ACCESS_TOKEN", EnvironmentVariableTarget.User);
                     var stream = new TimelineStream(x.Result, accessToken);
-
-                    this.Add(
-                        stream.UserAsObservable().
-                        OfType<UpdateStatusMessage>().
-                        Subscribe(msg =>
-                        {
-                            Dispatcher.Default.Invoke(new UpdateStatusActionMessage(msg.Status, StatusSource.User));
-                        }));
-                    this.Add(
-                        stream.UserAsObservable().
-                        OfType<DeleteStatusMessage>().
-                        Subscribe(msg =>
-                        {
-                            Dispatcher.Default.Invoke(new DeleteStatusActionMessage(msg.StatusId, StatusSource.User));
-                        }));
-                    this.Add(
-                        stream.UserAsObservable().
-                        OfType<NotificationMessage>().
-                        Subscribe(msg =>
-                        {
-                        }));
 
                     this.Add(
                         stream.PublicAsObservable().

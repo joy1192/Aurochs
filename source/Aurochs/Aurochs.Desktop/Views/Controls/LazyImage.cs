@@ -34,6 +34,7 @@ namespace Aurochs.Desktop.Views.Controls
         private static void LoadImage(LazyImage image)
         {
             image.Source = null;
+
             var source = image.LoadSource;
             if (source == null)
                 return;
