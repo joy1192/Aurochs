@@ -23,9 +23,7 @@
                 <ItemsControl.Template>
                     <ControlTemplate TargetType="ItemsControl">
                         <Border BorderThickness="1">
-                            <VirtualizingStackPanel VirtualizingPanel.VirtualizationMode="Recycling"
-                                                    VirtualizingPanel.IsVirtualizing="True"
-                                                    IsItemsHost="True" />
+                            <StackPanel IsItemsHost="True" />
                         </Border>
                     </ControlTemplate>
                 </ItemsControl.Template>

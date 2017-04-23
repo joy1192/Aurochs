@@ -74,8 +74,14 @@ namespace Aurochs.Desktop.ActionCreators
                     Subscribe(msg =>
                     {
                     }));
+
+                var userContents = _Stream.GetUserTimline().ToList();
+                Dispatcher.Default.Invoke(new UserTimelineInitializeMessage() { TweetContent = userContents });
+
+                var publicContents = _Stream.GetPublicTimline().ToList();
+                Dispatcher.Default.Invoke(new PublicTimelineInitializeMessage() { TweetContent = publicContents });
             }
-            catch(Exception)
+            catch (Exception)
             {
                 // Initialize前の状態まで戻す
                 foreach (var disposable in this)

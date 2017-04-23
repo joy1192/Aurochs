@@ -10,7 +10,7 @@ namespace Aurochs.Desktop.ActionMessages
 {
     public class TimelineInitializeMessage : ActionMessage
     {
-        public List<Status> TweetContent { get; }
+        public List<Status> TweetContent { get; set; }
     }
 
     public class UserTimelineInitializeMessage : TimelineInitializeMessage

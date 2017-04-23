@@ -12,7 +12,7 @@ namespace Aurochs.Desktop.SampleData
     {
         public StatusSample()
         {
-            this.DisplayId = "joy1192";
+            this.AccountName = "joy1192";
             this.Text = "開発なう";
             var localTime = DateTime.Now;
             this.CreateTime = $"{localTime.Hour:00}:{localTime.Minute:00}";

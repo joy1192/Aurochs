@@ -7,11 +7,13 @@
              xmlns:sample="clr-namespace:Aurochs.Desktop.SampleData"
              xmlns:controls="clr-namespace:Aurochs.Desktop.Views.Controls"
              xmlns:util="clr-namespace:Aurochs.Desktop.Views.Behaviors"
+             xmlns:conv="clr-namespace:Aurochs.Desktop.Views.Converters"
              mc:Ignorable="d" d:DesignWidth="300">
     <UserControl.Resources>
         <sample:StatusSample x:Key="Sample"/>
         <SolidColorBrush x:Key="BackgroundBrush" Color="#2F2E4A"/>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        <conv:BooleanToVisibilityInverter x:Key="BooleanToVisibilityInverter"/>
     </UserControl.Resources>
     <Grid Margin="5" d:DataContext="{StaticResource Sample}"
           Background="{StaticResource BackgroundBrush}">
@@ -32,7 +34,7 @@
                             Width="50"
                             Margin="5"
                             LoadSource="{Binding AvatarImageURI}"
-                            DefaultSource="{Binding InstanceMissingURI}"
+                            Source="https://friends.nico/avatars/original/missing.png"
                             VerticalAlignment="Top"/>
         <controls:LazyImage Grid.Row="0"
                             Grid.Column="0"
@@ -41,25 +43,67 @@
                             Width="25"
                             Visibility="{Binding IsReblog,Converter={StaticResource BooleanToVisibilityConverter}}"
                             LoadSource="{Binding SourceAvatarImageURI}"
-                            DefaultSource="{Binding InstanceMissingURI}"
+                            Source="https://friends.nico/avatars/original/missing.png"
                             VerticalAlignment="Top"
                             Margin="30,35,0,0"/>
         <Button Grid.Column="1" Grid.Row="0">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
-                    <TextBlock Text="{Binding DisplayId}" Foreground="#7F76FF"/>
+                    <TextBlock Text="{Binding DisplayName}" Foreground="#7F76FF"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <TextBlock Grid.Column="1" Grid.Row="1"
-                   Background="Transparent"
-                   TextWrapping="Wrap">
-            <i:Interaction.Behaviors>
-                <util:StatusBehavior Contents="{Binding Text}"
-                                         TextForeground="White"
-                                         UriForeground="Gray"/>
-            </i:Interaction.Behaviors>
-        </TextBlock>
+        <Control Grid.Column="1" Grid.Row="1">
+            <Control.Style>
+                <Style TargetType="Control">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Control">
+                                <TextBlock Background="Transparent" TextWrapping="Wrap">
+                                    <i:Interaction.Behaviors>
+                                        <util:StatusBehavior Contents="{Binding Text}"
+                                                             TextForeground="White"
+                                                             UriForeground="Gray"/>
+                                    </i:Interaction.Behaviors>
+                                </TextBlock>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsContentsWarning}" Value="True">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Control">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+                                            <TextBlock Background="Transparent"
+                                                       TextWrapping="Wrap"
+                                                       Foreground="White"
+                                                       Text="{Binding SpoilerText}">
+                                            </TextBlock>
+                                            <Expander Header="もっと見る" Foreground="White" Grid.Row="1">
+                                                <TextBlock Background="Transparent"
+                                                           TextWrapping="Wrap">
+                                                    <i:Interaction.Behaviors>
+                                                        <util:StatusBehavior Contents="{Binding Text}"
+                                                                             TextForeground="White"
+                                                                             UriForeground="Gray"/>
+                                                    </i:Interaction.Behaviors>
+                                                </TextBlock>
+                                            </Expander>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Control.Style>
+        </Control>
+
         <ItemsControl Grid.Column="1" Grid.Row="2" ItemsSource="{Binding Medias}">
             <ItemsControl.ItemTemplate>
                 <DataTemplate>

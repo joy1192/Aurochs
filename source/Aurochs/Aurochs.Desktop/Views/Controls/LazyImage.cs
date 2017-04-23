@@ -2,6 +2,7 @@
 using Aurochs.Desktop.Views.Utility;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,23 +24,6 @@ namespace Aurochs.Desktop.Views.Controls
         public static readonly DependencyProperty LoadSourceProperty =
             DependencyProperty.Register("LoadSource", typeof(string), typeof(LazyImage), new FrameworkPropertyMetadata(null, OnSourceChanged));
 
-        public string DefaultSource
-        {
-            get { return (string)GetValue(DefaultSourceProperty); }
-            set { SetValue(DefaultSourceProperty, value); }
-        }
-
-        public static readonly DependencyProperty DefaultSourceProperty =
-            DependencyProperty.Register("DefaultSource", typeof(string), typeof(LazyImage), new PropertyMetadata(null, OnDefaultSourceChanged));
-
-        private static void OnDefaultSourceChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        {
-            if (d is LazyImage image)
-            {
-                LoadDefaultImage(image);
-            }
-        }
-
         private static void OnSourceChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             if (d is LazyImage image)
@@ -47,43 +31,7 @@ namespace Aurochs.Desktop.Views.Controls
                 LoadImage(image);
             }
         }
-
-        private static void LoadDefaultImage(LazyImage image)
-        {
-            var source = image.DefaultSource;
-            if (source == null)
-                return;
-
-            if (ImageLoader.TryGetImage(source, out ImageSource imageSource))
-            {
-                DispatcherHelper.CurrentDispatcher.BeginInvoke((Action)(() =>
-                {
-                    // image.Sourceに何も存在しない場合のみ設定する
-                    if (image.Source == null)
-                    {
-                        image.Source = imageSource;
-                    }
-                }));
-            }
-            else
-            {
-                ImageLoader.RequestLoadImage(source, () =>
-                    {
-                        DispatcherHelper.CurrentDispatcher.BeginInvoke((Action)(() =>
-                        {
-                            if (ImageLoader.TryGetImage(source, out ImageSource loadedBitmap))
-                            {
-                                // image.Sourceに何も存在しない場合のみ設定する
-                                if (image.Source == null)
-                                {
-                                    image.Source = loadedBitmap;
-                                }
-                            }
-                        }));
-                    }, true);
-            }
-        }
-
+        
         private static void LoadImage(LazyImage image)
         {
             image.Source = null;
@@ -94,30 +42,31 @@ namespace Aurochs.Desktop.Views.Controls
 
             if (ImageLoader.TryGetImage(source, out ImageSource imageSource))
             {
-                DispatcherHelper.CurrentDispatcher.BeginInvoke((Action)(() =>
-                {
-                    image.Source = imageSource;
-                }));
+                image.SetSource(source, imageSource);
             }
             else
             {
-                ImageLoader.RequestLoadImage(source,
-                    () =>
-                    {
-                        DispatcherHelper.CurrentDispatcher.BeginInvoke((Action)(() =>
-                        {
-                            // Binding等により既に依頼した時点とはLoadSourceが変わっていたら、
-                            // 無視する
-                            if (image.LoadSource != source)
-                                return;
-
-                            if (ImageLoader.TryGetImage(source, out ImageSource loadedBitmap))
-                            {
-                                image.Source = loadedBitmap;
-                            }
-                        }));
-                    });
+                ImageLoader.RequestLoadImage(source, lazySource => image.SetSource(source, lazySource));
             }
+        }
+
+
+        private void SetSource(string requestUrl, ImageSource source)
+        {
+            if(source == null)
+            {
+                Trace.TraceWarning("source is null");
+            }
+
+            DispatcherHelper.CurrentDispatcher.BeginInvoke((Action)(() =>
+            {
+                // Binding等により既に依頼した時点とはLoadSourceが変わっていたら、
+                // 無視する
+                if (this.LoadSource != requestUrl)
+                    return;
+
+                this.Source = source;
+            }));
         }
     }
 }

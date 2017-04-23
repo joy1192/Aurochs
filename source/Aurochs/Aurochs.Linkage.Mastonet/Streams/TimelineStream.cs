@@ -9,6 +9,7 @@ using System.Reactive.Subjects;
 using System.Reactive.Linq;
 using Aurochs.Linkage.Converter;
 using Aurochs.Core.Entities;
+using System.Linq;
 
 namespace Aurochs.Linkage.Streams
 {
@@ -39,6 +40,17 @@ namespace Aurochs.Linkage.Streams
         public IObservable<StreamingMessage> PublicAsObservable()
         {
             return new PublicStreamingObservable(_AppRegistration, this._Auth);
+        }
+
+        public IEnumerable<Core.Entities.Status> GetUserTimline()
+        {
+            return _Client.GetHomeTimeline().Result.Select(x => x.ToStatus()).ToList();
+        }
+
+        public IEnumerable<Core.Entities.Status> GetPublicTimline()
+        {
+            return _Client.GetPublicTimeline().Result.Select(x => x.ToStatus()).ToList();
+
         }
     }
 

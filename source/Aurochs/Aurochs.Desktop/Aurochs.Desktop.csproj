@@ -150,6 +150,7 @@
       <DependentUpon>TimelineControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Controls\TootContent.cs" />
+    <Compile Include="Views\Converters\BooleanToVisibilityInverter.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>

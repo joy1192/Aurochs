@@ -17,7 +17,7 @@ namespace Aurochs.Desktop.Views.Utility
     public class LoadingRequest
     {
         public string URI { get; internal set; }
-        public Action Callback { get; internal set; }
+        public Action<ImageSource> Callback { get; internal set; }
         public bool IsPersistent { get; internal set; }
     }
 
@@ -58,9 +58,17 @@ namespace Aurochs.Desktop.Views.Utility
             return thread;
         }
 
-        public static void RequestLoadImage(string uri, Action callback, bool isPersistent = false)
+        public static bool RequestLoadImage(string uri, Action<ImageSource> callback, bool isPersistent = false)
         {
-            Requests.Enqueue(new LoadingRequest() { URI = uri, Callback = callback, IsPersistent = isPersistent });
+            if (Uri.IsWellFormedUriString(uri, UriKind.Absolute))
+            {
+                Requests.Enqueue(new LoadingRequest() { URI = uri, Callback = callback, IsPersistent = isPersistent });
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public static bool TryGetImage(string uri, out ImageSource image)
@@ -115,7 +123,7 @@ namespace Aurochs.Desktop.Views.Utility
                                                 LoadedImageUris.Enqueue(request.URI);
 
                                                 // ハンドラ実行
-                                                request.Callback?.Invoke();
+                                                request.Callback?.Invoke(bitmap);
 
                                                 while (MaxCacheCount < LoadedImageUris.Count)
                                                 {
@@ -135,7 +143,7 @@ namespace Aurochs.Desktop.Views.Utility
                                 }
                                 catch (Exception e)
                                 {
-                                    Trace.TraceError(e.ToString());
+                                    Trace.TraceError($"uri='{request.URI}'{Environment.NewLine}{e}");
                                     continue;
                                 }
                             }

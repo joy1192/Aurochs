@@ -51,12 +51,26 @@ namespace Aurochs.Desktop.Views.Behaviors
                 if (behavior.AssociatedObject is TextBlock textblock)
                 {
                     textblock.Inlines.Clear();
-                    NewMethod(behavior, textblock);
+                    Make(behavior, textblock);
                 }
             }
         }
 
-        private static void NewMethod(StatusBehavior behavior, TextBlock textblock)
+        protected override void OnAttached()
+        {
+            base.OnAttached();
+
+            if (this.Contents is null)
+                return;
+
+            if (this.AssociatedObject is TextBlock textblock)
+            {
+                textblock.Inlines.Clear();
+                Make(this, textblock);
+            }
+        }
+
+        private static void Make(StatusBehavior behavior, TextBlock textblock)
         {
             foreach (var inline in GenerateInlines(behavior, behavior.Contents))
             {

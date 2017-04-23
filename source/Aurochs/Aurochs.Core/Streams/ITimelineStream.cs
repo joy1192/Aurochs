@@ -8,6 +8,10 @@ namespace Aurochs.Core.Streams
 {
     public interface ITimelineStream
     {
+        IEnumerable<Status> GetUserTimline();
+
+        IEnumerable<Status> GetPublicTimline();
+
         IObservable<StreamingMessage> UserAsObservable();
 
         IObservable<StreamingMessage> PublicAsObservable();

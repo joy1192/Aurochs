@@ -16,6 +16,8 @@ namespace Aurochs.Desktop.ViewModels
 {
     public class LocalTimelineViewModel : TimelineViewModelBase
     {
+        public int MaxCount { get; set; } = 200;
+
         public LocalTimelineViewModel()
         {
             var store = StoreAccessor.Default.Get<LocalTimelineStore>();
@@ -55,6 +57,15 @@ namespace Aurochs.Desktop.ViewModels
                             var removeId = removes.Dequeue();
                             var removeTarget = this.StatusCollection.FirstOrDefault(x => x.StatusId == removeId);
                             this.StatusCollection.Remove(removeTarget);
+                        }
+
+                        while (MaxCount < this.StatusCollection.Count)
+                        {
+                            var tail = this.StatusCollection.Count - 1;
+                            if (0 <= tail)
+                            {
+                                this.StatusCollection.RemoveAt(tail);
+                            }
                         }
                     }
                     catch (Exception e)

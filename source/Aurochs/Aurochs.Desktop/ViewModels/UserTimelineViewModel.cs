@@ -18,9 +18,37 @@ namespace Aurochs.Desktop.ViewModels
 {
     public class UserTimelineViewModel : TimelineViewModelBase
     {
+        public int MaxCount { get; set; } = 200;
+
         public UserTimelineViewModel()
         {
             var store = StoreAccessor.Default.Get<UserTimelineStore>();
+
+            var initObserver = Observable.FromEventPattern<ApplicationLocalEventArgs>
+            (
+                handler => store.Initialized += handler,
+                handler => store.Initialized -= handler
+            ).
+            Where(x => x.Sender is UserTimelineStore).
+            Select(x => x.EventArgs).
+            Subscribe(args =>
+            {
+                DispatcherHelper.CurrentDispatcher.Invoke(() =>
+                {
+                    try
+                    {
+                        foreach (var status in store.StatusCollection)
+                        {
+                            this.StatusCollection.Add(new StatusViewModel(status));
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        Trace.TraceError(e.ToString());
+                    }
+                });
+            });
+
             var observer = Observable.FromEventPattern<ApplicationLocalEventArgs>
             (
                 handler => store.StoreContentChanged += handler,
@@ -52,11 +80,20 @@ namespace Aurochs.Desktop.ViewModels
                             this.StatusCollection.Insert(0, new StatusViewModel(status));
                         }
 
-                        while(removes.Count != 0)
+                        while (removes.Count != 0)
                         {
                             var removeId = removes.Dequeue();
                             var removeTarget = this.StatusCollection.FirstOrDefault(x => x.StatusId == removeId);
                             this.StatusCollection.Remove(removeTarget);
+                        }
+
+                        while (MaxCount < this.StatusCollection.Count)
+                        {
+                            var tail = this.StatusCollection.Count - 1;
+                            if (0 <= tail)
+                            {
+                                this.StatusCollection.RemoveAt(tail);
+                            }
                         }
                     }
                     catch (Exception e)

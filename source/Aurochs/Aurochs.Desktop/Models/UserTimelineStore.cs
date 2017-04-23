@@ -68,9 +68,11 @@ namespace Aurochs.Desktop.Models
         {
             this.StatusCollection = msg.TweetContent.Distinct().OrderByDescending(x => x.CreatedAt).Take(TimelineMaxSize).ToList();
 
-            StoreContentChanged?.Invoke(this, TimelineContentUpdatedEventArgs.Default);
+            Initialized?.Invoke(this, TimelineContentUpdatedEventArgs.Default);
         }
 
         public event EventHandler<ApplicationLocalEventArgs> StoreContentChanged;
+
+        public event EventHandler<ApplicationLocalEventArgs> Initialized;
     }
 }
