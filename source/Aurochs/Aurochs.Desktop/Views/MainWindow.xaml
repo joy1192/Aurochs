@@ -9,27 +9,32 @@
         mc:Ignorable="d"
         Title="Aurochs" Height="300" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <controls:TimelineControl Grid.Column="0">
+        <controls:PostControl Grid.Column="0" Grid.Row="0" MinHeight="60"/>
+        <controls:TimelineControl Grid.Column="0" Grid.Row="1">
             <controls:TimelineControl.DataContext>
                 <!-- 仮 -->
                 <vm:UserTimelineViewModel/>
             </controls:TimelineControl.DataContext>
         </controls:TimelineControl>
 
-        <controls:TimelineControl Grid.Column="1">
+        <controls:TimelineControl Grid.Column="1" Grid.RowSpan="2">
             <controls:TimelineControl.DataContext>
                 <!-- 仮 -->
                 <vm:LocalTimelineViewModel/>
             </controls:TimelineControl.DataContext>
         </controls:TimelineControl>
-        
-        <controls:TimelineControl Grid.Column="2">
+
+        <controls:TimelineControl Grid.Column="2" Grid.RowSpan="2">
             <controls:TimelineControl.DataContext>
                 <!-- 仮 -->
                 <vm:PublicTimelineViewModel/>

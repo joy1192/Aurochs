@@ -50,7 +50,16 @@ namespace Aurochs.Linkage.Streams
         public IEnumerable<Core.Entities.Status> GetPublicTimline()
         {
             return _Client.GetPublicTimeline().Result.Select(x => x.ToStatus()).ToList();
+        }
 
+        public void PostPublicStatus(string text)
+        {
+            _Client.PostStatus(text, Visibility.Public);
+        }
+
+        public void PostPrivateStatus(string text)
+        {
+            _Client.PostStatus(text, Visibility.Private);
         }
     }
 

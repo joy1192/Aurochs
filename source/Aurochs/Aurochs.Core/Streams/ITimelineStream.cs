@@ -15,5 +15,9 @@ namespace Aurochs.Core.Streams
         IObservable<StreamingMessage> UserAsObservable();
 
         IObservable<StreamingMessage> PublicAsObservable();
+
+        void PostPublicStatus(string text);
+
+        void PostPrivateStatus(string text);
     }
 }

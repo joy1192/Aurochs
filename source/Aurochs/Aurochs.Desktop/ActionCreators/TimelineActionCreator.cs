@@ -32,6 +32,15 @@ namespace Aurochs.Desktop.ActionCreators
             this.Auth = auth;
         }
 
+        public void Post(string text)
+        {
+            if (_Stream == null)
+                return;
+
+            _Stream.PostPublicStatus(text);
+
+        }
+
         public void Initialize()
         {
             try

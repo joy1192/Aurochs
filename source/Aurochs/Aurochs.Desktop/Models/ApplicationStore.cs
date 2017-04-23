@@ -17,7 +17,7 @@ namespace Aurochs.Desktop.Models
     {
         private Dictionary<string, DispatcherToken> Tokens { get; } = new Dictionary<string, DispatcherToken>();
 
-        private Dictionary<string, TimelineActionCreator> _timelines { get; } = new Dictionary<string, TimelineActionCreator>();
+        public Dictionary<string, TimelineActionCreator> Timelines { get; } = new Dictionary<string, TimelineActionCreator>();
 
         [ImportingConstructor]
         public ApplicationStore()
@@ -39,7 +39,7 @@ namespace Aurochs.Desktop.Models
         {
             var instance = msg.Registration.Instance;
 
-            _timelines[instance] = new TimelineActionCreator(msg.Registration, msg.Auth);
+            Timelines[instance] = new TimelineActionCreator(msg.Registration, msg.Auth);
 
             Authenticated?.Invoke(this, new ApplicationLocalEventArgs());
         }
@@ -51,7 +51,7 @@ namespace Aurochs.Desktop.Models
 
         private void OnWakeUpApplication(WakeUpApplicationMessage obj)
         {
-            foreach (var timeline in _timelines)
+            foreach (var timeline in Timelines)
             {
                 timeline.Value.Initialize();
             }
