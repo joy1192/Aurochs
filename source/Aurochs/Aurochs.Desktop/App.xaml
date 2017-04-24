@@ -3,6 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Aurochs.Desktop">
     <Application.Resources>
-         
+        <Image x:Key="nicoru" Width="15" Height="15" Source="http://dic.nicovideo.jp/oekaki/536379.png"/>
     </Application.Resources>
 </Application>

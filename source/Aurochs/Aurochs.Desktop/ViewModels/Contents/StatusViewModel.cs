@@ -9,6 +9,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web;
+using System.Windows;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
@@ -23,7 +24,7 @@ namespace Aurochs.Desktop.ViewModels.Contents
         public long StatusId { get; private set; }
 
         /// <summary>
-        /// Statusを投稿したAccountのID名を取得、または設定します
+        /// Statusを投稿したAccountのAccountNameを取得、または設定します
         /// </summary>
         public string AccountName
         {
@@ -31,6 +32,16 @@ namespace Aurochs.Desktop.ViewModels.Contents
             set { SetProperty(ref _AccountName, value); }
         }
         private string _AccountName;
+
+        /// <summary>
+        /// Statusを投稿したAccountのUserNameを取得、または設定します
+        /// </summary>
+        public string UserName
+        {
+            get { return _UserName; }
+            set { SetProperty(ref _UserName, value); }
+        }
+        private string _UserName;
 
         /// <summary>
         /// Statusを投稿したAccountの表示名を取得、または設定します
@@ -117,6 +128,26 @@ namespace Aurochs.Desktop.ViewModels.Contents
         }
         private bool _IsContentsWarning;
 
+        /// <summary>
+        /// Statusを投稿したAccountの所属Instanceを取得、または設定します
+        /// </summary>
+        public string InstanceName
+        {
+            get { return _InstanceName; }
+            set { SetProperty(ref _InstanceName, value); }
+        }
+        private string _InstanceName;
+
+        /// <summary>
+        /// 可視状態を取得、または設定します
+        /// </summary>
+        public Visibility Visibility
+        {
+            get { return _Visibility; }
+            set { SetProperty(ref _Visibility, value); }
+        }
+        private Visibility _Visibility;
+
         public StatusViewModel()
         {
 
@@ -127,6 +158,13 @@ namespace Aurochs.Desktop.ViewModels.Contents
             this.Update(status);
         }
 
+        private string AccountToInstanceName(Account account)
+        {
+            var accountName = account.AccountName;
+            var userName = account.UserName;
+            return accountName.Replace(userName, string.Empty);
+        }
+
         public void Update(Status status)
         {
             StatusId = status.Id;
@@ -134,6 +172,8 @@ namespace Aurochs.Desktop.ViewModels.Contents
             if (status.Reblog == null)
             {
                 this.AccountName = status.Account.AccountName;
+                this.UserName = status.Account.UserName;
+                this.InstanceName = AccountToInstanceName(status.Account);
                 this.DisplayName = status.Account.DisplayName;
                 this.Text = status.Content;
                 this.SpoilerText = status.SpoilerText;
@@ -151,6 +191,8 @@ namespace Aurochs.Desktop.ViewModels.Contents
             {
                 var reblog = status.Reblog;
                 this.AccountName = reblog.Account.AccountName;
+                this.UserName = status.Account.UserName;
+                this.InstanceName = AccountToInstanceName(reblog.Account);
                 this.DisplayName = reblog.Account.UserName;
                 this.Text = reblog.Content;
                 this.SpoilerText = status.SpoilerText;

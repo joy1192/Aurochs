@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using HtmlAgilityPack;
 using System.Web;
+using System.Windows.Documents;
+using System.Windows.Controls;
+using System.Windows;
+using System.Diagnostics;
 
 namespace Aurochs.Desktop.Views.Utility
 {
@@ -15,6 +19,7 @@ namespace Aurochs.Desktop.Views.Utility
         Link,
         Mension,
         HashTag,
+        Emoji,
     }
 
     public static class InlineGenerator
@@ -99,7 +104,31 @@ namespace Aurochs.Desktop.Views.Utility
                 else if (IsText(element))
                 {
                     var text = HttpUtility.HtmlDecode(element.InnerText);
-                    yield return factory(InlineContentType.Text, text, null);
+
+                    if (text.Contains(":nicoru:"))
+                    {
+                        var startIndex = 0;
+                        while (true)
+                        {
+                            int index = text.IndexOf(":nicoru:", startIndex);
+                            if (index == -1)
+                            {
+                                yield return factory(InlineContentType.Text, text.Substring(startIndex), null);
+                                break;
+                            }
+                            var length = index - startIndex;
+
+                            yield return factory(InlineContentType.Text, text.Substring(startIndex, length), null);
+                            startIndex += length;
+
+                            yield return factory(InlineContentType.Emoji, ":nicoru:", null);
+                            startIndex += ":nicoru:".Length;
+                        }
+                    }
+                    else
+                    {
+                        yield return factory(InlineContentType.Text, text, null);
+                    }
                 }
                 else if (IsNewLine(element))
                 {
@@ -107,11 +136,21 @@ namespace Aurochs.Desktop.Views.Utility
                 }
                 else if (IsHyperlink(element))
                 {
-                    var text = element.Descendants("span").
+                    string text = null;
+                    try
+                    {
+                        var innerText = element.Descendants("span").
                         Where(x => x.Attributes["class"]?.Value != "invisible").
                         Select(x => x.InnerText).
-                        Select(x => HttpUtility.HtmlDecode(x)).
-                        SingleOrDefault();
+                        Select(x => HttpUtility.HtmlDecode(x)).ToArray();
+
+                        text = innerText.SingleOrDefault();
+                    }
+                    catch(Exception e)
+                    {
+                        Trace.TraceError($"{element}:{Environment.NewLine}{e}");
+                    }
+
                     if (text == null)
                     {
                         var url = element.Attributes["href"].Value;

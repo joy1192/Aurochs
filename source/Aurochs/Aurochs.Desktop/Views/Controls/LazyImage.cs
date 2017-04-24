@@ -15,58 +15,30 @@ namespace Aurochs.Desktop.Views.Controls
 {
     public class LazyImage : Image
     {
-        public string LoadSource
+        public Uri UriSource
         {
-            get { return (string)GetValue(LoadSourceProperty); }
-            set { SetValue(LoadSourceProperty, value); }
+            get { return (Uri)GetValue(UriSourceProperty); }
+            set { SetValue(UriSourceProperty, value); }
         }
 
-        public static readonly DependencyProperty LoadSourceProperty =
-            DependencyProperty.Register("LoadSource", typeof(string), typeof(LazyImage), new FrameworkPropertyMetadata(null, OnSourceChanged));
+        public static readonly DependencyProperty UriSourceProperty =
+            DependencyProperty.Register("UriSource", typeof(Uri), typeof(LazyImage), new PropertyMetadata(null, OnSourceChanged));
 
         private static void OnSourceChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             if (d is LazyImage image)
             {
-                LoadImage(image);
+                image.UpdateImage();
             }
         }
         
-        private static void LoadImage(LazyImage image)
+        private void UpdateImage()
         {
-            image.Source = null;
-
-            var source = image.LoadSource;
+            var source = this.UriSource;
             if (source == null)
                 return;
 
-            if (ImageLoader.TryGetImage(source, out ImageSource imageSource))
-            {
-                image.SetSource(source, imageSource);
-            }
-            else
-            {
-                ImageLoader.RequestLoadImage(source, lazySource => image.SetSource(source, lazySource));
-            }
-        }
-
-
-        private void SetSource(string requestUrl, ImageSource source)
-        {
-            if(source == null)
-            {
-                Trace.TraceWarning("source is null");
-            }
-
-            DispatcherHelper.CurrentDispatcher.BeginInvoke((Action)(() =>
-            {
-                // Binding等により既に依頼した時点とはLoadSourceが変わっていたら、
-                // 無視する
-                if (this.LoadSource != requestUrl)
-                    return;
-
-                this.Source = source;
-            }));
+            ImageLoader.RequestLoadImage(source, this);
         }
     }
 }

@@ -124,6 +124,21 @@ namespace Aurochs.Desktop.Views.Behaviors
                         hyperlink.CommandParameter = url;
                         return (type, hyperlink);
                     }
+                case InlineContentType.Emoji:
+                    {
+                        var icon = Application.Current.Resources["nicoru"] as Image;
+                        UIElement element = new Border()
+                        {
+                            Width = 15,
+                            Height = 15,
+                            Background = new VisualBrush(icon)
+                        };
+                        var uiContainer = new InlineUIContainer(element)
+                        {
+                            BaselineAlignment = System.Windows.BaselineAlignment.Baseline
+                        };
+                        return (type, uiContainer);
+                    }
                 default:
                     throw new ArgumentException("invalid arguments", nameof(type));
             }

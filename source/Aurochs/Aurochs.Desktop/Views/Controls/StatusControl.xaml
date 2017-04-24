@@ -14,9 +14,11 @@
         <SolidColorBrush x:Key="BackgroundBrush" Color="#2F2E4A"/>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
         <conv:BooleanToVisibilityInverter x:Key="BooleanToVisibilityInverter"/>
+        <conv:RelativeUriToAbsoluteUriConverter x:Key="RelativeUriToAbsoluteUriConverter"/>
     </UserControl.Resources>
     <Grid Margin="5" d:DataContext="{StaticResource Sample}"
-          Background="{StaticResource BackgroundBrush}">
+          Background="{StaticResource BackgroundBrush}"
+          Visibility="{Binding Visibility}">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
@@ -27,29 +29,35 @@
             <ColumnDefinition Width="60"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <controls:LazyImage Grid.Row="0"
-                            Grid.Column="0"
-                            Grid.RowSpan="4"
-                            Height="50"
-                            Width="50"
-                            Margin="5"
-                            LoadSource="{Binding AvatarImageURI}"
-                            Source="https://friends.nico/avatars/original/missing.png"
-                            VerticalAlignment="Top"/>
-        <controls:LazyImage Grid.Row="0"
-                            Grid.Column="0"
-                            Grid.RowSpan="4"
-                            Height="25"
-                            Width="25"
-                            Visibility="{Binding IsReblog,Converter={StaticResource BooleanToVisibilityConverter}}"
-                            LoadSource="{Binding SourceAvatarImageURI}"
-                            Source="https://friends.nico/avatars/original/missing.png"
-                            VerticalAlignment="Top"
-                            Margin="30,35,0,0"/>
+        <Image Grid.Row="0"
+               Grid.Column="0"
+               Grid.RowSpan="4"
+               Height="50"
+               Width="50"
+               Margin="5"
+               Source="{Binding AvatarImageURI,Converter={StaticResource RelativeUriToAbsoluteUriConverter}}"
+               VerticalAlignment="Top"/>
+        <Image Grid.Row="0"
+               Grid.Column="0"
+               Grid.RowSpan="4"
+               Height="25"
+               Width="25"
+               Visibility="{Binding IsReblog,Converter={StaticResource BooleanToVisibilityConverter}}"
+               Source="{Binding SourceAvatarImageURI,Converter={StaticResource RelativeUriToAbsoluteUriConverter}}"
+               VerticalAlignment="Top"
+               Margin="30,35,0,0"/>
         <Button Grid.Column="1" Grid.Row="0">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
-                    <TextBlock Text="{Binding DisplayName}" Foreground="#7F76FF"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="5"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="{Binding UserName}" Foreground="#7F76FF"/>
+                        <TextBlock Grid.Column="2" FontSize="9" Text="{Binding DisplayName}" Foreground="Gray" VerticalAlignment="Bottom"/>
+                    </Grid>
                 </ControlTemplate>
             </Button.Template>
         </Button>
@@ -118,9 +126,15 @@
                 </ControlTemplate>
             </ItemsControl.Template>
         </ItemsControl>
-        <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal">
-            <TextBlock Text="{Binding CreateDate}" Foreground="Gray"/>
-            <TextBlock Text="{Binding CreateTime}" Foreground="Gray" Margin="5,0,0,0"/>
-        </StackPanel>
+        <Grid Grid.Column="1" Grid.Row="3" Height="15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="{Binding CreateTime}" Foreground="Gray" Margin="5,0,0,0" HorizontalAlignment="Left"/>
+            <Viewbox Grid.Column="1" Stretch="Uniform" HorizontalAlignment="Right">
+                <TextBlock Text="{Binding InstanceName}" Foreground="LightGray"/>
+            </Viewbox>
+        </Grid>
     </Grid>
 </UserControl>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Aurochs.Desktop.Helpers;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -14,16 +15,20 @@ using System.Windows.Media.Imaging;
 
 namespace Aurochs.Desktop.Views.Utility
 {
-    public class LoadingRequest
+    public class Request
     {
-        public string URI { get; internal set; }
-        public Action<ImageSource> Callback { get; internal set; }
-        public bool IsPersistent { get; internal set; }
+        public Uri Uri { get; internal set; }
+
+        public byte[] RawImage { get; internal set; }
+
+        public Image Image { get; internal set; }
     }
 
     public static class ImageLoader
     {
-        private const int LoadingThreadSize = 12;
+        private const int LoadThreadSize = 6;
+
+        private const int DecodeThreadSize = 1;
 
         private const int MaxCacheCount = 1000;
 
@@ -31,19 +36,26 @@ namespace Aurochs.Desktop.Views.Utility
 
         private static List<Thread> Threads { get; } = new List<Thread>();
 
-        private static ConcurrentQueue<LoadingRequest> Requests { get; } = new ConcurrentQueue<LoadingRequest>();
+        private static ConcurrentQueue<Request> LoadRequests { get; } = new ConcurrentQueue<Request>();
 
-        private static ConcurrentDictionary<string, ImageSource> LoadedImages { get; } = new ConcurrentDictionary<string, ImageSource>();
+        private static ConcurrentQueue<Request> DecodeRequests { get; } = new ConcurrentQueue<Request>();
 
-        private static ConcurrentQueue<string> LoadedImageUris { get; } = new ConcurrentQueue<string>();
+        private static ConcurrentDictionary<Uri, ImageSource> LoadedImages { get; } = new ConcurrentDictionary<Uri, ImageSource>();
 
-        private static ConcurrentDictionary<string, ImageSource> PersistentImages { get; } = new ConcurrentDictionary<string, ImageSource>();
+        private static ConcurrentQueue<Uri> LoadedImageUris { get; } = new ConcurrentQueue<Uri>();
+
+        private static ConcurrentDictionary<Uri, ImageSource> PersistentImages { get; } = new ConcurrentDictionary<Uri, ImageSource>();
 
         static ImageLoader()
         {
-            for (int i = 0; i < LoadingThreadSize; i++)
+            for (int i = 0; i < LoadThreadSize; i++)
             {
                 Threads.Add(MakeLoadingThread());
+            }
+
+            for (int i = 0; i < DecodeThreadSize; i++)
+            {
+                Threads.Add(MakeDecodingThread());
             }
         }
 
@@ -53,25 +65,27 @@ namespace Aurochs.Desktop.Views.Utility
             {
                 IsBackground = true
             };
+            thread.Start();
+            return thread;
+        }
+
+        private static Thread MakeDecodingThread()
+        {
+            var thread = new Thread(new ThreadStart(Decode))
+            {
+                IsBackground = true
+            };
             thread.SetApartmentState(ApartmentState.STA);
             thread.Start();
             return thread;
         }
 
-        public static bool RequestLoadImage(string uri, Action<ImageSource> callback, bool isPersistent = false)
+        public static void RequestLoadImage(Uri uri, Image image)
         {
-            if (Uri.IsWellFormedUriString(uri, UriKind.Absolute))
-            {
-                Requests.Enqueue(new LoadingRequest() { URI = uri, Callback = callback, IsPersistent = isPersistent });
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            LoadRequests.Enqueue(new Request() { Uri = uri, Image = image });
         }
 
-        public static bool TryGetImage(string uri, out ImageSource image)
+        private static bool TryGetImage(Uri uri, out ImageSource image)
         {
             if (PersistentImages.TryGetValue(uri, out image))
                 return true;
@@ -83,81 +97,104 @@ namespace Aurochs.Desktop.Views.Utility
         {
             while (true)
             {
-                if (Requests.TryDequeue(out LoadingRequest request))
+                if (LoadRequests.TryDequeue(out Request request))
                 {
-                    try
+                    LoadBytes(request, RetryCount).Wait();
+                }
+                else
+                {
+                    Thread.Sleep(30);
+                }
+            }
+        }
+
+        private static async Task LoadBytes(Request request, int retry)
+        {
+            while (0 < retry--)
+            {
+                try
+                {
+                    using (var client = new HttpClient() { Timeout = TimeSpan.FromMilliseconds(1000) })
                     {
-                        var url = request.URI;
+                        var source = request.Uri;
+                        var response = await client.GetAsync(source).ConfigureAwait(false);
+                        var result = await response.Content.ReadAsByteArrayAsync().ConfigureAwait(false);
 
-                        using (var web = new HttpClient())
+                        request.RawImage = result;
+                        DecodeRequests.Enqueue(request);
+                    }
+                    break;
+                }
+                catch (Exception e)
+                {
+                    Trace.TraceWarning($"{e}");
+                    continue;
+                }
+            }
+        }
+
+        private static void Decode()
+        {
+            while (true)
+            {
+                if (DecodeRequests.TryDequeue(out Request request))
+                {
+                    var bitmap = CreateImage(request.RawImage, 60, 60);
+
+                    if (LoadedImages.TryAdd(request.Uri, bitmap))
+                    {
+                        LoadedImageUris.Enqueue(request.Uri);
+
+                        DispatcherHelper.CurrentDispatcher.BeginInvoke((Action)(() =>
                         {
-                            byte[] bytes = null;
-                            var count = RetryCount;
-                            while (0 < count--)
+                            var UI = request.Image;
+                            UI.Source = bitmap;
+                        }));
+
+                        // Cache上限を超えたイメージを破棄
+                        while (MaxCacheCount < LoadedImageUris.Count)
+                        {
+                            if (LoadedImageUris.TryDequeue(out Uri result))
                             {
-                                try
+                                if (LoadedImages.TryRemove(result, out ImageSource value))
                                 {
-                                    bytes = web.GetByteArrayAsync(url).Result;
-
-                                    using (var stream = new MemoryStream(bytes))
-                                    {
-                                        var bitmap = new BitmapImage();
-                                        bitmap.BeginInit();
-                                        bitmap.StreamSource = stream;
-                                        bitmap.CacheOption = BitmapCacheOption.OnLoad;
-                                        bitmap.EndInit();
-                                        bitmap.Freeze();
-
-                                        if (request.IsPersistent)
-                                        {
-                                            if (PersistentImages.TryAdd(request.URI, bitmap))
-                                            {
-                                                // some log
-                                                Trace.TraceInformation("save persisitent");
-                                            }
-                                        }
-                                        else
-                                        {
-                                            if (LoadedImages.TryAdd(request.URI, bitmap))
-                                            {
-                                                LoadedImageUris.Enqueue(request.URI);
-
-                                                // ハンドラ実行
-                                                request.Callback?.Invoke(bitmap);
-
-                                                while (MaxCacheCount < LoadedImageUris.Count)
-                                                {
-                                                    if (LoadedImageUris.TryDequeue(out string result))
-                                                    {
-                                                        if (LoadedImages.TryRemove(result, out ImageSource value))
-                                                        {
-                                                            // some log
-                                                            Trace.TraceInformation("remove max cap");
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                    break;
-                                }
-                                catch (Exception e)
-                                {
-                                    Trace.TraceError($"uri='{request.URI}'{Environment.NewLine}{e}");
-                                    continue;
+                                    // some log
+                                    Trace.TraceInformation("remove max cap");
                                 }
                             }
                         }
                     }
-                    catch (Exception e)
+                    else
                     {
-                        Trace.TraceWarning(e.ToString());
+                        Thread.Sleep(30);
                     }
                 }
-                else
+            }
+        }
+
+        private static BitmapImage CreateImage(byte[] bytes, int dpw, int dph)
+        {
+            try
+            {
+                using (var ms = new MemoryStream(bytes, false))
                 {
-                    Thread.Sleep(1);
+                    var bitmap = new BitmapImage();
+                    bitmap.BeginInit();
+                    bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                    bitmap.StreamSource = ms;
+                    if (dpw > 0 || dph > 0)
+                    {
+                        bitmap.DecodePixelWidth = dpw;
+                        bitmap.DecodePixelHeight = dph;
+                    }
+                    bitmap.EndInit();
+                    bitmap.Freeze();
+                    return bitmap;
                 }
+            }
+            catch
+            {
+                return null;
             }
         }
     }
