@@ -17,10 +17,10 @@
 
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
+                <RowDefinition MinHeight="60" Height="auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <controls:PostControl Grid.Row="0" MinHeight="60" Grid.RowSpan="2"/>
+            <controls:PostControl Grid.Row="0"/>
             <controls:TimelineControl Grid.Row="1">
                 <controls:TimelineControl.DataContext>
                     <!-- 仮 -->
