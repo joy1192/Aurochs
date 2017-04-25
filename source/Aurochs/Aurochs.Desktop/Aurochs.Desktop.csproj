@@ -133,6 +133,7 @@
     <Compile Include="SampleData\StatusSample.cs" />
     <Compile Include="SampleData\TimelineSample.cs" />
     <Compile Include="ViewModels\AuthorizationViewModels\AuthViewModel.cs" />
+    <Compile Include="ViewModels\Contents\AttachmentViewModel.cs" />
     <Compile Include="ViewModels\Contents\StatusViewModel.cs" />
     <Compile Include="ViewModels\LocalTimelineViewModel.cs" />
     <Compile Include="ViewModels\PostAreaViewModel.cs" />

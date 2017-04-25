@@ -112,17 +112,17 @@
             </Control.Style>
         </Control>
 
-        <ItemsControl Grid.Column="1" Grid.Row="2" ItemsSource="{Binding Medias}">
+        <ItemsControl Grid.Column="1" Grid.Row="2" ItemsSource="{Binding AttachmentUrls}">
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <Image Source="{Binding URI}" Margin="2.5" Height="50"/>
+                    <Button Command="{Binding OpenUrlCommand}" Margin="2" BorderThickness="0" Padding="0">
+                        <Image Source="{Binding Url}" Height="50"/>
+                    </Button>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
             <ItemsControl.Template>
                 <ControlTemplate TargetType="ItemsControl">
-                    <Border BorderThickness="1">
-                        <WrapPanel IsItemsHost="True" />
-                    </Border>
+                    <WrapPanel IsItemsHost="True" />
                 </ControlTemplate>
             </ItemsControl.Template>
         </ItemsControl>

@@ -148,9 +148,15 @@ namespace Aurochs.Desktop.ViewModels.Contents
         }
         private Visibility _Visibility;
 
+        public List<AttachmentViewModel> AttachmentUrls
+        {
+            get { return _AttachmentUrls; }
+            set { SetProperty(ref _AttachmentUrls, value); }
+        }
+        private List<AttachmentViewModel> _AttachmentUrls = new List<AttachmentViewModel>();
+
         public StatusViewModel()
         {
-
         }
 
         public StatusViewModel(Status status)
@@ -179,6 +185,7 @@ namespace Aurochs.Desktop.ViewModels.Contents
                 this.SpoilerText = status.SpoilerText;
                 this.IsContentsWarning = !string.IsNullOrEmpty(status.SpoilerText);
                 this.AvatarImageURI = ToFullUrl(status.Account.AvatarImageUrl);
+                this.AttachmentUrls = status.MediaAttachments.Select(x => new AttachmentViewModel(x.Url)).ToList();
                 this.SourceAvatarImageURI = null;
                 this.IsReblog = false;
 
@@ -198,6 +205,7 @@ namespace Aurochs.Desktop.ViewModels.Contents
                 this.SpoilerText = status.SpoilerText;
                 this.IsContentsWarning = !string.IsNullOrEmpty(status.SpoilerText);
                 this.AvatarImageURI = ToFullUrl(reblog.Account.AvatarImageUrl);
+                this.AttachmentUrls = status.MediaAttachments.Select(x => new AttachmentViewModel(x.Url)).ToList();
                 this.SourceAvatarImageURI = ToFullUrl(status.Account.AvatarImageUrl);
                 this.IsReblog = true;
 
