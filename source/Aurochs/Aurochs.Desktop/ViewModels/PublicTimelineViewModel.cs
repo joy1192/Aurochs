@@ -23,8 +23,8 @@ namespace Aurochs.Desktop.ViewModels
 {
     public class PublicTimelineViewModel : TimelineViewModelBase
     {
-        public int VisibleMaxCount { get; set; } = 200;
-        public int MaxCount { get; set; } = 100000;
+        public int VisibleMaxCount { get; set; } = 100;
+        public int MaxCount { get; set; } = 400;
 
         public string FilterInstanceName
         {
@@ -106,11 +106,6 @@ namespace Aurochs.Desktop.ViewModels
             }
         }
 
-        private void ApplyFilteringState(StatusViewModel status)
-        {
-
-        }
-
         public PublicTimelineViewModel()
         {
             var store = StoreAccessor.Default.Get<PublicTimelineStore>();
@@ -144,7 +139,6 @@ namespace Aurochs.Desktop.ViewModels
                             var status = adds.Dequeue();
 
                             var item = new StatusViewModel(status);
-                            ApplyFilteringState(item);
                             this.StatusCollection.Insert(0, item);
                         }
 
