@@ -117,8 +117,8 @@ namespace Aurochs.Desktop.Views.Utility
                     using (var client = new HttpClient() { Timeout = TimeSpan.FromMilliseconds(1000) })
                     {
                         var source = request.Uri;
-                        var response = await client.GetAsync(source).ConfigureAwait(false);
-                        var result = await response.Content.ReadAsByteArrayAsync().ConfigureAwait(false);
+                        var response = await client.GetAsync(source);
+                        var result = await response.Content.ReadAsByteArrayAsync();
 
                         request.RawImage = result;
                         DecodeRequests.Enqueue(request);

@@ -59,6 +59,25 @@ namespace Aurochs.Desktop.Views.Utility
             return (classvalue.Value == "u-url mention");
         }
 
+        private static bool IsHashTag(HtmlNode node)
+        {
+            if (!node.HasAttributes)
+                return false;
+
+            if (node.Name != "a")
+                return false;
+
+            var hrefvalue = node.Attributes["href"];
+            if (hrefvalue == null)
+                return false;
+
+            var classvalue = node.Attributes["class"];
+            if (classvalue == null)
+                return false;
+
+            return (classvalue.Value == "mention hashtag");
+        }
+
         private static bool IsText(HtmlNode node)
         {
             return node.Name == "#text";
@@ -134,6 +153,13 @@ namespace Aurochs.Desktop.Views.Utility
                 {
                     yield return factory(InlineContentType.Text, "\n", null);
                 }
+                else if (IsHashTag(element))
+                {
+                    string text = HttpUtility.HtmlDecode(element.InnerText);
+                    string url = url = element.Attributes["href"].Value;
+
+                    yield return factory(InlineContentType.HashTag, text, url);
+                }
                 else if (IsHyperlink(element))
                 {
                     string text = null;
@@ -151,16 +177,9 @@ namespace Aurochs.Desktop.Views.Utility
                         Trace.TraceError($"{element}:{Environment.NewLine}{e}");
                     }
 
-                    if (text == null)
-                    {
-                        var url = element.Attributes["href"].Value;
-                        yield return factory(InlineContentType.Link, url, url);
-                    }
-                    else
-                    {
-                        var url = element.Attributes["href"].Value;
-                        yield return factory(InlineContentType.Link, text.ToString(), url);
-                    }
+                    var url = element.Attributes["href"].Value;
+
+                    yield return factory(InlineContentType.Link, text ?? url, url);
                 }
             }
         }
