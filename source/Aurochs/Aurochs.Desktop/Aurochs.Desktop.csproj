@@ -148,7 +148,6 @@
     <Compile Include="Views\Controls\FilterConfigurator.xaml.cs">
       <DependentUpon>FilterConfigurator.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\LazyImage.cs" />
     <Compile Include="Views\Controls\PostControl.xaml.cs">
       <DependentUpon>PostControl.xaml</DependentUpon>
     </Compile>
@@ -163,7 +162,6 @@
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Utility\ImageLoader.cs" />
     <Compile Include="Views\Utility\InlineGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
