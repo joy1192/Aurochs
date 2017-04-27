@@ -39,9 +39,18 @@ namespace Aurochs.Desktop.Views.Behaviors
         }
 
         public static readonly DependencyProperty ContentsProperty =
-            DependencyProperty.Register("Contents", typeof(string), typeof(StatusBehavior), new PropertyMetadata(string.Empty, OnStatusChanged));
+            DependencyProperty.Register("Contents", typeof(string), typeof(StatusBehavior), new PropertyMetadata(string.Empty, OnContentsChanged));
 
-        private static void OnStatusChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        public IEnumerable<Uri> MediaUris
+        {
+            get { return (IEnumerable<Uri>)GetValue(MediaUrisProperty); }
+            set { SetValue(MediaUrisProperty, value); }
+        }
+
+        public static readonly DependencyProperty MediaUrisProperty =
+            DependencyProperty.Register("MediaUris", typeof(IEnumerable<Uri>), typeof(StatusBehavior), new PropertyMetadata(Enumerable.Empty<Uri>(), OnContentsChanged));
+
+        private static void OnContentsChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             if (d is StatusBehavior behavior)
             {
@@ -72,15 +81,15 @@ namespace Aurochs.Desktop.Views.Behaviors
 
         private static void Make(StatusBehavior behavior, TextBlock textblock)
         {
-            foreach (var inline in GenerateInlines(behavior, behavior.Contents))
+            foreach (var inline in GenerateInlines(behavior, behavior.Contents, behavior.MediaUris))
             {
                 textblock.Inlines.Add(inline);
             }
         }
 
-        private static IEnumerable<Inline> GenerateInlines(StatusBehavior parent, string status)
+        private static IEnumerable<Inline> GenerateInlines(StatusBehavior parent, string content, IEnumerable<Uri> uris)
         {
-            foreach (var item in InlineGenerator.Resolve<Inline>(status, BuildInlines))
+            foreach (var item in InlineGenerator.Resolve<Inline>(content, uris, BuildInlines))
             {
                 // TextBlockに設定された見た目を反映
                 switch (item.Type)

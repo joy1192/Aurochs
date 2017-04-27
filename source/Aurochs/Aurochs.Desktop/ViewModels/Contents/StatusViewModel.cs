@@ -148,6 +148,13 @@ namespace Aurochs.Desktop.ViewModels.Contents
         }
         private Visibility _Visibility;
 
+        public IEnumerable<Uri> MediaAttachmentUris
+        {
+            get { return _MediaAttachmentUris; }
+            set { SetProperty(ref _MediaAttachmentUris, value); }
+        }
+        private IEnumerable<Uri> _MediaAttachmentUris;
+
         public List<AttachmentViewModel> AttachmentUrls
         {
             get { return _AttachmentUrls; }
@@ -175,47 +182,44 @@ namespace Aurochs.Desktop.ViewModels.Contents
         {
             StatusId = status.Id;
 
-            if (status.Reblog == null)
-            {
-                this.AccountName = status.Account.AccountName;
-                this.UserName = status.Account.UserName;
-                this.InstanceName = AccountToInstanceName(status.Account);
-                this.DisplayName = status.Account.DisplayName;
-                this.Text = status.Content;
-                this.SpoilerText = status.SpoilerText;
-                this.IsContentsWarning = !string.IsNullOrEmpty(status.SpoilerText);
-                this.AvatarImageURI = ToFullUrl(status.Account.AvatarImageUrl);
-                this.AttachmentUrls = status.MediaAttachments.Select(x => new AttachmentViewModel(x.Url)).ToList();
-                this.SourceAvatarImageURI = null;
-                this.IsReblog = false;
+            var target = status.Reblog ?? status;
 
-                var localTime = status.CreatedAt.ToLocalTime();
+            this.AccountName = target.Account.AccountName;
+            this.UserName = target.Account.UserName;
+            this.InstanceName = AccountToInstanceName(target.Account);
+            this.DisplayName = target.Account.DisplayName;
+            this.Text = target.Content;
+            this.SpoilerText = target.SpoilerText;
+            this.IsContentsWarning = !string.IsNullOrEmpty(target.SpoilerText);
+            this.AvatarImageURI = ToFullUrl(target.Account.AvatarImageUrl);
+            this.AttachmentUrls = target.MediaAttachments.Select(x => new AttachmentViewModel(x.Url)).ToList();
+            this.MediaAttachmentUris = target.MediaAttachments.SelectMany(x => AttachmentToUrls(x)).ToList();
+            var localTime = target.CreatedAt.ToLocalTime();
 
-                this.CreateTime = $"{localTime.Hour:00}:{localTime.Minute:00}";
-                this.CreateDate = (DateTime.Today == localTime.Date) ? string.Empty : $"{ localTime.Year}/{ localTime.Month}/{ localTime.Day}";
-            }
-            else
-            {
-                var reblog = status.Reblog;
-                this.AccountName = reblog.Account.AccountName;
-                this.UserName = status.Account.UserName;
-                this.InstanceName = AccountToInstanceName(reblog.Account);
-                this.DisplayName = reblog.Account.UserName;
-                this.Text = reblog.Content;
-                this.SpoilerText = status.SpoilerText;
-                this.IsContentsWarning = !string.IsNullOrEmpty(status.SpoilerText);
-                this.AvatarImageURI = ToFullUrl(reblog.Account.AvatarImageUrl);
-                this.AttachmentUrls = status.MediaAttachments.Select(x => new AttachmentViewModel(x.Url)).ToList();
-                this.SourceAvatarImageURI = ToFullUrl(status.Account.AvatarImageUrl);
-                this.IsReblog = true;
+            this.CreateTime = $"{localTime.Hour:00}:{localTime.Minute:00}";
+            this.CreateDate = (DateTime.Today == localTime.Date) ? string.Empty : $"{ localTime.Year}/{ localTime.Month}/{ localTime.Day}";
 
-                var localTime = status.CreatedAt.ToLocalTime();
-
-                this.CreateTime = $"{localTime.Hour:00}:{localTime.Minute:00}";
-                this.CreateDate = (DateTime.Today == localTime.Date) ? string.Empty : $"{ localTime.Year}/{ localTime.Month}/{ localTime.Day}";
-            }
+            this.SourceAvatarImageURI = status.Reblog != null ? ToFullUrl(status.Account.AvatarImageUrl) : null;
+            this.IsReblog = status.Reblog != null;
         }
 
+        private static IEnumerable<Uri> AttachmentToUrls(Attachment attachment)
+        {
+            if (Uri.TryCreate(attachment.RemoteUrl, UriKind.Absolute, out Uri remoteUrl))
+            {
+                yield return remoteUrl;
+            }
+
+            if (Uri.TryCreate(attachment.TextUrl, UriKind.Absolute, out Uri textUrl))
+            {
+                yield return textUrl;
+            }
+
+            if (Uri.TryCreate(attachment.Url, UriKind.Absolute, out Uri rawUrl))
+            {
+                yield return rawUrl;
+            }
+        }
 
         private string ToFullUrl(string url)
         {

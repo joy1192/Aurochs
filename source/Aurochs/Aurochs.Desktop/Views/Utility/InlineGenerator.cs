@@ -103,7 +103,7 @@ namespace Aurochs.Desktop.Views.Utility
             return true;
         }
 
-        public static IEnumerable<(InlineContentType Type, T Inline)> Resolve<T>(string status, Func<InlineContentType, string, string, (InlineContentType Type, T Inline)> factory)
+        public static IEnumerable<(InlineContentType Type, T Inline)> Resolve<T>(string status, IEnumerable<Uri> mediaUris, Func<InlineContentType, string, string, (InlineContentType Type, T Inline)> factory)
         {
             var doc = new HtmlDocument();
             doc.LoadHtml(status);
@@ -172,14 +172,24 @@ namespace Aurochs.Desktop.Views.Utility
 
                         text = innerText.SingleOrDefault();
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         Trace.TraceError($"{element}:{Environment.NewLine}{e}");
                     }
 
                     var url = element.Attributes["href"].Value;
 
-                    yield return factory(InlineContentType.Link, text ?? url, url);
+                    if (Uri.TryCreate(url, UriKind.Absolute, out Uri wellFormedUri))
+                    {
+                        var hadMedia = mediaUris.Contains(wellFormedUri);
+
+                        // MediaUrisに含まれていればUriとして表示せず、画像として表示するため、
+                        // HyperLinkとしては扱わない
+                        if (!hadMedia)
+                        {
+                            yield return factory(InlineContentType.Link, text ?? url, url);
+                        }
+                    }
                 }
             }
         }
