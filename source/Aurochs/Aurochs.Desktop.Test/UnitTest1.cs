@@ -30,7 +30,7 @@ namespace Aurochs.Desktop.Test
         public void ResolveTootContent()
         {
             var raw = File.ReadAllText("./RawToot.txt");
-            var inlines = InlineGenerator.Resolve(raw, Enumerable.Empty<Uri>(), BuildInlineMock).ToArray();
+            var inlines = InlineResolver.Resolve(raw, Enumerable.Empty<Uri>(), BuildInlineMock).ToArray();
 
             {
                 var inline = inlines[0].Inline as HyperlinkMock;

@@ -1,7 +1,12 @@
-﻿using Aurochs.Desktop.Views.Utility;
+﻿using Aurochs.Desktop.Views.Controls;
+using Aurochs.Desktop.Views.Utility;
 using Microsoft.Practices.Prism.Commands;
+using SharpVectors.Converters;
+using SharpVectors.Renderers.Wpf;
+using SharpVectors.Runtime;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -89,7 +94,7 @@ namespace Aurochs.Desktop.Views.Behaviors
 
         private static IEnumerable<Inline> GenerateInlines(StatusBehavior parent, string content, IEnumerable<Uri> uris)
         {
-            foreach (var item in InlineGenerator.Resolve<Inline>(content, uris, BuildInlines))
+            foreach (var item in InlineResolver.Resolve<Inline>(content, uris, MakeWrappedFunc(parent)))
             {
                 // TextBlockに設定された見た目を反映
                 switch (item.Type)
@@ -109,48 +114,44 @@ namespace Aurochs.Desktop.Views.Behaviors
             }
         }
 
-        private static (InlineContentType type, Inline inline) BuildInlines(InlineContentType type, string text, string url)
+        private static Func<InlineContentType, string, string, (InlineContentType type, Inline inline)> MakeWrappedFunc(StatusBehavior parent)
         {
-            switch (type)
+            return (InlineContentType type, string text, string url) =>
             {
-                case InlineContentType.Text:
-                    {
-                        return (type, new Run(text));
-                    }
-                case InlineContentType.Link:
-                case InlineContentType.Mension:
-                case InlineContentType.HashTag:
-                    {
-                        var hyperlink = new Hyperlink()
+                switch (type)
+                {
+                    case InlineContentType.Text:
                         {
-                            Focusable = false
-                        };
-                        hyperlink.Inlines.Add(text);
-                        hyperlink.Command = new DelegateCommand<string>(URL =>
+                            return (type, new Run(text));
+                        }
+                    case InlineContentType.Link:
+                    case InlineContentType.Mension:
+                    case InlineContentType.HashTag:
                         {
-                            System.Diagnostics.Process.Start(URL);
-                        });
-                        hyperlink.CommandParameter = url;
-                        return (type, hyperlink);
-                    }
-                case InlineContentType.Emoji:
-                    {
-                        var icon = Application.Current.Resources["nicoru"] as Image;
-                        UIElement element = new Border()
+                            var hyperlink = new Hyperlink()
+                            {
+                                Focusable = false
+                            };
+                            hyperlink.Inlines.Add(text);
+                            hyperlink.Command = new DelegateCommand<string>(URL =>
+                            {
+                                System.Diagnostics.Process.Start(URL);
+                            });
+                            hyperlink.CommandParameter = url;
+                            return (type, hyperlink);
+                        }
+                    case InlineContentType.Emoji:
                         {
-                            Width = 15,
-                            Height = 15,
-                            Background = new VisualBrush(icon)
-                        };
-                        var uiContainer = new InlineUIContainer(element)
-                        {
-                            BaselineAlignment = System.Windows.BaselineAlignment.Baseline
-                        };
-                        return (type, uiContainer);
-                    }
-                default:
-                    throw new ArgumentException("invalid arguments", nameof(type));
-            }
+                            var resolver = EmojiUriResolver.Resolver;
+                            var uri = resolver.CodeToUrl(text);
+                            var textblock = parent.AssociatedObject;
+                            var uiContainer = InlineGenerator.CreateEmojiWithInlineUIContainer(uri, new Typeface(textblock.FontFamily, textblock.FontStyle, textblock.FontWeight, textblock.FontStretch), textblock.FontSize, VisualTreeHelper.GetDpi(parent.AssociatedObject).PixelsPerDip);
+                            return (type, uiContainer);
+                        }
+                    default:
+                        throw new ArgumentException("invalid arguments", nameof(type));
+                }
+            };
         }
     }
 }
