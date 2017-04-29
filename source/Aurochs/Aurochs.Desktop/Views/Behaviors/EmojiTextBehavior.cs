@@ -86,7 +86,10 @@ namespace Aurochs.Desktop.Views.Behaviors
                             var resolver = EmojiUriResolver.Resolver;
                             var uri = resolver.CodeToUrl(item.Text);
                             var uiContainer = InlineGenerator.CreateEmojiWithInlineUIContainer(uri, new Typeface(textblock.FontFamily, textblock.FontStyle, textblock.FontWeight, textblock.FontStretch), textblock.FontSize, VisualTreeHelper.GetDpi(textblock).PixelsPerDip);
-                            yield return uiContainer;
+                            if (uiContainer != null)
+                            {
+                                yield return uiContainer;
+                            }
                         }
                         break;
                     default:

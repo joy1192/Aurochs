@@ -146,7 +146,14 @@ namespace Aurochs.Desktop.Views.Behaviors
                             var uri = resolver.CodeToUrl(text);
                             var textblock = parent.AssociatedObject;
                             var uiContainer = InlineGenerator.CreateEmojiWithInlineUIContainer(uri, new Typeface(textblock.FontFamily, textblock.FontStyle, textblock.FontWeight, textblock.FontStretch), textblock.FontSize, VisualTreeHelper.GetDpi(parent.AssociatedObject).PixelsPerDip);
-                            return (type, uiContainer);
+                            if (uiContainer != null)
+                            {
+                                return (type, uiContainer);
+                            }
+                            else
+                            {
+                                return (type, new Run() { Text = "□" });
+                            }
                         }
                     default:
                         throw new ArgumentException("invalid arguments", nameof(type));

@@ -1,0 +1,6497 @@
+[
+  {
+    "emoji": "😀",
+    "shortcode": "grinning",
+    "CodePoint": "1F600"
+  },
+  {
+    "emoji": "😃",
+    "shortcode": "smiley",
+    "CodePoint": "1F603"
+  },
+  {
+    "emoji": "😄",
+    "shortcode": "smile",
+    "CodePoint": "1F604"
+  },
+  {
+    "emoji": "😁",
+    "shortcode": "grin",
+    "CodePoint": "1F601"
+  },
+  {
+    "emoji": "😆",
+    "shortcode": "laughing",
+    "CodePoint": "1F606"
+  },
+  {
+    "emoji": "😅",
+    "shortcode": "sweat_smile",
+    "CodePoint": "1F605"
+  },
+  {
+    "emoji": "😂",
+    "shortcode": "joy",
+    "CodePoint": "1F602"
+  },
+  {
+    "emoji": "🤣",
+    "shortcode": "rofl",
+    "CodePoint": "1F923"
+  },
+  {
+    "emoji": "😊",
+    "shortcode": "blush",
+    "CodePoint": "1F60A"
+  },
+  {
+    "emoji": "😇",
+    "shortcode": "innocent",
+    "CodePoint": "1F607"
+  },
+  {
+    "emoji": "🙂",
+    "shortcode": "slightly_smiling_face",
+    "CodePoint": "1F642"
+  },
+  {
+    "emoji": "🙃",
+    "shortcode": "upside_down_face",
+    "CodePoint": "1F643"
+  },
+  {
+    "emoji": "😉",
+    "shortcode": "wink",
+    "CodePoint": "1F609"
+  },
+  {
+    "emoji": "😌",
+    "shortcode": "relieved",
+    "CodePoint": "1F60C"
+  },
+  {
+    "emoji": "😍",
+    "shortcode": "heart_eyes",
+    "CodePoint": "1F60D"
+  },
+  {
+    "emoji": "😘",
+    "shortcode": "kissing_heart",
+    "CodePoint": "1F618"
+  },
+  {
+    "emoji": "😗",
+    "shortcode": "kissing",
+    "CodePoint": "1F617"
+  },
+  {
+    "emoji": "😙",
+    "shortcode": "kissing_smiling_eyes",
+    "CodePoint": "1F619"
+  },
+  {
+    "emoji": "😚",
+    "shortcode": "kissing_closed_eyes",
+    "CodePoint": "1F61A"
+  },
+  {
+    "emoji": "😋",
+    "shortcode": "yum",
+    "CodePoint": "1F60B"
+  },
+  {
+    "emoji": "😜",
+    "shortcode": "stuck_out_tongue_winking_eye",
+    "CodePoint": "1F61C"
+  },
+  {
+    "emoji": "😝",
+    "shortcode": "stuck_out_tongue_closed_eyes",
+    "CodePoint": "1F61D"
+  },
+  {
+    "emoji": "😛",
+    "shortcode": "stuck_out_tongue",
+    "CodePoint": "1F61B"
+  },
+  {
+    "emoji": "🤑",
+    "shortcode": "money_mouth_face",
+    "CodePoint": "1F911"
+  },
+  {
+    "emoji": "🤗",
+    "shortcode": "hugs",
+    "CodePoint": "1F917"
+  },
+  {
+    "emoji": "🤓",
+    "shortcode": "nerd_face",
+    "CodePoint": "1F913"
+  },
+  {
+    "emoji": "😎",
+    "shortcode": "sunglasses",
+    "CodePoint": "1F60E"
+  },
+  {
+    "emoji": "🤡",
+    "shortcode": "clown_face",
+    "CodePoint": "1F921"
+  },
+  {
+    "emoji": "🤠",
+    "shortcode": "cowboy_hat_face",
+    "CodePoint": "1F920"
+  },
+  {
+    "emoji": "😏",
+    "shortcode": "smirk",
+    "CodePoint": "1F60F"
+  },
+  {
+    "emoji": "😒",
+    "shortcode": "unamused",
+    "CodePoint": "1F612"
+  },
+  {
+    "emoji": "😞",
+    "shortcode": "disappointed",
+    "CodePoint": "1F61E"
+  },
+  {
+    "emoji": "😔",
+    "shortcode": "pensive",
+    "CodePoint": "1F614"
+  },
+  {
+    "emoji": "😟",
+    "shortcode": "worried",
+    "CodePoint": "1F61F"
+  },
+  {
+    "emoji": "😕",
+    "shortcode": "confused",
+    "CodePoint": "1F615"
+  },
+  {
+    "emoji": "🙁",
+    "shortcode": "slightly_frowning_face",
+    "CodePoint": "1F641"
+  },
+  {
+    "emoji": "😣",
+    "shortcode": "persevere",
+    "CodePoint": "1F623"
+  },
+  {
+    "emoji": "😖",
+    "shortcode": "confounded",
+    "CodePoint": "1F616"
+  },
+  {
+    "emoji": "😫",
+    "shortcode": "tired_face",
+    "CodePoint": "1F62B"
+  },
+  {
+    "emoji": "😩",
+    "shortcode": "weary",
+    "CodePoint": "1F629"
+  },
+  {
+    "emoji": "😤",
+    "shortcode": "triumph",
+    "CodePoint": "1F624"
+  },
+  {
+    "emoji": "😠",
+    "shortcode": "angry",
+    "CodePoint": "1F620"
+  },
+  {
+    "emoji": "😡",
+    "shortcode": "rage",
+    "CodePoint": "1F621"
+  },
+  {
+    "emoji": "😶",
+    "shortcode": "no_mouth",
+    "CodePoint": "1F636"
+  },
+  {
+    "emoji": "😐",
+    "shortcode": "neutral_face",
+    "CodePoint": "1F610"
+  },
+  {
+    "emoji": "😑",
+    "shortcode": "expressionless",
+    "CodePoint": "1F611"
+  },
+  {
+    "emoji": "😯",
+    "shortcode": "hushed",
+    "CodePoint": "1F62F"
+  },
+  {
+    "emoji": "😦",
+    "shortcode": "frowning",
+    "CodePoint": "1F626"
+  },
+  {
+    "emoji": "😧",
+    "shortcode": "anguished",
+    "CodePoint": "1F627"
+  },
+  {
+    "emoji": "😮",
+    "shortcode": "open_mouth",
+    "CodePoint": "1F62E"
+  },
+  {
+    "emoji": "😲",
+    "shortcode": "astonished",
+    "CodePoint": "1F632"
+  },
+  {
+    "emoji": "😵",
+    "shortcode": "dizzy_face",
+    "CodePoint": "1F635"
+  },
+  {
+    "emoji": "😳",
+    "shortcode": "flushed",
+    "CodePoint": "1F633"
+  },
+  {
+    "emoji": "😱",
+    "shortcode": "scream",
+    "CodePoint": "1F631"
+  },
+  {
+    "emoji": "😨",
+    "shortcode": "fearful",
+    "CodePoint": "1F628"
+  },
+  {
+    "emoji": "😰",
+    "shortcode": "cold_sweat",
+    "CodePoint": "1F630"
+  },
+  {
+    "emoji": "😢",
+    "shortcode": "cry",
+    "CodePoint": "1F622"
+  },
+  {
+    "emoji": "😥",
+    "shortcode": "disappointed_relieved",
+    "CodePoint": "1F625"
+  },
+  {
+    "emoji": "🤤",
+    "shortcode": "drooling_face",
+    "CodePoint": "1F924"
+  },
+  {
+    "emoji": "😭",
+    "shortcode": "sob",
+    "CodePoint": "1F62D"
+  },
+  {
+    "emoji": "😓",
+    "shortcode": "sweat",
+    "CodePoint": "1F613"
+  },
+  {
+    "emoji": "😪",
+    "shortcode": "sleepy",
+    "CodePoint": "1F62A"
+  },
+  {
+    "emoji": "😴",
+    "shortcode": "sleeping",
+    "CodePoint": "1F634"
+  },
+  {
+    "emoji": "🙄",
+    "shortcode": "roll_eyes",
+    "CodePoint": "1F644"
+  },
+  {
+    "emoji": "🤔",
+    "shortcode": "thinking",
+    "CodePoint": "1F914"
+  },
+  {
+    "emoji": "🤥",
+    "shortcode": "lying_face",
+    "CodePoint": "1F925"
+  },
+  {
+    "emoji": "😬",
+    "shortcode": "grimacing",
+    "CodePoint": "1F62C"
+  },
+  {
+    "emoji": "🤐",
+    "shortcode": "zipper_mouth_face",
+    "CodePoint": "1F910"
+  },
+  {
+    "emoji": "🤢",
+    "shortcode": "nauseated_face",
+    "CodePoint": "1F922"
+  },
+  {
+    "emoji": "🤧",
+    "shortcode": "sneezing_face",
+    "CodePoint": "1F927"
+  },
+  {
+    "emoji": "😷",
+    "shortcode": "mask",
+    "CodePoint": "1F637"
+  },
+  {
+    "emoji": "🤒",
+    "shortcode": "face_with_thermometer",
+    "CodePoint": "1F912"
+  },
+  {
+    "emoji": "🤕",
+    "shortcode": "face_with_head_bandage",
+    "CodePoint": "1F915"
+  },
+  {
+    "emoji": "😈",
+    "shortcode": "smiling_imp",
+    "CodePoint": "1F608"
+  },
+  {
+    "emoji": "👿",
+    "shortcode": "imp",
+    "CodePoint": "1F47F"
+  },
+  {
+    "emoji": "👹",
+    "shortcode": "japanese_ogre",
+    "CodePoint": "1F479"
+  },
+  {
+    "emoji": "👺",
+    "shortcode": "japanese_goblin",
+    "CodePoint": "1F47A"
+  },
+  {
+    "emoji": "💩",
+    "shortcode": "hankey",
+    "CodePoint": "1F4A9"
+  },
+  {
+    "emoji": "👻",
+    "shortcode": "ghost",
+    "CodePoint": "1F47B"
+  },
+  {
+    "emoji": "💀",
+    "shortcode": "skull",
+    "CodePoint": "1F480"
+  },
+  {
+    "emoji": "👽",
+    "shortcode": "alien",
+    "CodePoint": "1F47D"
+  },
+  {
+    "emoji": "👾",
+    "shortcode": "space_invader",
+    "CodePoint": "1F47E"
+  },
+  {
+    "emoji": "🤖",
+    "shortcode": "robot",
+    "CodePoint": "1F916"
+  },
+  {
+    "emoji": "🎃",
+    "shortcode": "jack_o_lantern",
+    "CodePoint": "1F383"
+  },
+  {
+    "emoji": "😺",
+    "shortcode": "smiley_cat",
+    "CodePoint": "1F63A"
+  },
+  {
+    "emoji": "😸",
+    "shortcode": "smile_cat",
+    "CodePoint": "1F638"
+  },
+  {
+    "emoji": "😹",
+    "shortcode": "joy_cat",
+    "CodePoint": "1F639"
+  },
+  {
+    "emoji": "😻",
+    "shortcode": "heart_eyes_cat",
+    "CodePoint": "1F63B"
+  },
+  {
+    "emoji": "😼",
+    "shortcode": "smirk_cat",
+    "CodePoint": "1F63C"
+  },
+  {
+    "emoji": "😽",
+    "shortcode": "kissing_cat",
+    "CodePoint": "1F63D"
+  },
+  {
+    "emoji": "🙀",
+    "shortcode": "scream_cat",
+    "CodePoint": "1F640"
+  },
+  {
+    "emoji": "😿",
+    "shortcode": "crying_cat_face",
+    "CodePoint": "1F63F"
+  },
+  {
+    "emoji": "😾",
+    "shortcode": "pouting_cat",
+    "CodePoint": "1F63E"
+  },
+  {
+    "emoji": "👐",
+    "shortcode": "open_hands",
+    "CodePoint": "1F450"
+  },
+  {
+    "emoji": "🙌",
+    "shortcode": "raised_hands",
+    "CodePoint": "1F64C"
+  },
+  {
+    "emoji": "👏",
+    "shortcode": "clap",
+    "CodePoint": "1F44F"
+  },
+  {
+    "emoji": "🙏",
+    "shortcode": "pray",
+    "CodePoint": "1F64F"
+  },
+  {
+    "emoji": "🤝",
+    "shortcode": "handshake",
+    "CodePoint": "1F91D"
+  },
+  {
+    "emoji": "👍",
+    "shortcode": "+1",
+    "CodePoint": "1F44D"
+  },
+  {
+    "emoji": "👎",
+    "shortcode": "-1",
+    "CodePoint": "1F44E"
+  },
+  {
+    "emoji": "👊",
+    "shortcode": "fist_oncoming",
+    "CodePoint": "1F44A"
+  },
+  {
+    "emoji": "✊",
+    "shortcode": "fist_raised",
+    "CodePoint": "270A"
+  },
+  {
+    "emoji": "🤛",
+    "shortcode": "fist_left",
+    "CodePoint": "1F91B"
+  },
+  {
+    "emoji": "🤜",
+    "shortcode": "fist_right",
+    "CodePoint": "1F91C"
+  },
+  {
+    "emoji": "🤞",
+    "shortcode": "crossed_fingers",
+    "CodePoint": "1F91E"
+  },
+  {
+    "emoji": "🤘",
+    "shortcode": "metal",
+    "CodePoint": "1F918"
+  },
+  {
+    "emoji": "👌",
+    "shortcode": "ok_hand",
+    "CodePoint": "1F44C"
+  },
+  {
+    "emoji": "👈",
+    "shortcode": "point_left",
+    "CodePoint": "1F448"
+  },
+  {
+    "emoji": "👉",
+    "shortcode": "point_right",
+    "CodePoint": "1F449"
+  },
+  {
+    "emoji": "👆",
+    "shortcode": "point_up_2",
+    "CodePoint": "1F446"
+  },
+  {
+    "emoji": "👇",
+    "shortcode": "point_down",
+    "CodePoint": "1F447"
+  },
+  {
+    "emoji": "✋",
+    "shortcode": "hand",
+    "CodePoint": "270B"
+  },
+  {
+    "emoji": "🤚",
+    "shortcode": "raised_back_of_hand",
+    "CodePoint": "1F91A"
+  },
+  {
+    "emoji": "🖐",
+    "shortcode": "raised_hand_with_fingers_splayed",
+    "CodePoint": "1F590"
+  },
+  {
+    "emoji": "🖖",
+    "shortcode": "vulcan_salute",
+    "CodePoint": "1F596"
+  },
+  {
+    "emoji": "👋",
+    "shortcode": "wave",
+    "CodePoint": "1F44B"
+  },
+  {
+    "emoji": "🤙",
+    "shortcode": "call_me_hand",
+    "CodePoint": "1F919"
+  },
+  {
+    "emoji": "💪",
+    "shortcode": "muscle",
+    "CodePoint": "1F4AA"
+  },
+  {
+    "emoji": "🖕",
+    "shortcode": "middle_finger",
+    "CodePoint": "1F595"
+  },
+  {
+    "emoji": "🤳",
+    "shortcode": "selfie",
+    "CodePoint": "1F933"
+  },
+  {
+    "emoji": "💅",
+    "shortcode": "nail_care",
+    "CodePoint": "1F485"
+  },
+  {
+    "emoji": "💍",
+    "shortcode": "ring",
+    "CodePoint": "1F48D"
+  },
+  {
+    "emoji": "💄",
+    "shortcode": "lipstick",
+    "CodePoint": "1F484"
+  },
+  {
+    "emoji": "💋",
+    "shortcode": "kiss",
+    "CodePoint": "1F48B"
+  },
+  {
+    "emoji": "👄",
+    "shortcode": "lips",
+    "CodePoint": "1F444"
+  },
+  {
+    "emoji": "👅",
+    "shortcode": "tongue",
+    "CodePoint": "1F445"
+  },
+  {
+    "emoji": "👂",
+    "shortcode": "ear",
+    "CodePoint": "1F442"
+  },
+  {
+    "emoji": "👃",
+    "shortcode": "nose",
+    "CodePoint": "1F443"
+  },
+  {
+    "emoji": "👣",
+    "shortcode": "footprints",
+    "CodePoint": "1F463"
+  },
+  {
+    "emoji": "👁",
+    "shortcode": "eye",
+    "CodePoint": "1F441"
+  },
+  {
+    "emoji": "👀",
+    "shortcode": "eyes",
+    "CodePoint": "1F440"
+  },
+  {
+    "emoji": "🗣",
+    "shortcode": "speaking_head",
+    "CodePoint": "1F5E3"
+  },
+  {
+    "emoji": "👤",
+    "shortcode": "bust_in_silhouette",
+    "CodePoint": "1F464"
+  },
+  {
+    "emoji": "👥",
+    "shortcode": "busts_in_silhouette",
+    "CodePoint": "1F465"
+  },
+  {
+    "emoji": "👶",
+    "shortcode": "baby",
+    "CodePoint": "1F476"
+  },
+  {
+    "emoji": "👦",
+    "shortcode": "boy",
+    "CodePoint": "1F466"
+  },
+  {
+    "emoji": "👧",
+    "shortcode": "girl",
+    "CodePoint": "1F467"
+  },
+  {
+    "emoji": "👨",
+    "shortcode": "man",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩",
+    "shortcode": "woman",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👱‍♀",
+    "shortcode": "blonde_woman",
+    "CodePoint": "1F471"
+  },
+  {
+    "emoji": "👱",
+    "shortcode": "blonde_man",
+    "CodePoint": "1F471"
+  },
+  {
+    "emoji": "👴",
+    "shortcode": "older_man",
+    "CodePoint": "1F474"
+  },
+  {
+    "emoji": "👵",
+    "shortcode": "older_woman",
+    "CodePoint": "1F475"
+  },
+  {
+    "emoji": "👲",
+    "shortcode": "man_with_gua_pi_mao",
+    "CodePoint": "1F472"
+  },
+  {
+    "emoji": "👳‍♀",
+    "shortcode": "woman_with_turban",
+    "CodePoint": "1F473"
+  },
+  {
+    "emoji": "👳",
+    "shortcode": "man_with_turban",
+    "CodePoint": "1F473"
+  },
+  {
+    "emoji": "👮‍♀",
+    "shortcode": "policewoman",
+    "CodePoint": "1F46E"
+  },
+  {
+    "emoji": "👮",
+    "shortcode": "policeman",
+    "CodePoint": "1F46E"
+  },
+  {
+    "emoji": "👷‍♀",
+    "shortcode": "construction_worker_woman",
+    "CodePoint": "1F477"
+  },
+  {
+    "emoji": "👷",
+    "shortcode": "construction_worker_man",
+    "CodePoint": "1F477"
+  },
+  {
+    "emoji": "💂‍♀",
+    "shortcode": "guardswoman",
+    "CodePoint": "1F482"
+  },
+  {
+    "emoji": "💂",
+    "shortcode": "guardsman",
+    "CodePoint": "1F482"
+  },
+  {
+    "emoji": "🕵️‍♀️",
+    "shortcode": "female_detective",
+    "CodePoint": "1F575"
+  },
+  {
+    "emoji": "🕵",
+    "shortcode": "male_detective",
+    "CodePoint": "1F575"
+  },
+  {
+    "emoji": "👩‍⚕",
+    "shortcode": "woman_health_worker",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍⚕",
+    "shortcode": "man_health_worker",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍🌾",
+    "shortcode": "woman_farmer",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍🌾",
+    "shortcode": "man_farmer",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍🍳",
+    "shortcode": "woman_cook",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍🍳",
+    "shortcode": "man_cook",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍🎓",
+    "shortcode": "woman_student",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍🎓",
+    "shortcode": "man_student",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍🎤",
+    "shortcode": "woman_singer",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍🎤",
+    "shortcode": "man_singer",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍🏫",
+    "shortcode": "woman_teacher",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍🏫",
+    "shortcode": "man_teacher",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍🏭",
+    "shortcode": "woman_factory_worker",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍🏭",
+    "shortcode": "man_factory_worker",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍💻",
+    "shortcode": "woman_technologist",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍💻",
+    "shortcode": "man_technologist",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍💼",
+    "shortcode": "woman_office_worker",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍💼",
+    "shortcode": "man_office_worker",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍🔧",
+    "shortcode": "woman_mechanic",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍🔧",
+    "shortcode": "man_mechanic",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍🔬",
+    "shortcode": "woman_scientist",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍🔬",
+    "shortcode": "man_scientist",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍🎨",
+    "shortcode": "woman_artist",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍🎨",
+    "shortcode": "man_artist",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍🚒",
+    "shortcode": "woman_firefighter",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍🚒",
+    "shortcode": "man_firefighter",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍✈",
+    "shortcode": "woman_pilot",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍✈",
+    "shortcode": "man_pilot",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍🚀",
+    "shortcode": "woman_astronaut",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍🚀",
+    "shortcode": "man_astronaut",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍⚖",
+    "shortcode": "woman_judge",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍⚖",
+    "shortcode": "man_judge",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "🤶",
+    "shortcode": "mrs_claus",
+    "CodePoint": "1F936"
+  },
+  {
+    "emoji": "🎅",
+    "shortcode": "santa",
+    "CodePoint": "1F385"
+  },
+  {
+    "emoji": "👸",
+    "shortcode": "princess",
+    "CodePoint": "1F478"
+  },
+  {
+    "emoji": "🤴",
+    "shortcode": "prince",
+    "CodePoint": "1F934"
+  },
+  {
+    "emoji": "👰",
+    "shortcode": "bride_with_veil",
+    "CodePoint": "1F470"
+  },
+  {
+    "emoji": "🤵",
+    "shortcode": "man_in_tuxedo",
+    "CodePoint": "1F935"
+  },
+  {
+    "emoji": "👼",
+    "shortcode": "angel",
+    "CodePoint": "1F47C"
+  },
+  {
+    "emoji": "🤰",
+    "shortcode": "pregnant_woman",
+    "CodePoint": "1F930"
+  },
+  {
+    "emoji": "🙇‍♀",
+    "shortcode": "bowing_woman",
+    "CodePoint": "1F647"
+  },
+  {
+    "emoji": "🙇",
+    "shortcode": "bowing_man",
+    "CodePoint": "1F647"
+  },
+  {
+    "emoji": "💁",
+    "shortcode": "tipping_hand_woman",
+    "CodePoint": "1F481"
+  },
+  {
+    "emoji": "💁‍♂",
+    "shortcode": "tipping_hand_man",
+    "CodePoint": "1F481"
+  },
+  {
+    "emoji": "🙅",
+    "shortcode": "no_good_woman",
+    "CodePoint": "1F645"
+  },
+  {
+    "emoji": "🙅‍♂",
+    "shortcode": "no_good_man",
+    "CodePoint": "1F645"
+  },
+  {
+    "emoji": "🙆",
+    "shortcode": "ok_woman",
+    "CodePoint": "1F646"
+  },
+  {
+    "emoji": "🙆‍♂",
+    "shortcode": "ok_man",
+    "CodePoint": "1F646"
+  },
+  {
+    "emoji": "🙋",
+    "shortcode": "raising_hand_woman",
+    "CodePoint": "1F64B"
+  },
+  {
+    "emoji": "🙋‍♂",
+    "shortcode": "raising_hand_man",
+    "CodePoint": "1F64B"
+  },
+  {
+    "emoji": "🤦‍♀",
+    "shortcode": "woman_facepalming",
+    "CodePoint": "1F926"
+  },
+  {
+    "emoji": "🤦‍♂",
+    "shortcode": "man_facepalming",
+    "CodePoint": "1F926"
+  },
+  {
+    "emoji": "🤷‍♀",
+    "shortcode": "woman_shrugging",
+    "CodePoint": "1F937"
+  },
+  {
+    "emoji": "🤷‍♂",
+    "shortcode": "man_shrugging",
+    "CodePoint": "1F937"
+  },
+  {
+    "emoji": "🙎",
+    "shortcode": "pouting_woman",
+    "CodePoint": "1F64E"
+  },
+  {
+    "emoji": "🙎‍♂",
+    "shortcode": "pouting_man",
+    "CodePoint": "1F64E"
+  },
+  {
+    "emoji": "🙍",
+    "shortcode": "frowning_woman",
+    "CodePoint": "1F64D"
+  },
+  {
+    "emoji": "🙍‍♂",
+    "shortcode": "frowning_man",
+    "CodePoint": "1F64D"
+  },
+  {
+    "emoji": "💇",
+    "shortcode": "haircut_woman",
+    "CodePoint": "1F487"
+  },
+  {
+    "emoji": "💇‍♂",
+    "shortcode": "haircut_man",
+    "CodePoint": "1F487"
+  },
+  {
+    "emoji": "💆",
+    "shortcode": "massage_woman",
+    "CodePoint": "1F486"
+  },
+  {
+    "emoji": "💆‍♂",
+    "shortcode": "massage_man",
+    "CodePoint": "1F486"
+  },
+  {
+    "emoji": "🕴",
+    "shortcode": "business_suit_levitating",
+    "CodePoint": "1F574"
+  },
+  {
+    "emoji": "💃",
+    "shortcode": "dancer",
+    "CodePoint": "1F483"
+  },
+  {
+    "emoji": "🕺",
+    "shortcode": "man_dancing",
+    "CodePoint": "1F57A"
+  },
+  {
+    "emoji": "👯",
+    "shortcode": "dancing_women",
+    "CodePoint": "1F46F"
+  },
+  {
+    "emoji": "👯‍♂",
+    "shortcode": "dancing_men",
+    "CodePoint": "1F46F"
+  },
+  {
+    "emoji": "🚶‍♀",
+    "shortcode": "walking_woman",
+    "CodePoint": "1F6B6"
+  },
+  {
+    "emoji": "🚶",
+    "shortcode": "walking_man",
+    "CodePoint": "1F6B6"
+  },
+  {
+    "emoji": "🏃‍♀",
+    "shortcode": "running_woman",
+    "CodePoint": "1F3C3"
+  },
+  {
+    "emoji": "🏃",
+    "shortcode": "running_man",
+    "CodePoint": "1F3C3"
+  },
+  {
+    "emoji": "👫",
+    "shortcode": "couple",
+    "CodePoint": "1F46B"
+  },
+  {
+    "emoji": "👭",
+    "shortcode": "two_women_holding_hands",
+    "CodePoint": "1F46D"
+  },
+  {
+    "emoji": "👬",
+    "shortcode": "two_men_holding_hands",
+    "CodePoint": "1F46C"
+  },
+  {
+    "emoji": "💑",
+    "shortcode": "couple_with_heart_woman_man",
+    "CodePoint": "1F491"
+  },
+  {
+    "emoji": "👩‍❤️‍👩",
+    "shortcode": "couple_with_heart_woman_woman",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍❤️‍👨",
+    "shortcode": "couple_with_heart_man_man",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "💏",
+    "shortcode": "couplekiss_man_woman",
+    "CodePoint": "1F48F"
+  },
+  {
+    "emoji": "👩‍❤️‍💋‍👩",
+    "shortcode": "couplekiss_woman_woman",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍❤️‍💋‍👨",
+    "shortcode": "couplekiss_man_man",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👪",
+    "shortcode": "family_man_woman_boy",
+    "CodePoint": "1F46A"
+  },
+  {
+    "emoji": "👨‍👩‍👧",
+    "shortcode": "family_man_woman_girl",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👨‍👩‍👧‍👦",
+    "shortcode": "family_man_woman_girl_boy",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👨‍👩‍👦‍👦",
+    "shortcode": "family_man_woman_boy_boy",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👨‍👩‍👧‍👧",
+    "shortcode": "family_man_woman_girl_girl",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍👩‍👦",
+    "shortcode": "family_woman_woman_boy",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👩‍👩‍👧",
+    "shortcode": "family_woman_woman_girl",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👩‍👩‍👧‍👦",
+    "shortcode": "family_woman_woman_girl_boy",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👩‍👩‍👦‍👦",
+    "shortcode": "family_woman_woman_boy_boy",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👩‍👩‍👧‍👧",
+    "shortcode": "family_woman_woman_girl_girl",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍👨‍👦",
+    "shortcode": "family_man_man_boy",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👨‍👨‍👧",
+    "shortcode": "family_man_man_girl",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👨‍👨‍👧‍👦",
+    "shortcode": "family_man_man_girl_boy",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👨‍👨‍👦‍👦",
+    "shortcode": "family_man_man_boy_boy",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👨‍👨‍👧‍👧",
+    "shortcode": "family_man_man_girl_girl",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👩‍👦",
+    "shortcode": "family_woman_boy",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👩‍👧",
+    "shortcode": "family_woman_girl",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👩‍👧‍👦",
+    "shortcode": "family_woman_girl_boy",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👩‍👦‍👦",
+    "shortcode": "family_woman_boy_boy",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👩‍👧‍👧",
+    "shortcode": "family_woman_girl_girl",
+    "CodePoint": "1F469"
+  },
+  {
+    "emoji": "👨‍👦",
+    "shortcode": "family_man_boy",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👨‍👧",
+    "shortcode": "family_man_girl",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👨‍👧‍👦",
+    "shortcode": "family_man_girl_boy",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👨‍👦‍👦",
+    "shortcode": "family_man_boy_boy",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👨‍👧‍👧",
+    "shortcode": "family_man_girl_girl",
+    "CodePoint": "1F468"
+  },
+  {
+    "emoji": "👚",
+    "shortcode": "womans_clothes",
+    "CodePoint": "1F45A"
+  },
+  {
+    "emoji": "👕",
+    "shortcode": "shirt",
+    "CodePoint": "1F455"
+  },
+  {
+    "emoji": "👖",
+    "shortcode": "jeans",
+    "CodePoint": "1F456"
+  },
+  {
+    "emoji": "👔",
+    "shortcode": "necktie",
+    "CodePoint": "1F454"
+  },
+  {
+    "emoji": "👗",
+    "shortcode": "dress",
+    "CodePoint": "1F457"
+  },
+  {
+    "emoji": "👙",
+    "shortcode": "bikini",
+    "CodePoint": "1F459"
+  },
+  {
+    "emoji": "👘",
+    "shortcode": "kimono",
+    "CodePoint": "1F458"
+  },
+  {
+    "emoji": "👠",
+    "shortcode": "high_heel",
+    "CodePoint": "1F460"
+  },
+  {
+    "emoji": "👡",
+    "shortcode": "sandal",
+    "CodePoint": "1F461"
+  },
+  {
+    "emoji": "👢",
+    "shortcode": "boot",
+    "CodePoint": "1F462"
+  },
+  {
+    "emoji": "👞",
+    "shortcode": "mans_shoe",
+    "CodePoint": "1F45E"
+  },
+  {
+    "emoji": "👟",
+    "shortcode": "athletic_shoe",
+    "CodePoint": "1F45F"
+  },
+  {
+    "emoji": "👒",
+    "shortcode": "womans_hat",
+    "CodePoint": "1F452"
+  },
+  {
+    "emoji": "🎩",
+    "shortcode": "tophat",
+    "CodePoint": "1F3A9"
+  },
+  {
+    "emoji": "🎓",
+    "shortcode": "mortar_board",
+    "CodePoint": "1F393"
+  },
+  {
+    "emoji": "👑",
+    "shortcode": "crown",
+    "CodePoint": "1F451"
+  },
+  {
+    "emoji": "⛑",
+    "shortcode": "rescue_worker_helmet",
+    "CodePoint": "26D1"
+  },
+  {
+    "emoji": "🎒",
+    "shortcode": "school_satchel",
+    "CodePoint": "1F392"
+  },
+  {
+    "emoji": "👝",
+    "shortcode": "pouch",
+    "CodePoint": "1F45D"
+  },
+  {
+    "emoji": "👛",
+    "shortcode": "purse",
+    "CodePoint": "1F45B"
+  },
+  {
+    "emoji": "👜",
+    "shortcode": "handbag",
+    "CodePoint": "1F45C"
+  },
+  {
+    "emoji": "💼",
+    "shortcode": "briefcase",
+    "CodePoint": "1F4BC"
+  },
+  {
+    "emoji": "👓",
+    "shortcode": "eyeglasses",
+    "CodePoint": "1F453"
+  },
+  {
+    "emoji": "🕶",
+    "shortcode": "dark_sunglasses",
+    "CodePoint": "1F576"
+  },
+  {
+    "emoji": "🌂",
+    "shortcode": "closed_umbrella",
+    "CodePoint": "1F302"
+  },
+  {
+    "emoji": "🐶",
+    "shortcode": "dog",
+    "CodePoint": "1F436"
+  },
+  {
+    "emoji": "🐱",
+    "shortcode": "cat",
+    "CodePoint": "1F431"
+  },
+  {
+    "emoji": "🐭",
+    "shortcode": "mouse",
+    "CodePoint": "1F42D"
+  },
+  {
+    "emoji": "🐹",
+    "shortcode": "hamster",
+    "CodePoint": "1F439"
+  },
+  {
+    "emoji": "🐰",
+    "shortcode": "rabbit",
+    "CodePoint": "1F430"
+  },
+  {
+    "emoji": "🦊",
+    "shortcode": "fox_face",
+    "CodePoint": "1F98A"
+  },
+  {
+    "emoji": "🐻",
+    "shortcode": "bear",
+    "CodePoint": "1F43B"
+  },
+  {
+    "emoji": "🐼",
+    "shortcode": "panda_face",
+    "CodePoint": "1F43C"
+  },
+  {
+    "emoji": "🐨",
+    "shortcode": "koala",
+    "CodePoint": "1F428"
+  },
+  {
+    "emoji": "🐯",
+    "shortcode": "tiger",
+    "CodePoint": "1F42F"
+  },
+  {
+    "emoji": "🦁",
+    "shortcode": "lion",
+    "CodePoint": "1F981"
+  },
+  {
+    "emoji": "🐮",
+    "shortcode": "cow",
+    "CodePoint": "1F42E"
+  },
+  {
+    "emoji": "🐷",
+    "shortcode": "pig",
+    "CodePoint": "1F437"
+  },
+  {
+    "emoji": "🐽",
+    "shortcode": "pig_nose",
+    "CodePoint": "1F43D"
+  },
+  {
+    "emoji": "🐸",
+    "shortcode": "frog",
+    "CodePoint": "1F438"
+  },
+  {
+    "emoji": "🐵",
+    "shortcode": "monkey_face",
+    "CodePoint": "1F435"
+  },
+  {
+    "emoji": "🙈",
+    "shortcode": "see_no_evil",
+    "CodePoint": "1F648"
+  },
+  {
+    "emoji": "🙉",
+    "shortcode": "hear_no_evil",
+    "CodePoint": "1F649"
+  },
+  {
+    "emoji": "🙊",
+    "shortcode": "speak_no_evil",
+    "CodePoint": "1F64A"
+  },
+  {
+    "emoji": "🐒",
+    "shortcode": "monkey",
+    "CodePoint": "1F412"
+  },
+  {
+    "emoji": "🐔",
+    "shortcode": "chicken",
+    "CodePoint": "1F414"
+  },
+  {
+    "emoji": "🐧",
+    "shortcode": "penguin",
+    "CodePoint": "1F427"
+  },
+  {
+    "emoji": "🐦",
+    "shortcode": "bird",
+    "CodePoint": "1F426"
+  },
+  {
+    "emoji": "🐤",
+    "shortcode": "baby_chick",
+    "CodePoint": "1F424"
+  },
+  {
+    "emoji": "🐣",
+    "shortcode": "hatching_chick",
+    "CodePoint": "1F423"
+  },
+  {
+    "emoji": "🐥",
+    "shortcode": "hatched_chick",
+    "CodePoint": "1F425"
+  },
+  {
+    "emoji": "🦆",
+    "shortcode": "duck",
+    "CodePoint": "1F986"
+  },
+  {
+    "emoji": "🦅",
+    "shortcode": "eagle",
+    "CodePoint": "1F985"
+  },
+  {
+    "emoji": "🦉",
+    "shortcode": "owl",
+    "CodePoint": "1F989"
+  },
+  {
+    "emoji": "🦇",
+    "shortcode": "bat",
+    "CodePoint": "1F987"
+  },
+  {
+    "emoji": "🐺",
+    "shortcode": "wolf",
+    "CodePoint": "1F43A"
+  },
+  {
+    "emoji": "🐗",
+    "shortcode": "boar",
+    "CodePoint": "1F417"
+  },
+  {
+    "emoji": "🐴",
+    "shortcode": "horse",
+    "CodePoint": "1F434"
+  },
+  {
+    "emoji": "🦄",
+    "shortcode": "unicorn",
+    "CodePoint": "1F984"
+  },
+  {
+    "emoji": "🐝",
+    "shortcode": "bee",
+    "CodePoint": "1F41D"
+  },
+  {
+    "emoji": "🐛",
+    "shortcode": "bug",
+    "CodePoint": "1F41B"
+  },
+  {
+    "emoji": "🦋",
+    "shortcode": "butterfly",
+    "CodePoint": "1F98B"
+  },
+  {
+    "emoji": "🐌",
+    "shortcode": "snail",
+    "CodePoint": "1F40C"
+  },
+  {
+    "emoji": "🐚",
+    "shortcode": "shell",
+    "CodePoint": "1F41A"
+  },
+  {
+    "emoji": "🐞",
+    "shortcode": "beetle",
+    "CodePoint": "1F41E"
+  },
+  {
+    "emoji": "🐜",
+    "shortcode": "ant",
+    "CodePoint": "1F41C"
+  },
+  {
+    "emoji": "🕷",
+    "shortcode": "spider",
+    "CodePoint": "1F577"
+  },
+  {
+    "emoji": "🕸",
+    "shortcode": "spider_web",
+    "CodePoint": "1F578"
+  },
+  {
+    "emoji": "🐢",
+    "shortcode": "turtle",
+    "CodePoint": "1F422"
+  },
+  {
+    "emoji": "🐍",
+    "shortcode": "snake",
+    "CodePoint": "1F40D"
+  },
+  {
+    "emoji": "🦎",
+    "shortcode": "lizard",
+    "CodePoint": "1F98E"
+  },
+  {
+    "emoji": "🦂",
+    "shortcode": "scorpion",
+    "CodePoint": "1F982"
+  },
+  {
+    "emoji": "🦀",
+    "shortcode": "crab",
+    "CodePoint": "1F980"
+  },
+  {
+    "emoji": "🦑",
+    "shortcode": "squid",
+    "CodePoint": "1F991"
+  },
+  {
+    "emoji": "🐙",
+    "shortcode": "octopus",
+    "CodePoint": "1F419"
+  },
+  {
+    "emoji": "🦐",
+    "shortcode": "shrimp",
+    "CodePoint": "1F990"
+  },
+  {
+    "emoji": "🐠",
+    "shortcode": "tropical_fish",
+    "CodePoint": "1F420"
+  },
+  {
+    "emoji": "🐟",
+    "shortcode": "fish",
+    "CodePoint": "1F41F"
+  },
+  {
+    "emoji": "🐡",
+    "shortcode": "blowfish",
+    "CodePoint": "1F421"
+  },
+  {
+    "emoji": "🐬",
+    "shortcode": "dolphin",
+    "CodePoint": "1F42C"
+  },
+  {
+    "emoji": "🦈",
+    "shortcode": "shark",
+    "CodePoint": "1F988"
+  },
+  {
+    "emoji": "🐳",
+    "shortcode": "whale",
+    "CodePoint": "1F433"
+  },
+  {
+    "emoji": "🐋",
+    "shortcode": "whale2",
+    "CodePoint": "1F40B"
+  },
+  {
+    "emoji": "🐊",
+    "shortcode": "crocodile",
+    "CodePoint": "1F40A"
+  },
+  {
+    "emoji": "🐆",
+    "shortcode": "leopard",
+    "CodePoint": "1F406"
+  },
+  {
+    "emoji": "🐅",
+    "shortcode": "tiger2",
+    "CodePoint": "1F405"
+  },
+  {
+    "emoji": "🐃",
+    "shortcode": "water_buffalo",
+    "CodePoint": "1F403"
+  },
+  {
+    "emoji": "🐂",
+    "shortcode": "ox",
+    "CodePoint": "1F402"
+  },
+  {
+    "emoji": "🐄",
+    "shortcode": "cow2",
+    "CodePoint": "1F404"
+  },
+  {
+    "emoji": "🦌",
+    "shortcode": "deer",
+    "CodePoint": "1F98C"
+  },
+  {
+    "emoji": "🐪",
+    "shortcode": "dromedary_camel",
+    "CodePoint": "1F42A"
+  },
+  {
+    "emoji": "🐫",
+    "shortcode": "camel",
+    "CodePoint": "1F42B"
+  },
+  {
+    "emoji": "🐘",
+    "shortcode": "elephant",
+    "CodePoint": "1F418"
+  },
+  {
+    "emoji": "🦏",
+    "shortcode": "rhinoceros",
+    "CodePoint": "1F98F"
+  },
+  {
+    "emoji": "🦍",
+    "shortcode": "gorilla",
+    "CodePoint": "1F98D"
+  },
+  {
+    "emoji": "🐎",
+    "shortcode": "racehorse",
+    "CodePoint": "1F40E"
+  },
+  {
+    "emoji": "🐖",
+    "shortcode": "pig2",
+    "CodePoint": "1F416"
+  },
+  {
+    "emoji": "🐐",
+    "shortcode": "goat",
+    "CodePoint": "1F410"
+  },
+  {
+    "emoji": "🐏",
+    "shortcode": "ram",
+    "CodePoint": "1F40F"
+  },
+  {
+    "emoji": "🐑",
+    "shortcode": "sheep",
+    "CodePoint": "1F411"
+  },
+  {
+    "emoji": "🐕",
+    "shortcode": "dog2",
+    "CodePoint": "1F415"
+  },
+  {
+    "emoji": "🐩",
+    "shortcode": "poodle",
+    "CodePoint": "1F429"
+  },
+  {
+    "emoji": "🐈",
+    "shortcode": "cat2",
+    "CodePoint": "1F408"
+  },
+  {
+    "emoji": "🐓",
+    "shortcode": "rooster",
+    "CodePoint": "1F413"
+  },
+  {
+    "emoji": "🦃",
+    "shortcode": "turkey",
+    "CodePoint": "1F983"
+  },
+  {
+    "emoji": "🕊",
+    "shortcode": "dove",
+    "CodePoint": "1F54A"
+  },
+  {
+    "emoji": "🐇",
+    "shortcode": "rabbit2",
+    "CodePoint": "1F407"
+  },
+  {
+    "emoji": "🐁",
+    "shortcode": "mouse2",
+    "CodePoint": "1F401"
+  },
+  {
+    "emoji": "🐀",
+    "shortcode": "rat",
+    "CodePoint": "1F400"
+  },
+  {
+    "emoji": "🐿",
+    "shortcode": "chipmunk",
+    "CodePoint": "1F43F"
+  },
+  {
+    "emoji": "🐾",
+    "shortcode": "feet",
+    "CodePoint": "1F43E"
+  },
+  {
+    "emoji": "🐉",
+    "shortcode": "dragon",
+    "CodePoint": "1F409"
+  },
+  {
+    "emoji": "🐲",
+    "shortcode": "dragon_face",
+    "CodePoint": "1F432"
+  },
+  {
+    "emoji": "🌵",
+    "shortcode": "cactus",
+    "CodePoint": "1F335"
+  },
+  {
+    "emoji": "🎄",
+    "shortcode": "christmas_tree",
+    "CodePoint": "1F384"
+  },
+  {
+    "emoji": "🌲",
+    "shortcode": "evergreen_tree",
+    "CodePoint": "1F332"
+  },
+  {
+    "emoji": "🌳",
+    "shortcode": "deciduous_tree",
+    "CodePoint": "1F333"
+  },
+  {
+    "emoji": "🌴",
+    "shortcode": "palm_tree",
+    "CodePoint": "1F334"
+  },
+  {
+    "emoji": "🌱",
+    "shortcode": "seedling",
+    "CodePoint": "1F331"
+  },
+  {
+    "emoji": "🌿",
+    "shortcode": "herb",
+    "CodePoint": "1F33F"
+  },
+  {
+    "emoji": "🍀",
+    "shortcode": "four_leaf_clover",
+    "CodePoint": "1F340"
+  },
+  {
+    "emoji": "🎍",
+    "shortcode": "bamboo",
+    "CodePoint": "1F38D"
+  },
+  {
+    "emoji": "🎋",
+    "shortcode": "tanabata_tree",
+    "CodePoint": "1F38B"
+  },
+  {
+    "emoji": "🍃",
+    "shortcode": "leaves",
+    "CodePoint": "1F343"
+  },
+  {
+    "emoji": "🍂",
+    "shortcode": "fallen_leaf",
+    "CodePoint": "1F342"
+  },
+  {
+    "emoji": "🍁",
+    "shortcode": "maple_leaf",
+    "CodePoint": "1F341"
+  },
+  {
+    "emoji": "🍄",
+    "shortcode": "mushroom",
+    "CodePoint": "1F344"
+  },
+  {
+    "emoji": "🌾",
+    "shortcode": "ear_of_rice",
+    "CodePoint": "1F33E"
+  },
+  {
+    "emoji": "💐",
+    "shortcode": "bouquet",
+    "CodePoint": "1F490"
+  },
+  {
+    "emoji": "🌷",
+    "shortcode": "tulip",
+    "CodePoint": "1F337"
+  },
+  {
+    "emoji": "🌹",
+    "shortcode": "rose",
+    "CodePoint": "1F339"
+  },
+  {
+    "emoji": "🥀",
+    "shortcode": "wilted_flower",
+    "CodePoint": "1F940"
+  },
+  {
+    "emoji": "🌻",
+    "shortcode": "sunflower",
+    "CodePoint": "1F33B"
+  },
+  {
+    "emoji": "🌼",
+    "shortcode": "blossom",
+    "CodePoint": "1F33C"
+  },
+  {
+    "emoji": "🌸",
+    "shortcode": "cherry_blossom",
+    "CodePoint": "1F338"
+  },
+  {
+    "emoji": "🌺",
+    "shortcode": "hibiscus",
+    "CodePoint": "1F33A"
+  },
+  {
+    "emoji": "🌎",
+    "shortcode": "earth_americas",
+    "CodePoint": "1F30E"
+  },
+  {
+    "emoji": "🌍",
+    "shortcode": "earth_africa",
+    "CodePoint": "1F30D"
+  },
+  {
+    "emoji": "🌏",
+    "shortcode": "earth_asia",
+    "CodePoint": "1F30F"
+  },
+  {
+    "emoji": "🌕",
+    "shortcode": "full_moon",
+    "CodePoint": "1F315"
+  },
+  {
+    "emoji": "🌖",
+    "shortcode": "waning_gibbous_moon",
+    "CodePoint": "1F316"
+  },
+  {
+    "emoji": "🌗",
+    "shortcode": "last_quarter_moon",
+    "CodePoint": "1F317"
+  },
+  {
+    "emoji": "🌘",
+    "shortcode": "waning_crescent_moon",
+    "CodePoint": "1F318"
+  },
+  {
+    "emoji": "🌑",
+    "shortcode": "new_moon",
+    "CodePoint": "1F311"
+  },
+  {
+    "emoji": "🌒",
+    "shortcode": "waxing_crescent_moon",
+    "CodePoint": "1F312"
+  },
+  {
+    "emoji": "🌓",
+    "shortcode": "first_quarter_moon",
+    "CodePoint": "1F313"
+  },
+  {
+    "emoji": "🌔",
+    "shortcode": "moon",
+    "CodePoint": "1F314"
+  },
+  {
+    "emoji": "🌚",
+    "shortcode": "new_moon_with_face",
+    "CodePoint": "1F31A"
+  },
+  {
+    "emoji": "🌝",
+    "shortcode": "full_moon_with_face",
+    "CodePoint": "1F31D"
+  },
+  {
+    "emoji": "🌞",
+    "shortcode": "sun_with_face",
+    "CodePoint": "1F31E"
+  },
+  {
+    "emoji": "🌛",
+    "shortcode": "first_quarter_moon_with_face",
+    "CodePoint": "1F31B"
+  },
+  {
+    "emoji": "🌜",
+    "shortcode": "last_quarter_moon_with_face",
+    "CodePoint": "1F31C"
+  },
+  {
+    "emoji": "🌙",
+    "shortcode": "crescent_moon",
+    "CodePoint": "1F319"
+  },
+  {
+    "emoji": "💫",
+    "shortcode": "dizzy",
+    "CodePoint": "1F4AB"
+  },
+  {
+    "emoji": "🌟",
+    "shortcode": "star2",
+    "CodePoint": "1F31F"
+  },
+  {
+    "emoji": "✨",
+    "shortcode": "sparkles",
+    "CodePoint": "2728"
+  },
+  {
+    "emoji": "🔥",
+    "shortcode": "fire",
+    "CodePoint": "1F525"
+  },
+  {
+    "emoji": "💥",
+    "shortcode": "boom",
+    "CodePoint": "1F4A5"
+  },
+  {
+    "emoji": "☄",
+    "shortcode": "comet",
+    "CodePoint": "2604"
+  },
+  {
+    "emoji": "🌤",
+    "shortcode": "sun_behind_small_cloud",
+    "CodePoint": "1F324"
+  },
+  {
+    "emoji": "🌥",
+    "shortcode": "sun_behind_large_cloud",
+    "CodePoint": "1F325"
+  },
+  {
+    "emoji": "🌦",
+    "shortcode": "sun_behind_rain_cloud",
+    "CodePoint": "1F326"
+  },
+  {
+    "emoji": "🌈",
+    "shortcode": "rainbow",
+    "CodePoint": "1F308"
+  },
+  {
+    "emoji": "🌧",
+    "shortcode": "cloud_with_rain",
+    "CodePoint": "1F327"
+  },
+  {
+    "emoji": "⛈",
+    "shortcode": "cloud_with_lightning_and_rain",
+    "CodePoint": "26C8"
+  },
+  {
+    "emoji": "🌩",
+    "shortcode": "cloud_with_lightning",
+    "CodePoint": "1F329"
+  },
+  {
+    "emoji": "🌨",
+    "shortcode": "cloud_with_snow",
+    "CodePoint": "1F328"
+  },
+  {
+    "emoji": "🌬",
+    "shortcode": "wind_face",
+    "CodePoint": "1F32C"
+  },
+  {
+    "emoji": "💨",
+    "shortcode": "dash",
+    "CodePoint": "1F4A8"
+  },
+  {
+    "emoji": "🌪",
+    "shortcode": "tornado",
+    "CodePoint": "1F32A"
+  },
+  {
+    "emoji": "🌫",
+    "shortcode": "fog",
+    "CodePoint": "1F32B"
+  },
+  {
+    "emoji": "🌊",
+    "shortcode": "ocean",
+    "CodePoint": "1F30A"
+  },
+  {
+    "emoji": "💧",
+    "shortcode": "droplet",
+    "CodePoint": "1F4A7"
+  },
+  {
+    "emoji": "💦",
+    "shortcode": "sweat_drops",
+    "CodePoint": "1F4A6"
+  },
+  {
+    "emoji": "🍏",
+    "shortcode": "green_apple",
+    "CodePoint": "1F34F"
+  },
+  {
+    "emoji": "🍎",
+    "shortcode": "apple",
+    "CodePoint": "1F34E"
+  },
+  {
+    "emoji": "🍐",
+    "shortcode": "pear",
+    "CodePoint": "1F350"
+  },
+  {
+    "emoji": "🍊",
+    "shortcode": "tangerine",
+    "CodePoint": "1F34A"
+  },
+  {
+    "emoji": "🍋",
+    "shortcode": "lemon",
+    "CodePoint": "1F34B"
+  },
+  {
+    "emoji": "🍌",
+    "shortcode": "banana",
+    "CodePoint": "1F34C"
+  },
+  {
+    "emoji": "🍉",
+    "shortcode": "watermelon",
+    "CodePoint": "1F349"
+  },
+  {
+    "emoji": "🍇",
+    "shortcode": "grapes",
+    "CodePoint": "1F347"
+  },
+  {
+    "emoji": "🍓",
+    "shortcode": "strawberry",
+    "CodePoint": "1F353"
+  },
+  {
+    "emoji": "🍈",
+    "shortcode": "melon",
+    "CodePoint": "1F348"
+  },
+  {
+    "emoji": "🍒",
+    "shortcode": "cherries",
+    "CodePoint": "1F352"
+  },
+  {
+    "emoji": "🍑",
+    "shortcode": "peach",
+    "CodePoint": "1F351"
+  },
+  {
+    "emoji": "🍍",
+    "shortcode": "pineapple",
+    "CodePoint": "1F34D"
+  },
+  {
+    "emoji": "🥝",
+    "shortcode": "kiwi_fruit",
+    "CodePoint": "1F95D"
+  },
+  {
+    "emoji": "🥑",
+    "shortcode": "avocado",
+    "CodePoint": "1F951"
+  },
+  {
+    "emoji": "🍅",
+    "shortcode": "tomato",
+    "CodePoint": "1F345"
+  },
+  {
+    "emoji": "🍆",
+    "shortcode": "eggplant",
+    "CodePoint": "1F346"
+  },
+  {
+    "emoji": "🥒",
+    "shortcode": "cucumber",
+    "CodePoint": "1F952"
+  },
+  {
+    "emoji": "🥕",
+    "shortcode": "carrot",
+    "CodePoint": "1F955"
+  },
+  {
+    "emoji": "🌽",
+    "shortcode": "corn",
+    "CodePoint": "1F33D"
+  },
+  {
+    "emoji": "🌶",
+    "shortcode": "hot_pepper",
+    "CodePoint": "1F336"
+  },
+  {
+    "emoji": "🥔",
+    "shortcode": "potato",
+    "CodePoint": "1F954"
+  },
+  {
+    "emoji": "🍠",
+    "shortcode": "sweet_potato",
+    "CodePoint": "1F360"
+  },
+  {
+    "emoji": "🌰",
+    "shortcode": "chestnut",
+    "CodePoint": "1F330"
+  },
+  {
+    "emoji": "🥜",
+    "shortcode": "peanuts",
+    "CodePoint": "1F95C"
+  },
+  {
+    "emoji": "🍯",
+    "shortcode": "honey_pot",
+    "CodePoint": "1F36F"
+  },
+  {
+    "emoji": "🥐",
+    "shortcode": "croissant",
+    "CodePoint": "1F950"
+  },
+  {
+    "emoji": "🍞",
+    "shortcode": "bread",
+    "CodePoint": "1F35E"
+  },
+  {
+    "emoji": "🥖",
+    "shortcode": "baguette_bread",
+    "CodePoint": "1F956"
+  },
+  {
+    "emoji": "🧀",
+    "shortcode": "cheese",
+    "CodePoint": "1F9C0"
+  },
+  {
+    "emoji": "🥚",
+    "shortcode": "egg",
+    "CodePoint": "1F95A"
+  },
+  {
+    "emoji": "🍳",
+    "shortcode": "fried_egg",
+    "CodePoint": "1F373"
+  },
+  {
+    "emoji": "🥓",
+    "shortcode": "bacon",
+    "CodePoint": "1F953"
+  },
+  {
+    "emoji": "🥞",
+    "shortcode": "pancakes",
+    "CodePoint": "1F95E"
+  },
+  {
+    "emoji": "🍤",
+    "shortcode": "fried_shrimp",
+    "CodePoint": "1F364"
+  },
+  {
+    "emoji": "🍗",
+    "shortcode": "poultry_leg",
+    "CodePoint": "1F357"
+  },
+  {
+    "emoji": "🍖",
+    "shortcode": "meat_on_bone",
+    "CodePoint": "1F356"
+  },
+  {
+    "emoji": "🍕",
+    "shortcode": "pizza",
+    "CodePoint": "1F355"
+  },
+  {
+    "emoji": "🌭",
+    "shortcode": "hotdog",
+    "CodePoint": "1F32D"
+  },
+  {
+    "emoji": "🍔",
+    "shortcode": "hamburger",
+    "CodePoint": "1F354"
+  },
+  {
+    "emoji": "🍟",
+    "shortcode": "fries",
+    "CodePoint": "1F35F"
+  },
+  {
+    "emoji": "🥙",
+    "shortcode": "stuffed_flatbread",
+    "CodePoint": "1F959"
+  },
+  {
+    "emoji": "🌮",
+    "shortcode": "taco",
+    "CodePoint": "1F32E"
+  },
+  {
+    "emoji": "🌯",
+    "shortcode": "burrito",
+    "CodePoint": "1F32F"
+  },
+  {
+    "emoji": "🥗",
+    "shortcode": "green_salad",
+    "CodePoint": "1F957"
+  },
+  {
+    "emoji": "🥘",
+    "shortcode": "shallow_pan_of_food",
+    "CodePoint": "1F958"
+  },
+  {
+    "emoji": "🍝",
+    "shortcode": "spaghetti",
+    "CodePoint": "1F35D"
+  },
+  {
+    "emoji": "🍜",
+    "shortcode": "ramen",
+    "CodePoint": "1F35C"
+  },
+  {
+    "emoji": "🍲",
+    "shortcode": "stew",
+    "CodePoint": "1F372"
+  },
+  {
+    "emoji": "🍥",
+    "shortcode": "fish_cake",
+    "CodePoint": "1F365"
+  },
+  {
+    "emoji": "🍣",
+    "shortcode": "sushi",
+    "CodePoint": "1F363"
+  },
+  {
+    "emoji": "🍱",
+    "shortcode": "bento",
+    "CodePoint": "1F371"
+  },
+  {
+    "emoji": "🍛",
+    "shortcode": "curry",
+    "CodePoint": "1F35B"
+  },
+  {
+    "emoji": "🍚",
+    "shortcode": "rice",
+    "CodePoint": "1F35A"
+  },
+  {
+    "emoji": "🍙",
+    "shortcode": "rice_ball",
+    "CodePoint": "1F359"
+  },
+  {
+    "emoji": "🍘",
+    "shortcode": "rice_cracker",
+    "CodePoint": "1F358"
+  },
+  {
+    "emoji": "🍢",
+    "shortcode": "oden",
+    "CodePoint": "1F362"
+  },
+  {
+    "emoji": "🍡",
+    "shortcode": "dango",
+    "CodePoint": "1F361"
+  },
+  {
+    "emoji": "🍧",
+    "shortcode": "shaved_ice",
+    "CodePoint": "1F367"
+  },
+  {
+    "emoji": "🍨",
+    "shortcode": "ice_cream",
+    "CodePoint": "1F368"
+  },
+  {
+    "emoji": "🍦",
+    "shortcode": "icecream",
+    "CodePoint": "1F366"
+  },
+  {
+    "emoji": "🍰",
+    "shortcode": "cake",
+    "CodePoint": "1F370"
+  },
+  {
+    "emoji": "🎂",
+    "shortcode": "birthday",
+    "CodePoint": "1F382"
+  },
+  {
+    "emoji": "🍮",
+    "shortcode": "custard",
+    "CodePoint": "1F36E"
+  },
+  {
+    "emoji": "🍭",
+    "shortcode": "lollipop",
+    "CodePoint": "1F36D"
+  },
+  {
+    "emoji": "🍬",
+    "shortcode": "candy",
+    "CodePoint": "1F36C"
+  },
+  {
+    "emoji": "🍫",
+    "shortcode": "chocolate_bar",
+    "CodePoint": "1F36B"
+  },
+  {
+    "emoji": "🍿",
+    "shortcode": "popcorn",
+    "CodePoint": "1F37F"
+  },
+  {
+    "emoji": "🍩",
+    "shortcode": "doughnut",
+    "CodePoint": "1F369"
+  },
+  {
+    "emoji": "🍪",
+    "shortcode": "cookie",
+    "CodePoint": "1F36A"
+  },
+  {
+    "emoji": "🥛",
+    "shortcode": "milk_glass",
+    "CodePoint": "1F95B"
+  },
+  {
+    "emoji": "🍼",
+    "shortcode": "baby_bottle",
+    "CodePoint": "1F37C"
+  },
+  {
+    "emoji": "🍵",
+    "shortcode": "tea",
+    "CodePoint": "1F375"
+  },
+  {
+    "emoji": "🍶",
+    "shortcode": "sake",
+    "CodePoint": "1F376"
+  },
+  {
+    "emoji": "🍺",
+    "shortcode": "beer",
+    "CodePoint": "1F37A"
+  },
+  {
+    "emoji": "🍻",
+    "shortcode": "beers",
+    "CodePoint": "1F37B"
+  },
+  {
+    "emoji": "🥂",
+    "shortcode": "clinking_glasses",
+    "CodePoint": "1F942"
+  },
+  {
+    "emoji": "🍷",
+    "shortcode": "wine_glass",
+    "CodePoint": "1F377"
+  },
+  {
+    "emoji": "🥃",
+    "shortcode": "tumbler_glass",
+    "CodePoint": "1F943"
+  },
+  {
+    "emoji": "🍸",
+    "shortcode": "cocktail",
+    "CodePoint": "1F378"
+  },
+  {
+    "emoji": "🍹",
+    "shortcode": "tropical_drink",
+    "CodePoint": "1F379"
+  },
+  {
+    "emoji": "🍾",
+    "shortcode": "champagne",
+    "CodePoint": "1F37E"
+  },
+  {
+    "emoji": "🥄",
+    "shortcode": "spoon",
+    "CodePoint": "1F944"
+  },
+  {
+    "emoji": "🍴",
+    "shortcode": "fork_and_knife",
+    "CodePoint": "1F374"
+  },
+  {
+    "emoji": "🍽",
+    "shortcode": "plate_with_cutlery",
+    "CodePoint": "1F37D"
+  },
+  {
+    "emoji": "🏀",
+    "shortcode": "basketball",
+    "CodePoint": "1F3C0"
+  },
+  {
+    "emoji": "🏈",
+    "shortcode": "football",
+    "CodePoint": "1F3C8"
+  },
+  {
+    "emoji": "🎾",
+    "shortcode": "tennis",
+    "CodePoint": "1F3BE"
+  },
+  {
+    "emoji": "🏐",
+    "shortcode": "volleyball",
+    "CodePoint": "1F3D0"
+  },
+  {
+    "emoji": "🏉",
+    "shortcode": "rugby_football",
+    "CodePoint": "1F3C9"
+  },
+  {
+    "emoji": "🎱",
+    "shortcode": "8ball",
+    "CodePoint": "1F3B1"
+  },
+  {
+    "emoji": "♲",
+    "shortcode": "recycle",
+    "CodePoint": "267b"
+  },
+  {
+    "emoji": "🏓",
+    "shortcode": "ping_pong",
+    "CodePoint": "1F3D3"
+  },
+  {
+    "emoji": "🏸",
+    "shortcode": "badminton",
+    "CodePoint": "1F3F8"
+  },
+  {
+    "emoji": "🥅",
+    "shortcode": "goal_net",
+    "CodePoint": "1F945"
+  },
+  {
+    "emoji": "🏒",
+    "shortcode": "ice_hockey",
+    "CodePoint": "1F3D2"
+  },
+  {
+    "emoji": "🏑",
+    "shortcode": "field_hockey",
+    "CodePoint": "1F3D1"
+  },
+  {
+    "emoji": "🏏",
+    "shortcode": "cricket",
+    "CodePoint": "1F3CF"
+  },
+  {
+    "emoji": "🏹",
+    "shortcode": "bow_and_arrow",
+    "CodePoint": "1F3F9"
+  },
+  {
+    "emoji": "🎣",
+    "shortcode": "fishing_pole_and_fish",
+    "CodePoint": "1F3A3"
+  },
+  {
+    "emoji": "🥊",
+    "shortcode": "boxing_glove",
+    "CodePoint": "1F94A"
+  },
+  {
+    "emoji": "🥋",
+    "shortcode": "martial_arts_uniform",
+    "CodePoint": "1F94B"
+  },
+  {
+    "emoji": "⛸",
+    "shortcode": "ice_skate",
+    "CodePoint": "26F8"
+  },
+  {
+    "emoji": "🎿",
+    "shortcode": "ski",
+    "CodePoint": "1F3BF"
+  },
+  {
+    "emoji": "⛷",
+    "shortcode": "skier",
+    "CodePoint": "26F7"
+  },
+  {
+    "emoji": "🏂",
+    "shortcode": "snowboarder",
+    "CodePoint": "1F3C2"
+  },
+  {
+    "emoji": "🏋️‍♀️",
+    "shortcode": "weight_lifting_woman",
+    "CodePoint": "1F3CB"
+  },
+  {
+    "emoji": "🏋",
+    "shortcode": "weight_lifting_man",
+    "CodePoint": "1F3CB"
+  },
+  {
+    "emoji": "🤺",
+    "shortcode": "person_fencing",
+    "CodePoint": "1F93A"
+  },
+  {
+    "emoji": "🤼‍♀",
+    "shortcode": "women_wrestling",
+    "CodePoint": "1F93C"
+  },
+  {
+    "emoji": "🤼‍♂",
+    "shortcode": "men_wrestling",
+    "CodePoint": "1F93C"
+  },
+  {
+    "emoji": "🤸‍♀",
+    "shortcode": "woman_cartwheeling",
+    "CodePoint": "1F938"
+  },
+  {
+    "emoji": "🤸‍♂",
+    "shortcode": "man_cartwheeling",
+    "CodePoint": "1F938"
+  },
+  {
+    "emoji": "⛹",
+    "shortcode": "basketball_man",
+    "CodePoint": "26F9"
+  },
+  {
+    "emoji": "🤾‍♀",
+    "shortcode": "woman_playing_handball",
+    "CodePoint": "1F93E"
+  },
+  {
+    "emoji": "🤾‍♂",
+    "shortcode": "man_playing_handball",
+    "CodePoint": "1F93E"
+  },
+  {
+    "emoji": "🏌️‍♀️",
+    "shortcode": "golfing_woman",
+    "CodePoint": "1F3CC"
+  },
+  {
+    "emoji": "🏌",
+    "shortcode": "golfing_man",
+    "CodePoint": "1F3CC"
+  },
+  {
+    "emoji": "🏄‍♀",
+    "shortcode": "surfing_woman",
+    "CodePoint": "1F3C4"
+  },
+  {
+    "emoji": "🏄",
+    "shortcode": "surfing_man",
+    "CodePoint": "1F3C4"
+  },
+  {
+    "emoji": "🏊‍♀",
+    "shortcode": "swimming_woman",
+    "CodePoint": "1F3CA"
+  },
+  {
+    "emoji": "🏊",
+    "shortcode": "swimming_man",
+    "CodePoint": "1F3CA"
+  },
+  {
+    "emoji": "🤽‍♀",
+    "shortcode": "woman_playing_water_polo",
+    "CodePoint": "1F93D"
+  },
+  {
+    "emoji": "🤽‍♂",
+    "shortcode": "man_playing_water_polo",
+    "CodePoint": "1F93D"
+  },
+  {
+    "emoji": "🚣‍♀",
+    "shortcode": "rowing_woman",
+    "CodePoint": "1F6A3"
+  },
+  {
+    "emoji": "🚣",
+    "shortcode": "rowing_man",
+    "CodePoint": "1F6A3"
+  },
+  {
+    "emoji": "🏇",
+    "shortcode": "horse_racing",
+    "CodePoint": "1F3C7"
+  },
+  {
+    "emoji": "🚴‍♀",
+    "shortcode": "biking_woman",
+    "CodePoint": "1F6B4"
+  },
+  {
+    "emoji": "🚴",
+    "shortcode": "biking_man",
+    "CodePoint": "1F6B4"
+  },
+  {
+    "emoji": "🚵‍♀",
+    "shortcode": "mountain_biking_woman",
+    "CodePoint": "1F6B5"
+  },
+  {
+    "emoji": "🚵",
+    "shortcode": "mountain_biking_man",
+    "CodePoint": "1F6B5"
+  },
+  {
+    "emoji": "🎽",
+    "shortcode": "running_shirt_with_sash",
+    "CodePoint": "1F3BD"
+  },
+  {
+    "emoji": "🏅",
+    "shortcode": "medal_sports",
+    "CodePoint": "1F3C5"
+  },
+  {
+    "emoji": "🎖",
+    "shortcode": "medal_military",
+    "CodePoint": "1F396"
+  },
+  {
+    "emoji": "🥇",
+    "shortcode": "1st_place_medal",
+    "CodePoint": "1F947"
+  },
+  {
+    "emoji": "🥈",
+    "shortcode": "2nd_place_medal",
+    "CodePoint": "1F948"
+  },
+  {
+    "emoji": "🥉",
+    "shortcode": "3rd_place_medal",
+    "CodePoint": "1F949"
+  },
+  {
+    "emoji": "🏆",
+    "shortcode": "trophy",
+    "CodePoint": "1F3C6"
+  },
+  {
+    "emoji": "🏵",
+    "shortcode": "rosette",
+    "CodePoint": "1F3F5"
+  },
+  {
+    "emoji": "🎗",
+    "shortcode": "reminder_ribbon",
+    "CodePoint": "1F397"
+  },
+  {
+    "emoji": "🎫",
+    "shortcode": "ticket",
+    "CodePoint": "1F3AB"
+  },
+  {
+    "emoji": "🎟",
+    "shortcode": "tickets",
+    "CodePoint": "1F39F"
+  },
+  {
+    "emoji": "🎪",
+    "shortcode": "circus_tent",
+    "CodePoint": "1F3AA"
+  },
+  {
+    "emoji": "🤹‍♀",
+    "shortcode": "woman_juggling",
+    "CodePoint": "1F939"
+  },
+  {
+    "emoji": "🤹‍♂",
+    "shortcode": "man_juggling",
+    "CodePoint": "1F939"
+  },
+  {
+    "emoji": "🎭",
+    "shortcode": "performing_arts",
+    "CodePoint": "1F3AD"
+  },
+  {
+    "emoji": "🎨",
+    "shortcode": "art",
+    "CodePoint": "1F3A8"
+  },
+  {
+    "emoji": "🎬",
+    "shortcode": "clapper",
+    "CodePoint": "1F3AC"
+  },
+  {
+    "emoji": "🎤",
+    "shortcode": "microphone",
+    "CodePoint": "1F3A4"
+  },
+  {
+    "emoji": "🎧",
+    "shortcode": "headphones",
+    "CodePoint": "1F3A7"
+  },
+  {
+    "emoji": "🎼",
+    "shortcode": "musical_score",
+    "CodePoint": "1F3BC"
+  },
+  {
+    "emoji": "🎹",
+    "shortcode": "musical_keyboard",
+    "CodePoint": "1F3B9"
+  },
+  {
+    "emoji": "🥁",
+    "shortcode": "drum",
+    "CodePoint": "1F941"
+  },
+  {
+    "emoji": "🎷",
+    "shortcode": "saxophone",
+    "CodePoint": "1F3B7"
+  },
+  {
+    "emoji": "🎺",
+    "shortcode": "trumpet",
+    "CodePoint": "1F3BA"
+  },
+  {
+    "emoji": "🎸",
+    "shortcode": "guitar",
+    "CodePoint": "1F3B8"
+  },
+  {
+    "emoji": "🎻",
+    "shortcode": "violin",
+    "CodePoint": "1F3BB"
+  },
+  {
+    "emoji": "🎲",
+    "shortcode": "game_die",
+    "CodePoint": "1F3B2"
+  },
+  {
+    "emoji": "🎯",
+    "shortcode": "dart",
+    "CodePoint": "1F3AF"
+  },
+  {
+    "emoji": "🎳",
+    "shortcode": "bowling",
+    "CodePoint": "1F3B3"
+  },
+  {
+    "emoji": "🎮",
+    "shortcode": "video_game",
+    "CodePoint": "1F3AE"
+  },
+  {
+    "emoji": "🎰",
+    "shortcode": "slot_machine",
+    "CodePoint": "1F3B0"
+  },
+  {
+    "emoji": "🚗",
+    "shortcode": "car",
+    "CodePoint": "1F697"
+  },
+  {
+    "emoji": "🚕",
+    "shortcode": "taxi",
+    "CodePoint": "1F695"
+  },
+  {
+    "emoji": "🚙",
+    "shortcode": "blue_car",
+    "CodePoint": "1F699"
+  },
+  {
+    "emoji": "🚌",
+    "shortcode": "bus",
+    "CodePoint": "1F68C"
+  },
+  {
+    "emoji": "🚎",
+    "shortcode": "trolleybus",
+    "CodePoint": "1F68E"
+  },
+  {
+    "emoji": "🏎",
+    "shortcode": "racing_car",
+    "CodePoint": "1F3CE"
+  },
+  {
+    "emoji": "🚓",
+    "shortcode": "police_car",
+    "CodePoint": "1F693"
+  },
+  {
+    "emoji": "🚑",
+    "shortcode": "ambulance",
+    "CodePoint": "1F691"
+  },
+  {
+    "emoji": "🚒",
+    "shortcode": "fire_engine",
+    "CodePoint": "1F692"
+  },
+  {
+    "emoji": "🚐",
+    "shortcode": "minibus",
+    "CodePoint": "1F690"
+  },
+  {
+    "emoji": "🚚",
+    "shortcode": "truck",
+    "CodePoint": "1F69A"
+  },
+  {
+    "emoji": "🚛",
+    "shortcode": "articulated_lorry",
+    "CodePoint": "1F69B"
+  },
+  {
+    "emoji": "🚜",
+    "shortcode": "tractor",
+    "CodePoint": "1F69C"
+  },
+  {
+    "emoji": "🛴",
+    "shortcode": "kick_scooter",
+    "CodePoint": "1F6F4"
+  },
+  {
+    "emoji": "🚲",
+    "shortcode": "bike",
+    "CodePoint": "1F6B2"
+  },
+  {
+    "emoji": "🛵",
+    "shortcode": "motor_scooter",
+    "CodePoint": "1F6F5"
+  },
+  {
+    "emoji": "🏍",
+    "shortcode": "motorcycle",
+    "CodePoint": "1F3CD"
+  },
+  {
+    "emoji": "🚨",
+    "shortcode": "rotating_light",
+    "CodePoint": "1F6A8"
+  },
+  {
+    "emoji": "🚔",
+    "shortcode": "oncoming_police_car",
+    "CodePoint": "1F694"
+  },
+  {
+    "emoji": "🚍",
+    "shortcode": "oncoming_bus",
+    "CodePoint": "1F68D"
+  },
+  {
+    "emoji": "🚘",
+    "shortcode": "oncoming_automobile",
+    "CodePoint": "1F698"
+  },
+  {
+    "emoji": "🚖",
+    "shortcode": "oncoming_taxi",
+    "CodePoint": "1F696"
+  },
+  {
+    "emoji": "🚡",
+    "shortcode": "aerial_tramway",
+    "CodePoint": "1F6A1"
+  },
+  {
+    "emoji": "🚠",
+    "shortcode": "mountain_cableway",
+    "CodePoint": "1F6A0"
+  },
+  {
+    "emoji": "🚟",
+    "shortcode": "suspension_railway",
+    "CodePoint": "1F69F"
+  },
+  {
+    "emoji": "🚃",
+    "shortcode": "railway_car",
+    "CodePoint": "1F683"
+  },
+  {
+    "emoji": "🚋",
+    "shortcode": "train",
+    "CodePoint": "1F68B"
+  },
+  {
+    "emoji": "🚞",
+    "shortcode": "mountain_railway",
+    "CodePoint": "1F69E"
+  },
+  {
+    "emoji": "🚝",
+    "shortcode": "monorail",
+    "CodePoint": "1F69D"
+  },
+  {
+    "emoji": "🚄",
+    "shortcode": "bullettrain_side",
+    "CodePoint": "1F684"
+  },
+  {
+    "emoji": "🚅",
+    "shortcode": "bullettrain_front",
+    "CodePoint": "1F685"
+  },
+  {
+    "emoji": "🚈",
+    "shortcode": "light_rail",
+    "CodePoint": "1F688"
+  },
+  {
+    "emoji": "🚂",
+    "shortcode": "steam_locomotive",
+    "CodePoint": "1F682"
+  },
+  {
+    "emoji": "🚆",
+    "shortcode": "train2",
+    "CodePoint": "1F686"
+  },
+  {
+    "emoji": "🚇",
+    "shortcode": "metro",
+    "CodePoint": "1F687"
+  },
+  {
+    "emoji": "🚊",
+    "shortcode": "tram",
+    "CodePoint": "1F68A"
+  },
+  {
+    "emoji": "🚉",
+    "shortcode": "station",
+    "CodePoint": "1F689"
+  },
+  {
+    "emoji": "🚁",
+    "shortcode": "helicopter",
+    "CodePoint": "1F681"
+  },
+  {
+    "emoji": "🛩",
+    "shortcode": "small_airplane",
+    "CodePoint": "1F6E9"
+  },
+  {
+    "emoji": "🛫",
+    "shortcode": "flight_departure",
+    "CodePoint": "1F6EB"
+  },
+  {
+    "emoji": "🛬",
+    "shortcode": "flight_arrival",
+    "CodePoint": "1F6EC"
+  },
+  {
+    "emoji": "🚀",
+    "shortcode": "rocket",
+    "CodePoint": "1F680"
+  },
+  {
+    "emoji": "🛰",
+    "shortcode": "artificial_satellite",
+    "CodePoint": "1F6F0"
+  },
+  {
+    "emoji": "💺",
+    "shortcode": "seat",
+    "CodePoint": "1F4BA"
+  },
+  {
+    "emoji": "🛶",
+    "shortcode": "canoe",
+    "CodePoint": "1F6F6"
+  },
+  {
+    "emoji": "🛥",
+    "shortcode": "motor_boat",
+    "CodePoint": "1F6E5"
+  },
+  {
+    "emoji": "🚤",
+    "shortcode": "speedboat",
+    "CodePoint": "1F6A4"
+  },
+  {
+    "emoji": "🛳",
+    "shortcode": "passenger_ship",
+    "CodePoint": "1F6F3"
+  },
+  {
+    "emoji": "⛴",
+    "shortcode": "ferry",
+    "CodePoint": "26F4"
+  },
+  {
+    "emoji": "🚢",
+    "shortcode": "ship",
+    "CodePoint": "1F6A2"
+  },
+  {
+    "emoji": "🚧",
+    "shortcode": "construction",
+    "CodePoint": "1F6A7"
+  },
+  {
+    "emoji": "🚏",
+    "shortcode": "busstop",
+    "CodePoint": "1F68F"
+  },
+  {
+    "emoji": "🚦",
+    "shortcode": "vertical_traffic_light",
+    "CodePoint": "1F6A6"
+  },
+  {
+    "emoji": "🚥",
+    "shortcode": "traffic_light",
+    "CodePoint": "1F6A5"
+  },
+  {
+    "emoji": "🗺",
+    "shortcode": "world_map",
+    "CodePoint": "1F5FA"
+  },
+  {
+    "emoji": "🗿",
+    "shortcode": "moyai",
+    "CodePoint": "1F5FF"
+  },
+  {
+    "emoji": "🗽",
+    "shortcode": "statue_of_liberty",
+    "CodePoint": "1F5FD"
+  },
+  {
+    "emoji": "🗼",
+    "shortcode": "tokyo_tower",
+    "CodePoint": "1F5FC"
+  },
+  {
+    "emoji": "🏰",
+    "shortcode": "european_castle",
+    "CodePoint": "1F3F0"
+  },
+  {
+    "emoji": "🏯",
+    "shortcode": "japanese_castle",
+    "CodePoint": "1F3EF"
+  },
+  {
+    "emoji": "🏟",
+    "shortcode": "stadium",
+    "CodePoint": "1F3DF"
+  },
+  {
+    "emoji": "🎡",
+    "shortcode": "ferris_wheel",
+    "CodePoint": "1F3A1"
+  },
+  {
+    "emoji": "🎢",
+    "shortcode": "roller_coaster",
+    "CodePoint": "1F3A2"
+  },
+  {
+    "emoji": "🎠",
+    "shortcode": "carousel_horse",
+    "CodePoint": "1F3A0"
+  },
+  {
+    "emoji": "⛱",
+    "shortcode": "parasol_on_ground",
+    "CodePoint": "26F1"
+  },
+  {
+    "emoji": "🏖",
+    "shortcode": "beach_umbrella",
+    "CodePoint": "1F3D6"
+  },
+  {
+    "emoji": "🏝",
+    "shortcode": "desert_island",
+    "CodePoint": "1F3DD"
+  },
+  {
+    "emoji": "⛰",
+    "shortcode": "mountain",
+    "CodePoint": "26F0"
+  },
+  {
+    "emoji": "🏔",
+    "shortcode": "mountain_snow",
+    "CodePoint": "1F3D4"
+  },
+  {
+    "emoji": "🗻",
+    "shortcode": "mount_fuji",
+    "CodePoint": "1F5FB"
+  },
+  {
+    "emoji": "🌋",
+    "shortcode": "volcano",
+    "CodePoint": "1F30B"
+  },
+  {
+    "emoji": "🏜",
+    "shortcode": "desert",
+    "CodePoint": "1F3DC"
+  },
+  {
+    "emoji": "🏕",
+    "shortcode": "camping",
+    "CodePoint": "1F3D5"
+  },
+  {
+    "emoji": "🛤",
+    "shortcode": "railway_track",
+    "CodePoint": "1F6E4"
+  },
+  {
+    "emoji": "🛣",
+    "shortcode": "motorway",
+    "CodePoint": "1F6E3"
+  },
+  {
+    "emoji": "🏗",
+    "shortcode": "building_construction",
+    "CodePoint": "1F3D7"
+  },
+  {
+    "emoji": "🏭",
+    "shortcode": "factory",
+    "CodePoint": "1F3ED"
+  },
+  {
+    "emoji": "🏠",
+    "shortcode": "house",
+    "CodePoint": "1F3E0"
+  },
+  {
+    "emoji": "🏡",
+    "shortcode": "house_with_garden",
+    "CodePoint": "1F3E1"
+  },
+  {
+    "emoji": "🏘",
+    "shortcode": "houses",
+    "CodePoint": "1F3D8"
+  },
+  {
+    "emoji": "🏚",
+    "shortcode": "derelict_house",
+    "CodePoint": "1F3DA"
+  },
+  {
+    "emoji": "🏢",
+    "shortcode": "office",
+    "CodePoint": "1F3E2"
+  },
+  {
+    "emoji": "🏬",
+    "shortcode": "department_store",
+    "CodePoint": "1F3EC"
+  },
+  {
+    "emoji": "🏣",
+    "shortcode": "post_office",
+    "CodePoint": "1F3E3"
+  },
+  {
+    "emoji": "🏤",
+    "shortcode": "european_post_office",
+    "CodePoint": "1F3E4"
+  },
+  {
+    "emoji": "🏥",
+    "shortcode": "hospital",
+    "CodePoint": "1F3E5"
+  },
+  {
+    "emoji": "🏦",
+    "shortcode": "bank",
+    "CodePoint": "1F3E6"
+  },
+  {
+    "emoji": "🏨",
+    "shortcode": "hotel",
+    "CodePoint": "1F3E8"
+  },
+  {
+    "emoji": "🏪",
+    "shortcode": "convenience_store",
+    "CodePoint": "1F3EA"
+  },
+  {
+    "emoji": "🏫",
+    "shortcode": "school",
+    "CodePoint": "1F3EB"
+  },
+  {
+    "emoji": "🏩",
+    "shortcode": "love_hotel",
+    "CodePoint": "1F3E9"
+  },
+  {
+    "emoji": "💒",
+    "shortcode": "wedding",
+    "CodePoint": "1F492"
+  },
+  {
+    "emoji": "🏛",
+    "shortcode": "classical_building",
+    "CodePoint": "1F3DB"
+  },
+  {
+    "emoji": "🕌",
+    "shortcode": "mosque",
+    "CodePoint": "1F54C"
+  },
+  {
+    "emoji": "🕍",
+    "shortcode": "synagogue",
+    "CodePoint": "1F54D"
+  },
+  {
+    "emoji": "🕋",
+    "shortcode": "kaaba",
+    "CodePoint": "1F54B"
+  },
+  {
+    "emoji": "⛩",
+    "shortcode": "shinto_shrine",
+    "CodePoint": "26E9"
+  },
+  {
+    "emoji": "🗾",
+    "shortcode": "japan",
+    "CodePoint": "1F5FE"
+  },
+  {
+    "emoji": "🎑",
+    "shortcode": "rice_scene",
+    "CodePoint": "1F391"
+  },
+  {
+    "emoji": "🏞",
+    "shortcode": "national_park",
+    "CodePoint": "1F3DE"
+  },
+  {
+    "emoji": "🌅",
+    "shortcode": "sunrise",
+    "CodePoint": "1F305"
+  },
+  {
+    "emoji": "🌄",
+    "shortcode": "sunrise_over_mountains",
+    "CodePoint": "1F304"
+  },
+  {
+    "emoji": "🌠",
+    "shortcode": "stars",
+    "CodePoint": "1F320"
+  },
+  {
+    "emoji": "🎇",
+    "shortcode": "sparkler",
+    "CodePoint": "1F387"
+  },
+  {
+    "emoji": "🎆",
+    "shortcode": "fireworks",
+    "CodePoint": "1F386"
+  },
+  {
+    "emoji": "🌇",
+    "shortcode": "city_sunrise",
+    "CodePoint": "1F307"
+  },
+  {
+    "emoji": "🌆",
+    "shortcode": "city_sunset",
+    "CodePoint": "1F306"
+  },
+  {
+    "emoji": "🏙",
+    "shortcode": "cityscape",
+    "CodePoint": "1F3D9"
+  },
+  {
+    "emoji": "🌃",
+    "shortcode": "night_with_stars",
+    "CodePoint": "1F303"
+  },
+  {
+    "emoji": "🌌",
+    "shortcode": "milky_way",
+    "CodePoint": "1F30C"
+  },
+  {
+    "emoji": "🌉",
+    "shortcode": "bridge_at_night",
+    "CodePoint": "1F309"
+  },
+  {
+    "emoji": "🌁",
+    "shortcode": "foggy",
+    "CodePoint": "1F301"
+  },
+  {
+    "emoji": "📱",
+    "shortcode": "iphone",
+    "CodePoint": "1F4F1"
+  },
+  {
+    "emoji": "📲",
+    "shortcode": "calling",
+    "CodePoint": "1F4F2"
+  },
+  {
+    "emoji": "💻",
+    "shortcode": "computer",
+    "CodePoint": "1F4BB"
+  },
+  {
+    "emoji": "🖥",
+    "shortcode": "desktop_computer",
+    "CodePoint": "1F5A5"
+  },
+  {
+    "emoji": "🖨",
+    "shortcode": "printer",
+    "CodePoint": "1F5A8"
+  },
+  {
+    "emoji": "🖱",
+    "shortcode": "computer_mouse",
+    "CodePoint": "1F5B1"
+  },
+  {
+    "emoji": "🖲",
+    "shortcode": "trackball",
+    "CodePoint": "1F5B2"
+  },
+  {
+    "emoji": "🕹",
+    "shortcode": "joystick",
+    "CodePoint": "1F579"
+  },
+  {
+    "emoji": "🗜",
+    "shortcode": "clamp",
+    "CodePoint": "1F5DC"
+  },
+  {
+    "emoji": "💽",
+    "shortcode": "minidisc",
+    "CodePoint": "1F4BD"
+  },
+  {
+    "emoji": "💾",
+    "shortcode": "floppy_disk",
+    "CodePoint": "1F4BE"
+  },
+  {
+    "emoji": "💿",
+    "shortcode": "cd",
+    "CodePoint": "1F4BF"
+  },
+  {
+    "emoji": "📀",
+    "shortcode": "dvd",
+    "CodePoint": "1F4C0"
+  },
+  {
+    "emoji": "📼",
+    "shortcode": "vhs",
+    "CodePoint": "1F4FC"
+  },
+  {
+    "emoji": "📷",
+    "shortcode": "camera",
+    "CodePoint": "1F4F7"
+  },
+  {
+    "emoji": "📸",
+    "shortcode": "camera_flash",
+    "CodePoint": "1F4F8"
+  },
+  {
+    "emoji": "📹",
+    "shortcode": "video_camera",
+    "CodePoint": "1F4F9"
+  },
+  {
+    "emoji": "🎥",
+    "shortcode": "movie_camera",
+    "CodePoint": "1F3A5"
+  },
+  {
+    "emoji": "📽",
+    "shortcode": "film_projector",
+    "CodePoint": "1F4FD"
+  },
+  {
+    "emoji": "🎞",
+    "shortcode": "film_strip",
+    "CodePoint": "1F39E"
+  },
+  {
+    "emoji": "📞",
+    "shortcode": "telephone_receiver",
+    "CodePoint": "1F4DE"
+  },
+  {
+    "emoji": "📟",
+    "shortcode": "pager",
+    "CodePoint": "1F4DF"
+  },
+  {
+    "emoji": "📠",
+    "shortcode": "fax",
+    "CodePoint": "1F4E0"
+  },
+  {
+    "emoji": "📺",
+    "shortcode": "tv",
+    "CodePoint": "1F4FA"
+  },
+  {
+    "emoji": "📻",
+    "shortcode": "radio",
+    "CodePoint": "1F4FB"
+  },
+  {
+    "emoji": "🎙",
+    "shortcode": "studio_microphone",
+    "CodePoint": "1F399"
+  },
+  {
+    "emoji": "🎚",
+    "shortcode": "level_slider",
+    "CodePoint": "1F39A"
+  },
+  {
+    "emoji": "🎛",
+    "shortcode": "control_knobs",
+    "CodePoint": "1F39B"
+  },
+  {
+    "emoji": "⏱",
+    "shortcode": "stopwatch",
+    "CodePoint": "23F1"
+  },
+  {
+    "emoji": "⏲",
+    "shortcode": "timer_clock",
+    "CodePoint": "23F2"
+  },
+  {
+    "emoji": "⏰",
+    "shortcode": "alarm_clock",
+    "CodePoint": "23F0"
+  },
+  {
+    "emoji": "🕰",
+    "shortcode": "mantelpiece_clock",
+    "CodePoint": "1F570"
+  },
+  {
+    "emoji": "⏳",
+    "shortcode": "hourglass_flowing_sand",
+    "CodePoint": "23F3"
+  },
+  {
+    "emoji": "📡",
+    "shortcode": "satellite",
+    "CodePoint": "1F4E1"
+  },
+  {
+    "emoji": "🔋",
+    "shortcode": "battery",
+    "CodePoint": "1F50B"
+  },
+  {
+    "emoji": "🔌",
+    "shortcode": "electric_plug",
+    "CodePoint": "1F50C"
+  },
+  {
+    "emoji": "💡",
+    "shortcode": "bulb",
+    "CodePoint": "1F4A1"
+  },
+  {
+    "emoji": "🔦",
+    "shortcode": "flashlight",
+    "CodePoint": "1F526"
+  },
+  {
+    "emoji": "🕯",
+    "shortcode": "candle",
+    "CodePoint": "1F56F"
+  },
+  {
+    "emoji": "🗑",
+    "shortcode": "wastebasket",
+    "CodePoint": "1F5D1"
+  },
+  {
+    "emoji": "🛢",
+    "shortcode": "oil_drum",
+    "CodePoint": "1F6E2"
+  },
+  {
+    "emoji": "💸",
+    "shortcode": "money_with_wings",
+    "CodePoint": "1F4B8"
+  },
+  {
+    "emoji": "💵",
+    "shortcode": "dollar",
+    "CodePoint": "1F4B5"
+  },
+  {
+    "emoji": "💴",
+    "shortcode": "yen",
+    "CodePoint": "1F4B4"
+  },
+  {
+    "emoji": "💶",
+    "shortcode": "euro",
+    "CodePoint": "1F4B6"
+  },
+  {
+    "emoji": "💷",
+    "shortcode": "pound",
+    "CodePoint": "1F4B7"
+  },
+  {
+    "emoji": "💰",
+    "shortcode": "moneybag",
+    "CodePoint": "1F4B0"
+  },
+  {
+    "emoji": "💳",
+    "shortcode": "credit_card",
+    "CodePoint": "1F4B3"
+  },
+  {
+    "emoji": "💎",
+    "shortcode": "gem",
+    "CodePoint": "1F48E"
+  },
+  {
+    "emoji": "🔧",
+    "shortcode": "wrench",
+    "CodePoint": "1F527"
+  },
+  {
+    "emoji": "🔨",
+    "shortcode": "hammer",
+    "CodePoint": "1F528"
+  },
+  {
+    "emoji": "⚒",
+    "shortcode": "hammer_and_pick",
+    "CodePoint": "2692"
+  },
+  {
+    "emoji": "🛠",
+    "shortcode": "hammer_and_wrench",
+    "CodePoint": "1F6E0"
+  },
+  {
+    "emoji": "⛏",
+    "shortcode": "pick",
+    "CodePoint": "26CF"
+  },
+  {
+    "emoji": "🔩",
+    "shortcode": "nut_and_bolt",
+    "CodePoint": "1F529"
+  },
+  {
+    "emoji": "⛓",
+    "shortcode": "chains",
+    "CodePoint": "26D3"
+  },
+  {
+    "emoji": "🔫",
+    "shortcode": "gun",
+    "CodePoint": "1F52B"
+  },
+  {
+    "emoji": "💣",
+    "shortcode": "bomb",
+    "CodePoint": "1F4A3"
+  },
+  {
+    "emoji": "🔪",
+    "shortcode": "hocho",
+    "CodePoint": "1F52A"
+  },
+  {
+    "emoji": "🗡",
+    "shortcode": "dagger",
+    "CodePoint": "1F5E1"
+  },
+  {
+    "emoji": "🛡",
+    "shortcode": "shield",
+    "CodePoint": "1F6E1"
+  },
+  {
+    "emoji": "🚬",
+    "shortcode": "smoking",
+    "CodePoint": "1F6AC"
+  },
+  {
+    "emoji": "🏺",
+    "shortcode": "amphora",
+    "CodePoint": "1F3FA"
+  },
+  {
+    "emoji": "🔮",
+    "shortcode": "crystal_ball",
+    "CodePoint": "1F52E"
+  },
+  {
+    "emoji": "📿",
+    "shortcode": "prayer_beads",
+    "CodePoint": "1F4FF"
+  },
+  {
+    "emoji": "💈",
+    "shortcode": "barber",
+    "CodePoint": "1F488"
+  },
+  {
+    "emoji": "🔭",
+    "shortcode": "telescope",
+    "CodePoint": "1F52D"
+  },
+  {
+    "emoji": "🔬",
+    "shortcode": "microscope",
+    "CodePoint": "1F52C"
+  },
+  {
+    "emoji": "🕳",
+    "shortcode": "hole",
+    "CodePoint": "1F573"
+  },
+  {
+    "emoji": "💊",
+    "shortcode": "pill",
+    "CodePoint": "1F48A"
+  },
+  {
+    "emoji": "💉",
+    "shortcode": "syringe",
+    "CodePoint": "1F489"
+  },
+  {
+    "emoji": "🌡",
+    "shortcode": "thermometer",
+    "CodePoint": "1F321"
+  },
+  {
+    "emoji": "🚽",
+    "shortcode": "toilet",
+    "CodePoint": "1F6BD"
+  },
+  {
+    "emoji": "🚰",
+    "shortcode": "potable_water",
+    "CodePoint": "1F6B0"
+  },
+  {
+    "emoji": "🚿",
+    "shortcode": "shower",
+    "CodePoint": "1F6BF"
+  },
+  {
+    "emoji": "🛁",
+    "shortcode": "bathtub",
+    "CodePoint": "1F6C1"
+  },
+  {
+    "emoji": "🛀",
+    "shortcode": "bath",
+    "CodePoint": "1F6C0"
+  },
+  {
+    "emoji": "🛎",
+    "shortcode": "bellhop_bell",
+    "CodePoint": "1F6CE"
+  },
+  {
+    "emoji": "🔑",
+    "shortcode": "key",
+    "CodePoint": "1F511"
+  },
+  {
+    "emoji": "🗝",
+    "shortcode": "old_key",
+    "CodePoint": "1F5DD"
+  },
+  {
+    "emoji": "🚪",
+    "shortcode": "door",
+    "CodePoint": "1F6AA"
+  },
+  {
+    "emoji": "🛋",
+    "shortcode": "couch_and_lamp",
+    "CodePoint": "1F6CB"
+  },
+  {
+    "emoji": "🛏",
+    "shortcode": "bed",
+    "CodePoint": "1F6CF"
+  },
+  {
+    "emoji": "🛌",
+    "shortcode": "sleeping_bed",
+    "CodePoint": "1F6CC"
+  },
+  {
+    "emoji": "🖼",
+    "shortcode": "framed_picture",
+    "CodePoint": "1F5BC"
+  },
+  {
+    "emoji": "🛍",
+    "shortcode": "shopping",
+    "CodePoint": "1F6CD"
+  },
+  {
+    "emoji": "🛒",
+    "shortcode": "shopping_cart",
+    "CodePoint": "1F6D2"
+  },
+  {
+    "emoji": "🎁",
+    "shortcode": "gift",
+    "CodePoint": "1F381"
+  },
+  {
+    "emoji": "🎈",
+    "shortcode": "balloon",
+    "CodePoint": "1F388"
+  },
+  {
+    "emoji": "🎏",
+    "shortcode": "flags",
+    "CodePoint": "1F38F"
+  },
+  {
+    "emoji": "🎀",
+    "shortcode": "ribbon",
+    "CodePoint": "1F380"
+  },
+  {
+    "emoji": "🎊",
+    "shortcode": "confetti_ball",
+    "CodePoint": "1F38A"
+  },
+  {
+    "emoji": "🎉",
+    "shortcode": "tada",
+    "CodePoint": "1F389"
+  },
+  {
+    "emoji": "🎎",
+    "shortcode": "dolls",
+    "CodePoint": "1F38E"
+  },
+  {
+    "emoji": "🏮",
+    "shortcode": "izakaya_lantern",
+    "CodePoint": "1F3EE"
+  },
+  {
+    "emoji": "🎐",
+    "shortcode": "wind_chime",
+    "CodePoint": "1F390"
+  },
+  {
+    "emoji": "📩",
+    "shortcode": "envelope_with_arrow",
+    "CodePoint": "1F4E9"
+  },
+  {
+    "emoji": "📨",
+    "shortcode": "incoming_envelope",
+    "CodePoint": "1F4E8"
+  },
+  {
+    "emoji": "📧",
+    "shortcode": "e-mail",
+    "CodePoint": "1F4E7"
+  },
+  {
+    "emoji": "💌",
+    "shortcode": "love_letter",
+    "CodePoint": "1F48C"
+  },
+  {
+    "emoji": "📥",
+    "shortcode": "inbox_tray",
+    "CodePoint": "1F4E5"
+  },
+  {
+    "emoji": "📤",
+    "shortcode": "outbox_tray",
+    "CodePoint": "1F4E4"
+  },
+  {
+    "emoji": "📦",
+    "shortcode": "package",
+    "CodePoint": "1F4E6"
+  },
+  {
+    "emoji": "🏷",
+    "shortcode": "label",
+    "CodePoint": "1F3F7"
+  },
+  {
+    "emoji": "📪",
+    "shortcode": "mailbox_closed",
+    "CodePoint": "1F4EA"
+  },
+  {
+    "emoji": "📫",
+    "shortcode": "mailbox",
+    "CodePoint": "1F4EB"
+  },
+  {
+    "emoji": "📬",
+    "shortcode": "mailbox_with_mail",
+    "CodePoint": "1F4EC"
+  },
+  {
+    "emoji": "📭",
+    "shortcode": "mailbox_with_no_mail",
+    "CodePoint": "1F4ED"
+  },
+  {
+    "emoji": "📮",
+    "shortcode": "postbox",
+    "CodePoint": "1F4EE"
+  },
+  {
+    "emoji": "📯",
+    "shortcode": "postal_horn",
+    "CodePoint": "1F4EF"
+  },
+  {
+    "emoji": "📜",
+    "shortcode": "scroll",
+    "CodePoint": "1F4DC"
+  },
+  {
+    "emoji": "📃",
+    "shortcode": "page_with_curl",
+    "CodePoint": "1F4C3"
+  },
+  {
+    "emoji": "📄",
+    "shortcode": "page_facing_up",
+    "CodePoint": "1F4C4"
+  },
+  {
+    "emoji": "📑",
+    "shortcode": "bookmark_tabs",
+    "CodePoint": "1F4D1"
+  },
+  {
+    "emoji": "📊",
+    "shortcode": "bar_chart",
+    "CodePoint": "1F4CA"
+  },
+  {
+    "emoji": "📈",
+    "shortcode": "chart_with_upwards_trend",
+    "CodePoint": "1F4C8"
+  },
+  {
+    "emoji": "📉",
+    "shortcode": "chart_with_downwards_trend",
+    "CodePoint": "1F4C9"
+  },
+  {
+    "emoji": "🗒",
+    "shortcode": "spiral_notepad",
+    "CodePoint": "1F5D2"
+  },
+  {
+    "emoji": "🗓",
+    "shortcode": "spiral_calendar",
+    "CodePoint": "1F5D3"
+  },
+  {
+    "emoji": "📆",
+    "shortcode": "calendar",
+    "CodePoint": "1F4C6"
+  },
+  {
+    "emoji": "📅",
+    "shortcode": "date",
+    "CodePoint": "1F4C5"
+  },
+  {
+    "emoji": "📇",
+    "shortcode": "card_index",
+    "CodePoint": "1F4C7"
+  },
+  {
+    "emoji": "🗃",
+    "shortcode": "card_file_box",
+    "CodePoint": "1F5C3"
+  },
+  {
+    "emoji": "🗳",
+    "shortcode": "ballot_box",
+    "CodePoint": "1F5F3"
+  },
+  {
+    "emoji": "🗄",
+    "shortcode": "file_cabinet",
+    "CodePoint": "1F5C4"
+  },
+  {
+    "emoji": "📋",
+    "shortcode": "clipboard",
+    "CodePoint": "1F4CB"
+  },
+  {
+    "emoji": "📁",
+    "shortcode": "file_folder",
+    "CodePoint": "1F4C1"
+  },
+  {
+    "emoji": "📂",
+    "shortcode": "open_file_folder",
+    "CodePoint": "1F4C2"
+  },
+  {
+    "emoji": "🗂",
+    "shortcode": "card_index_dividers",
+    "CodePoint": "1F5C2"
+  },
+  {
+    "emoji": "🗞",
+    "shortcode": "newspaper_roll",
+    "CodePoint": "1F5DE"
+  },
+  {
+    "emoji": "📰",
+    "shortcode": "newspaper",
+    "CodePoint": "1F4F0"
+  },
+  {
+    "emoji": "📓",
+    "shortcode": "notebook",
+    "CodePoint": "1F4D3"
+  },
+  {
+    "emoji": "📔",
+    "shortcode": "notebook_with_decorative_cover",
+    "CodePoint": "1F4D4"
+  },
+  {
+    "emoji": "📒",
+    "shortcode": "ledger",
+    "CodePoint": "1F4D2"
+  },
+  {
+    "emoji": "📕",
+    "shortcode": "closed_book",
+    "CodePoint": "1F4D5"
+  },
+  {
+    "emoji": "📗",
+    "shortcode": "green_book",
+    "CodePoint": "1F4D7"
+  },
+  {
+    "emoji": "📘",
+    "shortcode": "blue_book",
+    "CodePoint": "1F4D8"
+  },
+  {
+    "emoji": "📙",
+    "shortcode": "orange_book",
+    "CodePoint": "1F4D9"
+  },
+  {
+    "emoji": "📚",
+    "shortcode": "books",
+    "CodePoint": "1F4DA"
+  },
+  {
+    "emoji": "📖",
+    "shortcode": "book",
+    "CodePoint": "1F4D6"
+  },
+  {
+    "emoji": "🔖",
+    "shortcode": "bookmark",
+    "CodePoint": "1F516"
+  },
+  {
+    "emoji": "🔗",
+    "shortcode": "link",
+    "CodePoint": "1F517"
+  },
+  {
+    "emoji": "📎",
+    "shortcode": "paperclip",
+    "CodePoint": "1F4CE"
+  },
+  {
+    "emoji": "🖇",
+    "shortcode": "paperclips",
+    "CodePoint": "1F587"
+  },
+  {
+    "emoji": "📐",
+    "shortcode": "triangular_ruler",
+    "CodePoint": "1F4D0"
+  },
+  {
+    "emoji": "📏",
+    "shortcode": "straight_ruler",
+    "CodePoint": "1F4CF"
+  },
+  {
+    "emoji": "📌",
+    "shortcode": "pushpin",
+    "CodePoint": "1F4CC"
+  },
+  {
+    "emoji": "📍",
+    "shortcode": "round_pushpin",
+    "CodePoint": "1F4CD"
+  },
+  {
+    "emoji": "🖊",
+    "shortcode": "pen",
+    "CodePoint": "1F58A"
+  },
+  {
+    "emoji": "🖋",
+    "shortcode": "fountain_pen",
+    "CodePoint": "1F58B"
+  },
+  {
+    "emoji": "🖌",
+    "shortcode": "paintbrush",
+    "CodePoint": "1F58C"
+  },
+  {
+    "emoji": "🖍",
+    "shortcode": "crayon",
+    "CodePoint": "1F58D"
+  },
+  {
+    "emoji": "📝",
+    "shortcode": "memo",
+    "CodePoint": "1F4DD"
+  },
+  {
+    "emoji": "🔍",
+    "shortcode": "mag",
+    "CodePoint": "1F50D"
+  },
+  {
+    "emoji": "🔎",
+    "shortcode": "mag_right",
+    "CodePoint": "1F50E"
+  },
+  {
+    "emoji": "🔏",
+    "shortcode": "lock_with_ink_pen",
+    "CodePoint": "1F50F"
+  },
+  {
+    "emoji": "🔐",
+    "shortcode": "closed_lock_with_key",
+    "CodePoint": "1F510"
+  },
+  {
+    "emoji": "🔒",
+    "shortcode": "lock",
+    "CodePoint": "1F512"
+  },
+  {
+    "emoji": "🔓",
+    "shortcode": "unlock",
+    "CodePoint": "1F513"
+  },
+  {
+    "emoji": "💛",
+    "shortcode": "yellow_heart",
+    "CodePoint": "1F49B"
+  },
+  {
+    "emoji": "💚",
+    "shortcode": "green_heart",
+    "CodePoint": "1F49A"
+  },
+  {
+    "emoji": "💙",
+    "shortcode": "blue_heart",
+    "CodePoint": "1F499"
+  },
+  {
+    "emoji": "💜",
+    "shortcode": "purple_heart",
+    "CodePoint": "1F49C"
+  },
+  {
+    "emoji": "🖤",
+    "shortcode": "black_heart",
+    "CodePoint": "1F5A4"
+  },
+  {
+    "emoji": "💔",
+    "shortcode": "broken_heart",
+    "CodePoint": "1F494"
+  },
+  {
+    "emoji": "💕",
+    "shortcode": "two_hearts",
+    "CodePoint": "1F495"
+  },
+  {
+    "emoji": "💞",
+    "shortcode": "revolving_hearts",
+    "CodePoint": "1F49E"
+  },
+  {
+    "emoji": "💓",
+    "shortcode": "heartbeat",
+    "CodePoint": "1F493"
+  },
+  {
+    "emoji": "💗",
+    "shortcode": "heartpulse",
+    "CodePoint": "1F497"
+  },
+  {
+    "emoji": "💖",
+    "shortcode": "sparkling_heart",
+    "CodePoint": "1F496"
+  },
+  {
+    "emoji": "💘",
+    "shortcode": "cupid",
+    "CodePoint": "1F498"
+  },
+  {
+    "emoji": "💝",
+    "shortcode": "gift_heart",
+    "CodePoint": "1F49D"
+  },
+  {
+    "emoji": "💟",
+    "shortcode": "heart_decoration",
+    "CodePoint": "1F49F"
+  },
+  {
+    "emoji": "🕉",
+    "shortcode": "om",
+    "CodePoint": "1F549"
+  },
+  {
+    "emoji": "🔯",
+    "shortcode": "six_pointed_star",
+    "CodePoint": "1F52F"
+  },
+  {
+    "emoji": "🕎",
+    "shortcode": "menorah",
+    "CodePoint": "1F54E"
+  },
+  {
+    "emoji": "🛐",
+    "shortcode": "place_of_worship",
+    "CodePoint": "1F6D0"
+  },
+  {
+    "emoji": "⛎",
+    "shortcode": "ophiuchus",
+    "CodePoint": "26CE"
+  },
+  {
+    "emoji": "🆔",
+    "shortcode": "id",
+    "CodePoint": "1F194"
+  },
+  {
+    "emoji": "🉑",
+    "shortcode": "accept",
+    "CodePoint": "1F251"
+  },
+  {
+    "emoji": "📴",
+    "shortcode": "mobile_phone_off",
+    "CodePoint": "1F4F4"
+  },
+  {
+    "emoji": "📳",
+    "shortcode": "vibration_mode",
+    "CodePoint": "1F4F3"
+  },
+  {
+    "emoji": "🈶",
+    "shortcode": "u6709",
+    "CodePoint": "1F236"
+  },
+  {
+    "emoji": "🈚️",
+    "shortcode": "u7121",
+    "CodePoint": "1F21A"
+  },
+  {
+    "emoji": "🈸",
+    "shortcode": "u7533",
+    "CodePoint": "1F238"
+  },
+  {
+    "emoji": "🈺",
+    "shortcode": "u55b6",
+    "CodePoint": "1F23A"
+  },
+  {
+    "emoji": "🈷️",
+    "shortcode": "u6708",
+    "CodePoint": "1F237"
+  },
+  {
+    "emoji": "🆚",
+    "shortcode": "vs",
+    "CodePoint": "1F19A"
+  },
+  {
+    "emoji": "💮",
+    "shortcode": "white_flower",
+    "CodePoint": "1F4AE"
+  },
+  {
+    "emoji": "🉐",
+    "shortcode": "ideograph_advantage",
+    "CodePoint": "1F250"
+  },
+  {
+    "emoji": "🈴",
+    "shortcode": "u5408",
+    "CodePoint": "1F234"
+  },
+  {
+    "emoji": "🈵",
+    "shortcode": "u6e80",
+    "CodePoint": "1F235"
+  },
+  {
+    "emoji": "🈹",
+    "shortcode": "u5272",
+    "CodePoint": "1F239"
+  },
+  {
+    "emoji": "🈲",
+    "shortcode": "u7981",
+    "CodePoint": "1F232"
+  },
+  {
+    "emoji": "🅰️",
+    "shortcode": "a",
+    "CodePoint": "1F170"
+  },
+  {
+    "emoji": "🅱️",
+    "shortcode": "b",
+    "CodePoint": "1F171"
+  },
+  {
+    "emoji": "🆎",
+    "shortcode": "ab",
+    "CodePoint": "1F18E"
+  },
+  {
+    "emoji": "🆑",
+    "shortcode": "cl",
+    "CodePoint": "1F191"
+  },
+  {
+    "emoji": "🅾️",
+    "shortcode": "o2",
+    "CodePoint": "1F17E"
+  },
+  {
+    "emoji": "🆘",
+    "shortcode": "sos",
+    "CodePoint": "1F198"
+  },
+  {
+    "emoji": "❌",
+    "shortcode": "x",
+    "CodePoint": "274C"
+  },
+  {
+    "emoji": "🛑",
+    "shortcode": "stop_sign",
+    "CodePoint": "1F6D1"
+  },
+  {
+    "emoji": "📛",
+    "shortcode": "name_badge",
+    "CodePoint": "1F4DB"
+  },
+  {
+    "emoji": "🚫",
+    "shortcode": "no_entry_sign",
+    "CodePoint": "1F6AB"
+  },
+  {
+    "emoji": "💯",
+    "shortcode": "100",
+    "CodePoint": "1F4AF"
+  },
+  {
+    "emoji": "💢",
+    "shortcode": "anger",
+    "CodePoint": "1F4A2"
+  },
+  {
+    "emoji": "🚷",
+    "shortcode": "no_pedestrians",
+    "CodePoint": "1F6B7"
+  },
+  {
+    "emoji": "🚯",
+    "shortcode": "do_not_litter",
+    "CodePoint": "1F6AF"
+  },
+  {
+    "emoji": "🚳",
+    "shortcode": "no_bicycles",
+    "CodePoint": "1F6B3"
+  },
+  {
+    "emoji": "🚱",
+    "shortcode": "non-potable_water",
+    "CodePoint": "1F6B1"
+  },
+  {
+    "emoji": "🔞",
+    "shortcode": "underage",
+    "CodePoint": "1F51E"
+  },
+  {
+    "emoji": "📵",
+    "shortcode": "no_mobile_phones",
+    "CodePoint": "1F4F5"
+  },
+  {
+    "emoji": "🚭",
+    "shortcode": "no_smoking",
+    "CodePoint": "1F6AD"
+  },
+  {
+    "emoji": "❕",
+    "shortcode": "grey_exclamation",
+    "CodePoint": "2755"
+  },
+  {
+    "emoji": "❓",
+    "shortcode": "question",
+    "CodePoint": "2753"
+  },
+  {
+    "emoji": "❔",
+    "shortcode": "grey_question",
+    "CodePoint": "2754"
+  },
+  {
+    "emoji": "🔅",
+    "shortcode": "low_brightness",
+    "CodePoint": "1F505"
+  },
+  {
+    "emoji": "🔆",
+    "shortcode": "high_brightness",
+    "CodePoint": "1F506"
+  },
+  {
+    "emoji": "🚸",
+    "shortcode": "children_crossing",
+    "CodePoint": "1F6B8"
+  },
+  {
+    "emoji": "🔱",
+    "shortcode": "trident",
+    "CodePoint": "1F531"
+  },
+  {
+    "emoji": "🔰",
+    "shortcode": "beginner",
+    "CodePoint": "1F530"
+  },
+  {
+    "emoji": "✅",
+    "shortcode": "white_check_mark",
+    "CodePoint": "2705"
+  },
+  {
+    "emoji": "🈯️",
+    "shortcode": "u6307",
+    "CodePoint": "1F22F"
+  },
+  {
+    "emoji": "💹",
+    "shortcode": "chart",
+    "CodePoint": "1F4B9"
+  },
+  {
+    "emoji": "❎",
+    "shortcode": "negative_squared_cross_mark",
+    "CodePoint": "274E"
+  },
+  {
+    "emoji": "🌐",
+    "shortcode": "globe_with_meridians",
+    "CodePoint": "1F310"
+  },
+  {
+    "emoji": "💠",
+    "shortcode": "diamond_shape_with_a_dot_inside",
+    "CodePoint": "1F4A0"
+  },
+  {
+    "emoji": "🌀",
+    "shortcode": "cyclone",
+    "CodePoint": "1F300"
+  },
+  {
+    "emoji": "💤",
+    "shortcode": "zzz",
+    "CodePoint": "1F4A4"
+  },
+  {
+    "emoji": "🏧",
+    "shortcode": "atm",
+    "CodePoint": "1F3E7"
+  },
+  {
+    "emoji": "🚾",
+    "shortcode": "wc",
+    "CodePoint": "1F6BE"
+  },
+  {
+    "emoji": "🅿️",
+    "shortcode": "parking",
+    "CodePoint": "1F17F"
+  },
+  {
+    "emoji": "🈳",
+    "shortcode": "u7a7a",
+    "CodePoint": "1F233"
+  },
+  {
+    "emoji": "🈂️",
+    "shortcode": "sa",
+    "CodePoint": "1F202"
+  },
+  {
+    "emoji": "🛂",
+    "shortcode": "passport_control",
+    "CodePoint": "1F6C2"
+  },
+  {
+    "emoji": "🛃",
+    "shortcode": "customs",
+    "CodePoint": "1F6C3"
+  },
+  {
+    "emoji": "🛄",
+    "shortcode": "baggage_claim",
+    "CodePoint": "1F6C4"
+  },
+  {
+    "emoji": "🛅",
+    "shortcode": "left_luggage",
+    "CodePoint": "1F6C5"
+  },
+  {
+    "emoji": "🚹",
+    "shortcode": "mens",
+    "CodePoint": "1F6B9"
+  },
+  {
+    "emoji": "🚺",
+    "shortcode": "womens",
+    "CodePoint": "1F6BA"
+  },
+  {
+    "emoji": "🚼",
+    "shortcode": "baby_symbol",
+    "CodePoint": "1F6BC"
+  },
+  {
+    "emoji": "🚻",
+    "shortcode": "restroom",
+    "CodePoint": "1F6BB"
+  },
+  {
+    "emoji": "🚮",
+    "shortcode": "put_litter_in_its_place",
+    "CodePoint": "1F6AE"
+  },
+  {
+    "emoji": "🎦",
+    "shortcode": "cinema",
+    "CodePoint": "1F3A6"
+  },
+  {
+    "emoji": "📶",
+    "shortcode": "signal_strength",
+    "CodePoint": "1F4F6"
+  },
+  {
+    "emoji": "🈁",
+    "shortcode": "koko",
+    "CodePoint": "1F201"
+  },
+  {
+    "emoji": "🔣",
+    "shortcode": "symbols",
+    "CodePoint": "1F523"
+  },
+  {
+    "emoji": "🔤",
+    "shortcode": "abc",
+    "CodePoint": "1F524"
+  },
+  {
+    "emoji": "🔡",
+    "shortcode": "abcd",
+    "CodePoint": "1F521"
+  },
+  {
+    "emoji": "🔠",
+    "shortcode": "capital_abcd",
+    "CodePoint": "1F520"
+  },
+  {
+    "emoji": "🆖",
+    "shortcode": "ng",
+    "CodePoint": "1F196"
+  },
+  {
+    "emoji": "🆗",
+    "shortcode": "ok",
+    "CodePoint": "1F197"
+  },
+  {
+    "emoji": "🆙",
+    "shortcode": "up",
+    "CodePoint": "1F199"
+  },
+  {
+    "emoji": "🆒",
+    "shortcode": "cool",
+    "CodePoint": "1F192"
+  },
+  {
+    "emoji": "🆕",
+    "shortcode": "new",
+    "CodePoint": "1F195"
+  },
+  {
+    "emoji": "🆓",
+    "shortcode": "free",
+    "CodePoint": "1F193"
+  },
+  {
+    "emoji": "🔟",
+    "shortcode": "keycap_ten",
+    "CodePoint": "1F51F"
+  },
+  {
+    "emoji": "🔢",
+    "shortcode": "1234",
+    "CodePoint": "1F522"
+  },
+  {
+    "emoji": "⏸",
+    "shortcode": "pause_button",
+    "CodePoint": "23F8"
+  },
+  {
+    "emoji": "⏯",
+    "shortcode": "play_or_pause_button",
+    "CodePoint": "23EF"
+  },
+  {
+    "emoji": "⏹",
+    "shortcode": "stop_button",
+    "CodePoint": "23F9"
+  },
+  {
+    "emoji": "⏺",
+    "shortcode": "record_button",
+    "CodePoint": "23FA"
+  },
+  {
+    "emoji": "⏭",
+    "shortcode": "next_track_button",
+    "CodePoint": "23ED"
+  },
+  {
+    "emoji": "⏮",
+    "shortcode": "previous_track_button",
+    "CodePoint": "23EE"
+  },
+  {
+    "emoji": "⏩",
+    "shortcode": "fast_forward",
+    "CodePoint": "23E9"
+  },
+  {
+    "emoji": "⏪",
+    "shortcode": "rewind",
+    "CodePoint": "23EA"
+  },
+  {
+    "emoji": "⏫",
+    "shortcode": "arrow_double_up",
+    "CodePoint": "23EB"
+  },
+  {
+    "emoji": "⏬",
+    "shortcode": "arrow_double_down",
+    "CodePoint": "23EC"
+  },
+  {
+    "emoji": "🔼",
+    "shortcode": "arrow_up_small",
+    "CodePoint": "1F53C"
+  },
+  {
+    "emoji": "🔽",
+    "shortcode": "arrow_down_small",
+    "CodePoint": "1F53D"
+  },
+  {
+    "emoji": "🔀",
+    "shortcode": "twisted_rightwards_arrows",
+    "CodePoint": "1F500"
+  },
+  {
+    "emoji": "🔁",
+    "shortcode": "repeat",
+    "CodePoint": "1F501"
+  },
+  {
+    "emoji": "🔂",
+    "shortcode": "repeat_one",
+    "CodePoint": "1F502"
+  },
+  {
+    "emoji": "🔄",
+    "shortcode": "arrows_counterclockwise",
+    "CodePoint": "1F504"
+  },
+  {
+    "emoji": "🔃",
+    "shortcode": "arrows_clockwise",
+    "CodePoint": "1F503"
+  },
+  {
+    "emoji": "🎵",
+    "shortcode": "musical_note",
+    "CodePoint": "1F3B5"
+  },
+  {
+    "emoji": "🎶",
+    "shortcode": "notes",
+    "CodePoint": "1F3B6"
+  },
+  {
+    "emoji": "➕",
+    "shortcode": "heavy_plus_sign",
+    "CodePoint": "2795"
+  },
+  {
+    "emoji": "➖",
+    "shortcode": "heavy_minus_sign",
+    "CodePoint": "2796"
+  },
+  {
+    "emoji": "➗",
+    "shortcode": "heavy_division_sign",
+    "CodePoint": "2797"
+  },
+  {
+    "emoji": "💲",
+    "shortcode": "heavy_dollar_sign",
+    "CodePoint": "1F4B2"
+  },
+  {
+    "emoji": "💱",
+    "shortcode": "currency_exchange",
+    "CodePoint": "1F4B1"
+  },
+  {
+    "emoji": "➰",
+    "shortcode": "curly_loop",
+    "CodePoint": "27B0"
+  },
+  {
+    "emoji": "➿",
+    "shortcode": "loop",
+    "CodePoint": "27BF"
+  },
+  {
+    "emoji": "🔚",
+    "shortcode": "end",
+    "CodePoint": "1F51A"
+  },
+  {
+    "emoji": "🔙",
+    "shortcode": "back",
+    "CodePoint": "1F519"
+  },
+  {
+    "emoji": "🔛",
+    "shortcode": "on",
+    "CodePoint": "1F51B"
+  },
+  {
+    "emoji": "🔝",
+    "shortcode": "top",
+    "CodePoint": "1F51D"
+  },
+  {
+    "emoji": "🔜",
+    "shortcode": "soon",
+    "CodePoint": "1F51C"
+  },
+  {
+    "emoji": "🔘",
+    "shortcode": "radio_button",
+    "CodePoint": "1F518"
+  },
+  {
+    "emoji": "🔴",
+    "shortcode": "red_circle",
+    "CodePoint": "1F534"
+  },
+  {
+    "emoji": "🔵",
+    "shortcode": "large_blue_circle",
+    "CodePoint": "1F535"
+  },
+  {
+    "emoji": "🔺",
+    "shortcode": "small_red_triangle",
+    "CodePoint": "1F53A"
+  },
+  {
+    "emoji": "🔻",
+    "shortcode": "small_red_triangle_down",
+    "CodePoint": "1F53B"
+  },
+  {
+    "emoji": "🔸",
+    "shortcode": "small_orange_diamond",
+    "CodePoint": "1F538"
+  },
+  {
+    "emoji": "🔹",
+    "shortcode": "small_blue_diamond",
+    "CodePoint": "1F539"
+  },
+  {
+    "emoji": "🔶",
+    "shortcode": "large_orange_diamond",
+    "CodePoint": "1F536"
+  },
+  {
+    "emoji": "🔷",
+    "shortcode": "large_blue_diamond",
+    "CodePoint": "1F537"
+  },
+  {
+    "emoji": "🔳",
+    "shortcode": "white_square_button",
+    "CodePoint": "1F533"
+  },
+  {
+    "emoji": "🔲",
+    "shortcode": "black_square_button",
+    "CodePoint": "1F532"
+  },
+  {
+    "emoji": "🔈",
+    "shortcode": "speaker",
+    "CodePoint": "1F508"
+  },
+  {
+    "emoji": "🔇",
+    "shortcode": "mute",
+    "CodePoint": "1F507"
+  },
+  {
+    "emoji": "🔉",
+    "shortcode": "sound",
+    "CodePoint": "1F509"
+  },
+  {
+    "emoji": "🔊",
+    "shortcode": "loud_sound",
+    "CodePoint": "1F50A"
+  },
+  {
+    "emoji": "🔔",
+    "shortcode": "bell",
+    "CodePoint": "1F514"
+  },
+  {
+    "emoji": "🔕",
+    "shortcode": "no_bell",
+    "CodePoint": "1F515"
+  },
+  {
+    "emoji": "📣",
+    "shortcode": "mega",
+    "CodePoint": "1F4E3"
+  },
+  {
+    "emoji": "📢",
+    "shortcode": "loudspeaker",
+    "CodePoint": "1F4E2"
+  },
+  {
+    "emoji": "👁‍🗨",
+    "shortcode": "eye_speech_bubble",
+    "CodePoint": "1F441"
+  },
+  {
+    "emoji": "💬",
+    "shortcode": "speech_balloon",
+    "CodePoint": "1F4AC"
+  },
+  {
+    "emoji": "💭",
+    "shortcode": "thought_balloon",
+    "CodePoint": "1F4AD"
+  },
+  {
+    "emoji": "🗯",
+    "shortcode": "right_anger_bubble",
+    "CodePoint": "1F5EF"
+  },
+  {
+    "emoji": "🃏",
+    "shortcode": "black_joker",
+    "CodePoint": "1F0CF"
+  },
+  {
+    "emoji": "🎴",
+    "shortcode": "flower_playing_cards",
+    "CodePoint": "1F3B4"
+  },
+  {
+    "emoji": "🀄️",
+    "shortcode": "mahjong",
+    "CodePoint": "1F004"
+  },
+  {
+    "emoji": "🕐",
+    "shortcode": "clock1",
+    "CodePoint": "1F550"
+  },
+  {
+    "emoji": "🕑",
+    "shortcode": "clock2",
+    "CodePoint": "1F551"
+  },
+  {
+    "emoji": "🕒",
+    "shortcode": "clock3",
+    "CodePoint": "1F552"
+  },
+  {
+    "emoji": "🕓",
+    "shortcode": "clock4",
+    "CodePoint": "1F553"
+  },
+  {
+    "emoji": "🕔",
+    "shortcode": "clock5",
+    "CodePoint": "1F554"
+  },
+  {
+    "emoji": "🕕",
+    "shortcode": "clock6",
+    "CodePoint": "1F555"
+  },
+  {
+    "emoji": "🕖",
+    "shortcode": "clock7",
+    "CodePoint": "1F556"
+  },
+  {
+    "emoji": "🕗",
+    "shortcode": "clock8",
+    "CodePoint": "1F557"
+  },
+  {
+    "emoji": "🕘",
+    "shortcode": "clock9",
+    "CodePoint": "1F558"
+  },
+  {
+    "emoji": "🕙",
+    "shortcode": "clock10",
+    "CodePoint": "1F559"
+  },
+  {
+    "emoji": "🕚",
+    "shortcode": "clock11",
+    "CodePoint": "1F55A"
+  },
+  {
+    "emoji": "🕛",
+    "shortcode": "clock12",
+    "CodePoint": "1F55B"
+  },
+  {
+    "emoji": "🕜",
+    "shortcode": "clock130",
+    "CodePoint": "1F55C"
+  },
+  {
+    "emoji": "🕝",
+    "shortcode": "clock230",
+    "CodePoint": "1F55D"
+  },
+  {
+    "emoji": "🕞",
+    "shortcode": "clock330",
+    "CodePoint": "1F55E"
+  },
+  {
+    "emoji": "🕟",
+    "shortcode": "clock430",
+    "CodePoint": "1F55F"
+  },
+  {
+    "emoji": "🕠",
+    "shortcode": "clock530",
+    "CodePoint": "1F560"
+  },
+  {
+    "emoji": "🕡",
+    "shortcode": "clock630",
+    "CodePoint": "1F561"
+  },
+  {
+    "emoji": "🕢",
+    "shortcode": "clock730",
+    "CodePoint": "1F562"
+  },
+  {
+    "emoji": "🕣",
+    "shortcode": "clock830",
+    "CodePoint": "1F563"
+  },
+  {
+    "emoji": "🕤",
+    "shortcode": "clock930",
+    "CodePoint": "1F564"
+  },
+  {
+    "emoji": "🕥",
+    "shortcode": "clock1030",
+    "CodePoint": "1F565"
+  },
+  {
+    "emoji": "🕦",
+    "shortcode": "clock1130",
+    "CodePoint": "1F566"
+  },
+  {
+    "emoji": "🕧",
+    "shortcode": "clock1230",
+    "CodePoint": "1F567"
+  },
+  {
+    "emoji": "🏳️",
+    "shortcode": "white_flag",
+    "CodePoint": "1F3F3"
+  },
+  {
+    "emoji": "🏴",
+    "shortcode": "black_flag",
+    "CodePoint": "1F3F4"
+  },
+  {
+    "emoji": "🏁",
+    "shortcode": "checkered_flag",
+    "CodePoint": "1F3C1"
+  },
+  {
+    "emoji": "🚩",
+    "shortcode": "triangular_flag_on_post",
+    "CodePoint": "1F6A9"
+  },
+  {
+    "emoji": "🏳️‍🌈",
+    "shortcode": "rainbow_flag",
+    "CodePoint": "1F3F3"
+  },
+  {
+    "emoji": "🇦🇫",
+    "shortcode": "afghanistan",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇦🇽",
+    "shortcode": "aland_islands",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇦🇱",
+    "shortcode": "albania",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇩🇿",
+    "shortcode": "algeria",
+    "CodePoint": "1F1E9"
+  },
+  {
+    "emoji": "🇦🇸",
+    "shortcode": "american_samoa",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇦🇩",
+    "shortcode": "andorra",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇦🇴",
+    "shortcode": "angola",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇦🇮",
+    "shortcode": "anguilla",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇦🇶",
+    "shortcode": "antarctica",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇦🇬",
+    "shortcode": "antigua_barbuda",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇦🇷",
+    "shortcode": "argentina",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇦🇲",
+    "shortcode": "armenia",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇦🇼",
+    "shortcode": "aruba",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇦🇺",
+    "shortcode": "australia",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇦🇹",
+    "shortcode": "austria",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇦🇿",
+    "shortcode": "azerbaijan",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇧🇸",
+    "shortcode": "bahamas",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇭",
+    "shortcode": "bahrain",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇩",
+    "shortcode": "bangladesh",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇧",
+    "shortcode": "barbados",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇾",
+    "shortcode": "belarus",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇪",
+    "shortcode": "belgium",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇿",
+    "shortcode": "belize",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇯",
+    "shortcode": "benin",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇲",
+    "shortcode": "bermuda",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇹",
+    "shortcode": "bhutan",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇴",
+    "shortcode": "bolivia",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇶",
+    "shortcode": "caribbean_netherlands",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇦",
+    "shortcode": "bosnia_herzegovina",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇼",
+    "shortcode": "botswana",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇷",
+    "shortcode": "brazil",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇮🇴",
+    "shortcode": "british_indian_ocean_territory",
+    "CodePoint": "1F1EE"
+  },
+  {
+    "emoji": "🇻🇬",
+    "shortcode": "british_virgin_islands",
+    "CodePoint": "1F1FB"
+  },
+  {
+    "emoji": "🇧🇳",
+    "shortcode": "brunei",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇬",
+    "shortcode": "bulgaria",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇫",
+    "shortcode": "burkina_faso",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇧🇮",
+    "shortcode": "burundi",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇨🇻",
+    "shortcode": "cape_verde",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇰🇭",
+    "shortcode": "cambodia",
+    "CodePoint": "1F1F0"
+  },
+  {
+    "emoji": "🇨🇲",
+    "shortcode": "cameroon",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇨🇦",
+    "shortcode": "canada",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇮🇨",
+    "shortcode": "canary_islands",
+    "CodePoint": "1F1EE"
+  },
+  {
+    "emoji": "🇰🇾",
+    "shortcode": "cayman_islands",
+    "CodePoint": "1F1F0"
+  },
+  {
+    "emoji": "🇨🇫",
+    "shortcode": "central_african_republic",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇹🇩",
+    "shortcode": "chad",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇨🇱",
+    "shortcode": "chile",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇨🇳",
+    "shortcode": "cn",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇨🇽",
+    "shortcode": "christmas_island",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇨🇨",
+    "shortcode": "cocos_islands",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇨🇴",
+    "shortcode": "colombia",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇰🇲",
+    "shortcode": "comoros",
+    "CodePoint": "1F1F0"
+  },
+  {
+    "emoji": "🇨🇬",
+    "shortcode": "congo_brazzaville",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇨🇩",
+    "shortcode": "congo_kinshasa",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇨🇰",
+    "shortcode": "cook_islands",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇨🇷",
+    "shortcode": "costa_rica",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇨🇮",
+    "shortcode": "cote_divoire",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇭🇷",
+    "shortcode": "croatia",
+    "CodePoint": "1F1ED"
+  },
+  {
+    "emoji": "🇨🇺",
+    "shortcode": "cuba",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇨🇼",
+    "shortcode": "curacao",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇨🇾",
+    "shortcode": "cyprus",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇨🇿",
+    "shortcode": "czech_republic",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇩🇰",
+    "shortcode": "denmark",
+    "CodePoint": "1F1E9"
+  },
+  {
+    "emoji": "🇩🇯",
+    "shortcode": "djibouti",
+    "CodePoint": "1F1E9"
+  },
+  {
+    "emoji": "🇩🇲",
+    "shortcode": "dominica",
+    "CodePoint": "1F1E9"
+  },
+  {
+    "emoji": "🇩🇴",
+    "shortcode": "dominican_republic",
+    "CodePoint": "1F1E9"
+  },
+  {
+    "emoji": "🇪🇨",
+    "shortcode": "ecuador",
+    "CodePoint": "1F1EA"
+  },
+  {
+    "emoji": "🇪🇬",
+    "shortcode": "egypt",
+    "CodePoint": "1F1EA"
+  },
+  {
+    "emoji": "🇸🇻",
+    "shortcode": "el_salvador",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇬🇶",
+    "shortcode": "equatorial_guinea",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇪🇷",
+    "shortcode": "eritrea",
+    "CodePoint": "1F1EA"
+  },
+  {
+    "emoji": "🇪🇪",
+    "shortcode": "estonia",
+    "CodePoint": "1F1EA"
+  },
+  {
+    "emoji": "🇪🇹",
+    "shortcode": "ethiopia",
+    "CodePoint": "1F1EA"
+  },
+  {
+    "emoji": "🇪🇺",
+    "shortcode": "eu",
+    "CodePoint": "1F1EA"
+  },
+  {
+    "emoji": "🇫🇰",
+    "shortcode": "falkland_islands",
+    "CodePoint": "1F1EB"
+  },
+  {
+    "emoji": "🇫🇴",
+    "shortcode": "faroe_islands",
+    "CodePoint": "1F1EB"
+  },
+  {
+    "emoji": "🇫🇯",
+    "shortcode": "fiji",
+    "CodePoint": "1F1EB"
+  },
+  {
+    "emoji": "🇫🇮",
+    "shortcode": "finland",
+    "CodePoint": "1F1EB"
+  },
+  {
+    "emoji": "🇫🇷",
+    "shortcode": "fr",
+    "CodePoint": "1F1EB"
+  },
+  {
+    "emoji": "🇬🇫",
+    "shortcode": "french_guiana",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇵🇫",
+    "shortcode": "french_polynesia",
+    "CodePoint": "1F1F5"
+  },
+  {
+    "emoji": "🇹🇫",
+    "shortcode": "french_southern_territories",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇬🇦",
+    "shortcode": "gabon",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇬🇲",
+    "shortcode": "gambia",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇬🇪",
+    "shortcode": "georgia",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇩🇪",
+    "shortcode": "de",
+    "CodePoint": "1F1E9"
+  },
+  {
+    "emoji": "🇬🇭",
+    "shortcode": "ghana",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇬🇮",
+    "shortcode": "gibraltar",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇬🇷",
+    "shortcode": "greece",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇬🇱",
+    "shortcode": "greenland",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇬🇩",
+    "shortcode": "grenada",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇬🇵",
+    "shortcode": "guadeloupe",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇬🇺",
+    "shortcode": "guam",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇬🇹",
+    "shortcode": "guatemala",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇬🇬",
+    "shortcode": "guernsey",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇬🇳",
+    "shortcode": "guinea",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇬🇼",
+    "shortcode": "guinea_bissau",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇬🇾",
+    "shortcode": "guyana",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇭🇹",
+    "shortcode": "haiti",
+    "CodePoint": "1F1ED"
+  },
+  {
+    "emoji": "🇭🇳",
+    "shortcode": "honduras",
+    "CodePoint": "1F1ED"
+  },
+  {
+    "emoji": "🇭🇰",
+    "shortcode": "hong_kong",
+    "CodePoint": "1F1ED"
+  },
+  {
+    "emoji": "🇭🇺",
+    "shortcode": "hungary",
+    "CodePoint": "1F1ED"
+  },
+  {
+    "emoji": "🇮🇸",
+    "shortcode": "iceland",
+    "CodePoint": "1F1EE"
+  },
+  {
+    "emoji": "🇮🇳",
+    "shortcode": "india",
+    "CodePoint": "1F1EE"
+  },
+  {
+    "emoji": "🇮🇩",
+    "shortcode": "indonesia",
+    "CodePoint": "1F1EE"
+  },
+  {
+    "emoji": "🇮🇷",
+    "shortcode": "iran",
+    "CodePoint": "1F1EE"
+  },
+  {
+    "emoji": "🇮🇶",
+    "shortcode": "iraq",
+    "CodePoint": "1F1EE"
+  },
+  {
+    "emoji": "🇮🇪",
+    "shortcode": "ireland",
+    "CodePoint": "1F1EE"
+  },
+  {
+    "emoji": "🇮🇲",
+    "shortcode": "isle_of_man",
+    "CodePoint": "1F1EE"
+  },
+  {
+    "emoji": "🇮🇱",
+    "shortcode": "israel",
+    "CodePoint": "1F1EE"
+  },
+  {
+    "emoji": "🇮🇹",
+    "shortcode": "it",
+    "CodePoint": "1F1EE"
+  },
+  {
+    "emoji": "🇯🇲",
+    "shortcode": "jamaica",
+    "CodePoint": "1F1EF"
+  },
+  {
+    "emoji": "🇯🇵",
+    "shortcode": "jp",
+    "CodePoint": "1F1EF"
+  },
+  {
+    "emoji": "🎌",
+    "shortcode": "crossed_flags",
+    "CodePoint": "1F38C"
+  },
+  {
+    "emoji": "🇯🇪",
+    "shortcode": "jersey",
+    "CodePoint": "1F1EF"
+  },
+  {
+    "emoji": "🇯🇴",
+    "shortcode": "jordan",
+    "CodePoint": "1F1EF"
+  },
+  {
+    "emoji": "🇰🇿",
+    "shortcode": "kazakhstan",
+    "CodePoint": "1F1F0"
+  },
+  {
+    "emoji": "🇰🇪",
+    "shortcode": "kenya",
+    "CodePoint": "1F1F0"
+  },
+  {
+    "emoji": "🇰🇮",
+    "shortcode": "kiribati",
+    "CodePoint": "1F1F0"
+  },
+  {
+    "emoji": "🇽🇰",
+    "shortcode": "kosovo",
+    "CodePoint": "1F1FD"
+  },
+  {
+    "emoji": "🇰🇼",
+    "shortcode": "kuwait",
+    "CodePoint": "1F1F0"
+  },
+  {
+    "emoji": "🇰🇬",
+    "shortcode": "kyrgyzstan",
+    "CodePoint": "1F1F0"
+  },
+  {
+    "emoji": "🇱🇦",
+    "shortcode": "laos",
+    "CodePoint": "1F1F1"
+  },
+  {
+    "emoji": "🇱🇻",
+    "shortcode": "latvia",
+    "CodePoint": "1F1F1"
+  },
+  {
+    "emoji": "🇱🇧",
+    "shortcode": "lebanon",
+    "CodePoint": "1F1F1"
+  },
+  {
+    "emoji": "🇱🇸",
+    "shortcode": "lesotho",
+    "CodePoint": "1F1F1"
+  },
+  {
+    "emoji": "🇱🇷",
+    "shortcode": "liberia",
+    "CodePoint": "1F1F1"
+  },
+  {
+    "emoji": "🇱🇾",
+    "shortcode": "libya",
+    "CodePoint": "1F1F1"
+  },
+  {
+    "emoji": "🇱🇮",
+    "shortcode": "liechtenstein",
+    "CodePoint": "1F1F1"
+  },
+  {
+    "emoji": "🇱🇹",
+    "shortcode": "lithuania",
+    "CodePoint": "1F1F1"
+  },
+  {
+    "emoji": "🇱🇺",
+    "shortcode": "luxembourg",
+    "CodePoint": "1F1F1"
+  },
+  {
+    "emoji": "🇲🇴",
+    "shortcode": "macau",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇰",
+    "shortcode": "macedonia",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇬",
+    "shortcode": "madagascar",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇼",
+    "shortcode": "malawi",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇾",
+    "shortcode": "malaysia",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇻",
+    "shortcode": "maldives",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇱",
+    "shortcode": "mali",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇹",
+    "shortcode": "malta",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇭",
+    "shortcode": "marshall_islands",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇶",
+    "shortcode": "martinique",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇷",
+    "shortcode": "mauritania",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇺",
+    "shortcode": "mauritius",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇾🇹",
+    "shortcode": "mayotte",
+    "CodePoint": "1F1FE"
+  },
+  {
+    "emoji": "🇲🇽",
+    "shortcode": "mexico",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇫🇲",
+    "shortcode": "micronesia",
+    "CodePoint": "1F1EB"
+  },
+  {
+    "emoji": "🇲🇩",
+    "shortcode": "moldova",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇨",
+    "shortcode": "monaco",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇳",
+    "shortcode": "mongolia",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇪",
+    "shortcode": "montenegro",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇸",
+    "shortcode": "montserrat",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇦",
+    "shortcode": "morocco",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇿",
+    "shortcode": "mozambique",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇲🇲",
+    "shortcode": "myanmar",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇳🇦",
+    "shortcode": "namibia",
+    "CodePoint": "1F1F3"
+  },
+  {
+    "emoji": "🇳🇷",
+    "shortcode": "nauru",
+    "CodePoint": "1F1F3"
+  },
+  {
+    "emoji": "🇳🇵",
+    "shortcode": "nepal",
+    "CodePoint": "1F1F3"
+  },
+  {
+    "emoji": "🇳🇱",
+    "shortcode": "netherlands",
+    "CodePoint": "1F1F3"
+  },
+  {
+    "emoji": "🇳🇨",
+    "shortcode": "new_caledonia",
+    "CodePoint": "1F1F3"
+  },
+  {
+    "emoji": "🇳🇿",
+    "shortcode": "new_zealand",
+    "CodePoint": "1F1F3"
+  },
+  {
+    "emoji": "🇳🇮",
+    "shortcode": "nicaragua",
+    "CodePoint": "1F1F3"
+  },
+  {
+    "emoji": "🇳🇪",
+    "shortcode": "niger",
+    "CodePoint": "1F1F3"
+  },
+  {
+    "emoji": "🇳🇬",
+    "shortcode": "nigeria",
+    "CodePoint": "1F1F3"
+  },
+  {
+    "emoji": "🇳🇺",
+    "shortcode": "niue",
+    "CodePoint": "1F1F3"
+  },
+  {
+    "emoji": "🇳🇫",
+    "shortcode": "norfolk_island",
+    "CodePoint": "1F1F3"
+  },
+  {
+    "emoji": "🇲🇵",
+    "shortcode": "northern_mariana_islands",
+    "CodePoint": "1F1F2"
+  },
+  {
+    "emoji": "🇰🇵",
+    "shortcode": "north_korea",
+    "CodePoint": "1F1F0"
+  },
+  {
+    "emoji": "🇳🇴",
+    "shortcode": "norway",
+    "CodePoint": "1F1F3"
+  },
+  {
+    "emoji": "🇴🇲",
+    "shortcode": "oman",
+    "CodePoint": "1F1F4"
+  },
+  {
+    "emoji": "🇵🇰",
+    "shortcode": "pakistan",
+    "CodePoint": "1F1F5"
+  },
+  {
+    "emoji": "🇵🇼",
+    "shortcode": "palau",
+    "CodePoint": "1F1F5"
+  },
+  {
+    "emoji": "🇵🇸",
+    "shortcode": "palestinian_territories",
+    "CodePoint": "1F1F5"
+  },
+  {
+    "emoji": "🇵🇦",
+    "shortcode": "panama",
+    "CodePoint": "1F1F5"
+  },
+  {
+    "emoji": "🇵🇬",
+    "shortcode": "papua_new_guinea",
+    "CodePoint": "1F1F5"
+  },
+  {
+    "emoji": "🇵🇾",
+    "shortcode": "paraguay",
+    "CodePoint": "1F1F5"
+  },
+  {
+    "emoji": "🇵🇪",
+    "shortcode": "peru",
+    "CodePoint": "1F1F5"
+  },
+  {
+    "emoji": "🇵🇭",
+    "shortcode": "philippines",
+    "CodePoint": "1F1F5"
+  },
+  {
+    "emoji": "🇵🇳",
+    "shortcode": "pitcairn_islands",
+    "CodePoint": "1F1F5"
+  },
+  {
+    "emoji": "🇵🇱",
+    "shortcode": "poland",
+    "CodePoint": "1F1F5"
+  },
+  {
+    "emoji": "🇵🇹",
+    "shortcode": "portugal",
+    "CodePoint": "1F1F5"
+  },
+  {
+    "emoji": "🇵🇷",
+    "shortcode": "puerto_rico",
+    "CodePoint": "1F1F5"
+  },
+  {
+    "emoji": "🇶🇦",
+    "shortcode": "qatar",
+    "CodePoint": "1F1F6"
+  },
+  {
+    "emoji": "🇷🇪",
+    "shortcode": "reunion",
+    "CodePoint": "1F1F7"
+  },
+  {
+    "emoji": "🇷🇴",
+    "shortcode": "romania",
+    "CodePoint": "1F1F7"
+  },
+  {
+    "emoji": "🇷🇺",
+    "shortcode": "ru",
+    "CodePoint": "1F1F7"
+  },
+  {
+    "emoji": "🇷🇼",
+    "shortcode": "rwanda",
+    "CodePoint": "1F1F7"
+  },
+  {
+    "emoji": "🇧🇱",
+    "shortcode": "st_barthelemy",
+    "CodePoint": "1F1E7"
+  },
+  {
+    "emoji": "🇸🇭",
+    "shortcode": "st_helena",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇰🇳",
+    "shortcode": "st_kitts_nevis",
+    "CodePoint": "1F1F0"
+  },
+  {
+    "emoji": "🇱🇨",
+    "shortcode": "st_lucia",
+    "CodePoint": "1F1F1"
+  },
+  {
+    "emoji": "🇵🇲",
+    "shortcode": "st_pierre_miquelon",
+    "CodePoint": "1F1F5"
+  },
+  {
+    "emoji": "🇻🇨",
+    "shortcode": "st_vincent_grenadines",
+    "CodePoint": "1F1FB"
+  },
+  {
+    "emoji": "🇼🇸",
+    "shortcode": "samoa",
+    "CodePoint": "1F1FC"
+  },
+  {
+    "emoji": "🇸🇲",
+    "shortcode": "san_marino",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇸🇹",
+    "shortcode": "sao_tome_principe",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇸🇦",
+    "shortcode": "saudi_arabia",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇸🇳",
+    "shortcode": "senegal",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇷🇸",
+    "shortcode": "serbia",
+    "CodePoint": "1F1F7"
+  },
+  {
+    "emoji": "🇸🇨",
+    "shortcode": "seychelles",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇸🇱",
+    "shortcode": "sierra_leone",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇸🇬",
+    "shortcode": "singapore",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇸🇽",
+    "shortcode": "sint_maarten",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇸🇰",
+    "shortcode": "slovakia",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇸🇮",
+    "shortcode": "slovenia",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇸🇧",
+    "shortcode": "solomon_islands",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇸🇴",
+    "shortcode": "somalia",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇿🇦",
+    "shortcode": "south_africa",
+    "CodePoint": "1F1FF"
+  },
+  {
+    "emoji": "🇬🇸",
+    "shortcode": "south_georgia_south_sandwich_islands",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇰🇷",
+    "shortcode": "kr",
+    "CodePoint": "1F1F0"
+  },
+  {
+    "emoji": "🇸🇸",
+    "shortcode": "south_sudan",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇪🇸",
+    "shortcode": "es",
+    "CodePoint": "1F1EA"
+  },
+  {
+    "emoji": "🇱🇰",
+    "shortcode": "sri_lanka",
+    "CodePoint": "1F1F1"
+  },
+  {
+    "emoji": "🇸🇩",
+    "shortcode": "sudan",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇸🇷",
+    "shortcode": "suriname",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇸🇿",
+    "shortcode": "swaziland",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇸🇪",
+    "shortcode": "sweden",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇨🇭",
+    "shortcode": "switzerland",
+    "CodePoint": "1F1E8"
+  },
+  {
+    "emoji": "🇸🇾",
+    "shortcode": "syria",
+    "CodePoint": "1F1F8"
+  },
+  {
+    "emoji": "🇹🇼",
+    "shortcode": "taiwan",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇹🇯",
+    "shortcode": "tajikistan",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇹🇿",
+    "shortcode": "tanzania",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇹🇭",
+    "shortcode": "thailand",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇹🇱",
+    "shortcode": "timor_leste",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇹🇬",
+    "shortcode": "togo",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇹🇰",
+    "shortcode": "tokelau",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇹🇴",
+    "shortcode": "tonga",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇹🇹",
+    "shortcode": "trinidad_tobago",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇹🇳",
+    "shortcode": "tunisia",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇹🇷",
+    "shortcode": "tr",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇹🇲",
+    "shortcode": "turkmenistan",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇹🇨",
+    "shortcode": "turks_caicos_islands",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇹🇻",
+    "shortcode": "tuvalu",
+    "CodePoint": "1F1F9"
+  },
+  {
+    "emoji": "🇺🇬",
+    "shortcode": "uganda",
+    "CodePoint": "1F1FA"
+  },
+  {
+    "emoji": "🇺🇦",
+    "shortcode": "ukraine",
+    "CodePoint": "1F1FA"
+  },
+  {
+    "emoji": "🇦🇪",
+    "shortcode": "united_arab_emirates",
+    "CodePoint": "1F1E6"
+  },
+  {
+    "emoji": "🇬🇧",
+    "shortcode": "gb",
+    "CodePoint": "1F1EC"
+  },
+  {
+    "emoji": "🇺🇸",
+    "shortcode": "us",
+    "CodePoint": "1F1FA"
+  },
+  {
+    "emoji": "🇻🇮",
+    "shortcode": "us_virgin_islands",
+    "CodePoint": "1F1FB"
+  },
+  {
+    "emoji": "🇺🇾",
+    "shortcode": "uruguay",
+    "CodePoint": "1F1FA"
+  },
+  {
+    "emoji": "🇺🇿",
+    "shortcode": "uzbekistan",
+    "CodePoint": "1F1FA"
+  },
+  {
+    "emoji": "🇻🇺",
+    "shortcode": "vanuatu",
+    "CodePoint": "1F1FB"
+  },
+  {
+    "emoji": "🇻🇦",
+    "shortcode": "vatican_city",
+    "CodePoint": "1F1FB"
+  },
+  {
+    "emoji": "🇻🇪",
+    "shortcode": "venezuela",
+    "CodePoint": "1F1FB"
+  },
+  {
+    "emoji": "🇻🇳",
+    "shortcode": "vietnam",
+    "CodePoint": "1F1FB"
+  },
+  {
+    "emoji": "🇼🇫",
+    "shortcode": "wallis_futuna",
+    "CodePoint": "1F1FC"
+  },
+  {
+    "emoji": "🇪🇭",
+    "shortcode": "western_sahara",
+    "CodePoint": "1F1EA"
+  },
+  {
+    "emoji": "🇾🇪",
+    "shortcode": "yemen",
+    "CodePoint": "1F1FE"
+  },
+  {
+    "emoji": "🇿🇲",
+    "shortcode": "zambia",
+    "CodePoint": "1F1FF"
+  },
+  {
+    "emoji": "🇿🇼",
+    "shortcode": "zimbabwe",
+    "CodePoint": "1F1FF"
+  }
+]

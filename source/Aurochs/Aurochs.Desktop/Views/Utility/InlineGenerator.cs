@@ -18,26 +18,33 @@ namespace Aurochs.Desktop.Views.Utility
     {
         public static Inline CreateEmojiWithInlineUIContainer(Uri uri, Typeface typeface, double fontSize, double pixelPerDip)
         {
-            var svg = new SvgDrawingCanvas();
-            using (var reader = new FileSvgReader(new WpfDrawingSettings()) { SaveZaml = false })
+            try
             {
-                var drawing = reader.Read(uri);
-                svg.RenderDiagrams(drawing);
+                var svg = new SvgDrawingCanvas();
+                using (var reader = new FileSvgReader(new WpfDrawingSettings()) { SaveZaml = false })
+                {
+                    var drawing = reader.Read(uri);
+                    svg.RenderDiagrams(drawing);
+                }
+
+                var sizer = new FormattedText("■", CultureInfo.CurrentCulture, FlowDirection.LeftToRight, typeface, fontSize, Brushes.Transparent, pixelPerDip);
+
+                var vbox = new Viewbox()
+                {
+                    Child = svg
+                };
+                vbox.Width = vbox.Height = sizer.Height;
+
+                var uiContainer = new InlineUIContainer(vbox)
+                {
+                    BaselineAlignment = System.Windows.BaselineAlignment.Center
+                };
+                return uiContainer;
             }
-
-            var sizer = new FormattedText("■", CultureInfo.CurrentCulture, FlowDirection.LeftToRight, typeface, fontSize, Brushes.Transparent, pixelPerDip);
-
-            var vbox = new Viewbox()
+            catch
             {
-                Child = svg
-            };
-            vbox.Width = vbox.Height = sizer.Height;
-
-            var uiContainer = new InlineUIContainer(vbox)
-            {
-                BaselineAlignment = System.Windows.BaselineAlignment.Center
-            };
-            return uiContainer;
+                return null;
+            }
         }
     }
 }
