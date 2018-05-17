@@ -16,7 +16,7 @@ namespace Aurochs.Core.Entities
     public class Attachment
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         [JsonProperty("type")]
         public AttachmentType Type { get; set; }

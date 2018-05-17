@@ -11,7 +11,7 @@ namespace Aurochs.Core.Entities
         /// アカウントのIdを取得、または設定します
         /// </summary>
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         /// <summary>
         /// アカウントのプロフィールURLを取得、または設定します

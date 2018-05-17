@@ -8,7 +8,7 @@ namespace Aurochs.Core.Entities
     public class ApplicationRegistration
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         [JsonProperty("redirect_uri")]
         public string RedirectUri { get; set; }

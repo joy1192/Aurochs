@@ -15,7 +15,7 @@ namespace Aurochs.Core.Entities
 
     public class Notification
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         public NotificationType Type { get; set; }
 
