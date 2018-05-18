@@ -37,8 +37,7 @@ namespace Aurochs.Desktop.ActionCreators
             if (_Stream == null)
                 return;
 
-            _Stream.PostPublicStatus(text);
-
+            _Stream.PostUnlistedStatus(text);
         }
 
         public void Initialize()
