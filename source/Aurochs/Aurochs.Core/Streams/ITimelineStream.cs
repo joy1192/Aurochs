@@ -18,6 +18,10 @@ namespace Aurochs.Core.Streams
 
         void PostPublicStatus(string text);
 
+        void PostUnlistedStatus(string text);
+
         void PostPrivateStatus(string text);
+
+        void PostDirectStatus(string text);
     }
 }

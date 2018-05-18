@@ -32,7 +32,7 @@ namespace Aurochs.Linkage.Converter
                 Favourited = s.Favourited,
                 Sensitive = s.Sensitive,
                 SpoilerText = s.SpoilerText,
-                Visibility = s.Visibility,
+                Visibility = s.Visibility.ToString(),
                 MediaAttachments = s.MediaAttachments.Select(x => x.ToAttachment()).ToList(),
                 Mentions = s.Mentions.Select(x => x.ToMention()).ToList(),
                 Tags = s.Tags.Select(x => x.ToTag()).ToList(),

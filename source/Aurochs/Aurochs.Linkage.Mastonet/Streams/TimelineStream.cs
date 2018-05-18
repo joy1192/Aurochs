@@ -61,6 +61,16 @@ namespace Aurochs.Linkage.Streams
         {
             _Client.PostStatus(text, Visibility.Private);
         }
+
+        public void PostUnlistedStatus(string text)
+        {
+            _Client.PostStatus(text, Visibility.Unlisted);
+        }
+
+        public void PostDirectStatus(string text)
+        {
+            _Client.PostStatus(text, Visibility.Direct);
+        }
     }
 
     public class UserStreamingObservable : IObservable<StreamingMessage>
